@@ -1,6 +1,6 @@
 # Security Abstraction Model (SAM)
 
-[Online Version](docs/)
+[Online Version](https://zoppelt.net/SAM/)
 
 ## Vision
 Eine Softwarearchitektur mit Sicherheit nach innen und außen, bestehend aus:
