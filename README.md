@@ -2,10 +2,8 @@
 
 [Online Version](https://zoppelt.net/SAM/)
 
-## Vision
-Eine Softwarearchitektur mit Sicherheit nach innen und außen, bestehend aus:
+Security modeling entitites for the [EAST-ADL](http://east-adl.info/).
 
-* Security Bausteinen für die EAST-ADL (als Annex)
-
-EAP file can be imported in Enterprise Architect
+EAP file can be imported into Enterprise Architect.
+SAM can be found in the "Annexes" folder.
 
