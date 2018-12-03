@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.1:1", "", "CVSS", "EARoot/EA1/EA36.htm", "175.png", "81", "0", "", "Logical diagram0","{1029E12D-DDA6-4313-B547-FC81DCB011D8}");
+tocTab[tocTab.length] = new Array("0.1:2", "", "Base Metric Group", "EARoot/EA1/EA38.htm", "5.png", "381", "0", "", "Class0","{82D81C74-AF32-4066-83A3-737FEF5D27A3}");
+tocTab[tocTab.length] = new Array("0.1:3", "", "Environmental Metric Group", "EARoot/EA1/EA39.htm", "5.png", "383", "0", "", "Class0","{C74DB5AC-B308-4e6e-928F-CF8F8EF849D8}");
+tocTab[tocTab.length] = new Array("0.1:4", "", "Score", "EARoot/EA1/EA40.htm", "5.png", "384", "0", "", "Class0","{CD087984-E2E6-4588-80EA-DBB97D57A82E}");
+tocTab[tocTab.length] = new Array("0.1:5", "", "Temporal Metric Group", "EARoot/EA1/EA41.htm", "5.png", "382", "0", "", "Class0","{944A83CC-FE7F-46c3-B1CA-D4C9D0E704DB}");

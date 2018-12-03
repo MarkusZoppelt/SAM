@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.1:1", "", "SecurityConcept", "EARoot/EA1/EA34.htm", "175.png", "75", "0", "", "Logical diagram0","{4FC72E11-EDF8-44c5-9077-A3EFBC9F0A56}");
-tocTab[tocTab.length] = new Array("0.1:2", "", "FunctionalSecurityConcept", "EARoot/EA1/EA36.htm", "5.png", "354", "0", "", "Class0","{F6C06796-05E8-438e-8378-C8E4C0925BAB}");
-tocTab[tocTab.length] = new Array("0.1:3", "", "SecurityRequirement", "EARoot/EA1/EA37.htm", "5.png", "353", "0", "", "Class0","{48AA0454-C78E-4c49-9555-154556E5D861}");
-tocTab[tocTab.length] = new Array("0.1:4", "", "TechnicalSecurityConcept", "EARoot/EA1/EA38.htm", "5.png", "355", "0", "", "Class0","{BCB312F1-0AF6-42f1-ADCE-6D93099F8E4E}");
+tocTab[tocTab.length] = new Array("0.2:1", "", "SecurityConcept", "EARoot/EA2/EA42.htm", "175.png", "75", "0", "", "Logical diagram0","{4FC72E11-EDF8-44c5-9077-A3EFBC9F0A56}");
+tocTab[tocTab.length] = new Array("0.2:2", "", "FunctionalSecurityConcept", "EARoot/EA2/EA44.htm", "5.png", "354", "0", "", "Class0","{F6C06796-05E8-438e-8378-C8E4C0925BAB}");
+tocTab[tocTab.length] = new Array("0.2:3", "", "SecurityRequirement", "EARoot/EA2/EA45.htm", "5.png", "353", "0", "", "Class0","{48AA0454-C78E-4c49-9555-154556E5D861}");
+tocTab[tocTab.length] = new Array("0.2:4", "", "TechnicalSecurityConcept", "EARoot/EA2/EA46.htm", "5.png", "355", "0", "", "Class0","{BCB312F1-0AF6-42f1-ADCE-6D93099F8E4E}");
