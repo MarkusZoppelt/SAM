@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gxl dbName="EAST-ADL" dbPath="c:\EAST-ADL_ME" timeStamp="2019-09-13T11:01:12.251Z" version="5.5" xmlns="http://www.metacase.com/gxlGOPRRType" xmlns:sym="http://www.metacase.com/symbol">
+<gxl dbName="EAST-ADL" dbPath="c:\EAST-ADL_ME" timeStamp="2019-09-13T11:31:10.585Z" version="5.5" xmlns="http://www.metacase.com/gxlGOPRRType" xmlns:sym="http://www.metacase.com/symbol">
 	<graph type="Graph_SAM_061218_sysadmin_3721553581" typeName="SAM">
 		<description></description>
 		<slot id="a0uke8" name="Name" unique="false">
@@ -57,14 +57,6 @@
 					<line stroke="rgb(0,0,0)" stroke-width="1" x1="50" x2="210" y1="90" y2="90">
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</line>
-					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="50" y="90">
-						knowledgeLevel:
-						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-					</textArea>
-					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="110" y="90">
-						PropertyTextSource:a2flmk
-						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-					</textArea>
 				</svg>
 			</objectSymbol>
 		</object>
@@ -142,19 +134,19 @@
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</rect>
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="120" y="330">
-						classificationAssumptions:
+						userInteraction:
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="120" y="350">
-						minimalKnowledgeLevel:
+						privilegesRequired:
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="40" x="180" y="330">
-						PropertyTextSource:l1fkhg
+						PropertyTextSource:l7c79o
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="40" x="180" y="350">
-						PropertyTextSource:l2fkin
+						PropertyTextSource:l8c77i
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 					<textArea display-align="after" fill="rgb(0,0,0)" font-family="#sans serif" font-size="20" font-style="normal" font-weight="normal" height="30" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="200" x="120" y="300">
@@ -169,11 +161,11 @@
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="120" y="370">
-						breaksSecurityGoals:
+						accessRequired:
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="40" x="180" y="370">
-						PropertyTextSource:l57krd
+						PropertyTextSource:l6c6i6
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 				</svg>
@@ -223,6 +215,14 @@
 					</textArea>
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="11" font-style="normal" font-weight="normal" height="10" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="140" x="40" y="30">
 						AttackableProperty
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="after" fill="rgb(0,0,0)" font-family="#sans serif" font-size="20" font-style="normal" font-weight="normal" height="30" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="80" x="30" y="70">
+						conditionPrerequisiteComplexity:
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="after" fill="rgb(0,0,0)" font-family="#sans serif" font-size="20" font-style="normal" font-weight="normal" height="30" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="80" x="110" y="70">
+						PropertyTextSource:kncaj1
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 				</svg>
@@ -305,10 +305,10 @@
 				</property>
 			</slot>
 			<identProp slotID="a1yd5r"></identProp>
-			<objectSymbol offset="20,40" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
-				<defaultConnectable isSticky="true" points="180,128.92 179.392,133.16 177.662,136.755 175.072,139.157 172.016,140 27.9834,140 24.9283,139.157 22.3383,136.755 20.6077,133.16 20,128.92 20,51.0803 20.6077,46.8401 22.3383,43.2453 24.9283,40.8434 27.9834,40 172.016,40 175.072,40.8434 177.662,43.2453 179.392,46.8401 180,51.0803 180,128.92" targetPointX="100" targetPointY="90" usesGrid="false"></defaultConnectable>
-				<svg baseProfile="tiny" height="140" version="1.2" width="180" xmlns="http://www.w3.org/2000/svg">
-					<rect fill="rgb(255,224,192)" height="100" rx="6" ry="10" stroke="rgb(0,0,0)" stroke-width="1" width="160" x="20" y="40">
+			<objectSymbol offset="19,40" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
+				<defaultConnectable isSticky="true" points="180,155.596 179.392,161.108 177.662,165.781 175.072,168.904 172.016,170 27.9834,170 24.9283,168.904 22.3383,165.781 20.6077,161.108 20,155.596 20,54.4044 20.6077,48.8921 22.3383,44.2189 24.9283,41.0964 27.9834,40 172.016,40 175.072,41.0964 177.662,44.2189 179.392,48.8921 180,54.4044 180,155.596" targetPointX="100" targetPointY="105" usesGrid="false"></defaultConnectable>
+				<svg baseProfile="tiny" height="170" version="1.2" width="180" xmlns="http://www.w3.org/2000/svg">
+					<rect fill="rgb(255,224,192)" height="130" rx="6" ry="10" stroke="rgb(0,0,0)" stroke-width="1" width="160" x="20" y="40">
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</rect>
 					<textArea display-align="after" fill="rgb(0,0,0)" font-family="#sans serif" font-size="20" font-style="normal" font-weight="normal" height="30" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="160" x="20" y="50">
@@ -328,6 +328,30 @@
 					</textArea>
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="80" y="80">
 						PropertyTextSource:a27klh
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="22" y="104">
+						confidentialityImpact
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="82" y="104">
+						PropertyTextSource:a5ca3z
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="19" y="126">
+						integrityImpact:
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="79" y="126">
+						PropertyTextSource:a4ca5q
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="22" y="144">
+						availabilityImpact:
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="82" y="144">
+						PropertyTextSource:a3ca7a
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 				</svg>
@@ -361,10 +385,10 @@
 				<property href="#Property_confidentialityImpact_sysadmin_3745830167"></property>
 			</slot>
 			<identProp slotID="a1ydba"></identProp>
-			<objectSymbol offset="40,50" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
-				<defaultConnectable isSticky="true" points="200,138.92 199.392,143.16 197.662,146.755 195.072,149.157 192.016,150 47.9834,150 44.9283,149.157 42.3383,146.755 40.6077,143.16 40,138.92 40,61.0803 40.6077,56.8401 42.3383,53.2453 44.9283,50.8434 47.9834,50 192.016,50 195.072,50.8434 197.662,53.2453 199.392,56.8401 200,61.0803 200,138.92" targetPointX="120" targetPointY="100" usesGrid="false"></defaultConnectable>
-				<svg baseProfile="tiny" height="150" version="1.2" width="200" xmlns="http://www.w3.org/2000/svg">
-					<rect fill="rgb(255,224,192)" height="100" rx="6" ry="10" stroke="rgb(0,0,0)" stroke-width="1" width="160" x="40" y="50">
+			<objectSymbol offset="36,50" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
+				<defaultConnectable isSticky="true" points="200,156.704 199.392,161.792 197.662,166.106 195.072,168.988 192.016,170 47.9834,170 44.9283,168.988 42.3383,166.106 40.6077,161.792 40,156.704 40,63.2964 40.6077,58.2081 42.3383,53.8944 44.9283,51.0121 47.9834,50 192.016,50 195.072,51.0121 197.662,53.8944 199.392,58.2081 200,63.2964 200,156.704" targetPointX="120" targetPointY="110" usesGrid="false"></defaultConnectable>
+				<svg baseProfile="tiny" height="170" version="1.2" width="200" xmlns="http://www.w3.org/2000/svg">
+					<rect fill="rgb(255,224,192)" height="120" rx="6" ry="10" stroke="rgb(0,0,0)" stroke-width="1" width="160" x="40" y="50">
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</rect>
 					<textArea display-align="after" fill="rgb(0,0,0)" font-family="#sans serif" font-size="20" font-style="normal" font-weight="normal" height="30" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="160" x="40" y="60">
@@ -384,6 +408,30 @@
 					</textArea>
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="100" y="90">
 						PropertyTextSource:a2fn16
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="39" y="108">
+						confidentialityImpact
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="99" y="108">
+						PropertyTextSource:a5ca9w
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="36" y="130">
+						integrityImpact:
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="96" y="130">
+						PropertyTextSource:a4caak
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="39" y="148">
+						availabilityImpact:
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="99" y="148">
+						PropertyTextSource:a3cabn
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 				</svg>
@@ -416,10 +464,10 @@
 				<property href="#Property_availabilityImpact_sysadmin_3745830227"></property>
 			</slot>
 			<identProp slotID="ksyd86"></identProp>
-			<objectSymbol offset="50,60" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
-				<defaultConnectable isSticky="true" points="210,148.92 209.392,153.16 207.662,156.755 205.072,159.157 202.016,160 57.9834,160 54.9283,159.157 52.3383,156.755 50.6077,153.16 50,148.92 50,71.0803 50.6077,66.8401 52.3383,63.2453 54.9283,60.8434 57.9834,60 202.016,60 205.072,60.8434 207.662,63.2453 209.392,66.8401 210,71.0803 210,148.92" targetPointX="130" targetPointY="110" usesGrid="false"></defaultConnectable>
-				<svg baseProfile="tiny" height="160" version="1.2" width="210" xmlns="http://www.w3.org/2000/svg">
-					<rect fill="rgb(255,224,192)" height="100" rx="6" ry="10" stroke="rgb(0,0,0)" stroke-width="1" width="160" x="50" y="60">
+			<objectSymbol offset="48,60" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
+				<defaultConnectable isSticky="true" points="210,166.704 209.392,171.792 207.662,176.106 205.072,178.988 202.016,180 57.9834,180 54.9283,178.988 52.3383,176.106 50.6077,171.792 50,166.704 50,73.2964 50.6077,68.2081 52.3383,63.8944 54.9283,61.0121 57.9834,60 202.016,60 205.072,61.0121 207.662,63.8944 209.392,68.2081 210,73.2964 210,166.704" targetPointX="130" targetPointY="120" usesGrid="false"></defaultConnectable>
+				<svg baseProfile="tiny" height="180" version="1.2" width="210" xmlns="http://www.w3.org/2000/svg">
+					<rect fill="rgb(255,224,192)" height="120" rx="6" ry="10" stroke="rgb(0,0,0)" stroke-width="1" width="160" x="50" y="60">
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</rect>
 					<textArea display-align="after" fill="rgb(0,0,0)" font-family="#sans serif" font-size="20" font-style="normal" font-weight="normal" height="30" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="160" x="50" y="70">
@@ -439,6 +487,30 @@
 					</textArea>
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="110" y="100">
 						PropertyTextSource:ktfn5q
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="51" y="116">
+						confidentialityImpact
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="111" y="116">
+						PropertyTextSource:kucack
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="48" y="138">
+						integrityImpact:
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="108" y="138">
+						PropertyTextSource:kvcad0
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="51" y="156">
+						availabilityImpact:
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="111" y="156">
+						PropertyTextSource:kwcadf
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 				</svg>
@@ -1642,10 +1714,10 @@ endif
 				<property href="#Property_availabilityImpact_sysadmin_3745830227"></property>
 			</slot>
 			<identProp slotID="a1ycz7"></identProp>
-			<objectSymbol offset="30,30" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
-				<defaultConnectable isSticky="true" points="190,118.92 189.392,123.16 187.662,126.755 185.072,129.157 182.016,130 37.9834,130 34.9283,129.157 32.3383,126.755 30.6077,123.16 30,118.92 30,41.0803 30.6077,36.8401 32.3383,33.2453 34.9283,30.8434 37.9834,30 182.016,30 185.072,30.8434 187.662,33.2453 189.392,36.8401 190,41.0803 190,118.92" targetPointX="110" targetPointY="80" usesGrid="false"></defaultConnectable>
-				<svg baseProfile="tiny" height="130" version="1.2" width="190" xmlns="http://www.w3.org/2000/svg">
-					<rect fill="rgb(255,224,192)" height="100" rx="6" ry="10" stroke="rgb(0,0,0)" stroke-width="1" width="160" x="30" y="30">
+			<objectSymbol offset="26,30" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
+				<defaultConnectable isSticky="true" points="190,136.704 189.392,141.792 187.662,146.106 185.072,148.988 182.016,150 37.9834,150 34.9283,148.988 32.3383,146.106 30.6077,141.792 30,136.704 30,43.2964 30.6077,38.2081 32.3383,33.8944 34.9283,31.0121 37.9834,30 182.016,30 185.072,31.0121 187.662,33.8944 189.392,38.2081 190,43.2964 190,136.704" targetPointX="110" targetPointY="90" usesGrid="false"></defaultConnectable>
+				<svg baseProfile="tiny" height="152" version="1.2" width="190" xmlns="http://www.w3.org/2000/svg">
+					<rect fill="rgb(255,224,192)" height="120" rx="6" ry="10" stroke="rgb(0,0,0)" stroke-width="1" width="160" x="30" y="30">
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</rect>
 					<textArea display-align="after" fill="rgb(0,0,0)" font-family="#sans serif" font-size="20" font-style="normal" font-weight="normal" height="30" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="160" x="30" y="40">
@@ -1665,6 +1737,30 @@ endif
 					</textArea>
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="90" y="70">
 						PropertyTextSource:a2fnez
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="29" y="92">
+						confidentialityImpact
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="89" y="92">
+						PropertyTextSource:a3caea
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="26" y="114">
+						integrityImpact:
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="86" y="114">
+						PropertyTextSource:a4caer
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="29" y="132">
+						availabilityImpact:
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="89" y="132">
+						PropertyTextSource:a5caf5
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 				</svg>
@@ -1911,9 +2007,9 @@ id
 			</slot>
 			<identProp slotID="krydg5"></identProp>
 			<objectSymbol offset="40,40" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
-				<defaultConnectable isSticky="true" points="200,128.92 199.392,133.16 197.662,136.755 195.072,139.157 192.016,140 47.9834,140 44.9283,139.157 42.3383,136.755 40.6077,133.16 40,128.92 40,51.0803 40.6077,46.8401 42.3383,43.2453 44.9283,40.8434 47.9834,40 192.016,40 195.072,40.8434 197.662,43.2453 199.392,46.8401 200,51.0803 200,128.92" targetPointX="120" targetPointY="90" usesGrid="false"></defaultConnectable>
-				<svg baseProfile="tiny" height="140" version="1.2" width="200" xmlns="http://www.w3.org/2000/svg">
-					<rect fill="rgb(255,224,192)" height="100" rx="6" ry="10" stroke="rgb(0,0,0)" stroke-width="1" width="160" x="40" y="40">
+				<defaultConnectable isSticky="true" points="200,146.704 199.392,151.792 197.662,156.106 195.072,158.988 192.016,160 47.9834,160 44.9283,158.988 42.3383,156.106 40.6077,151.792 40,146.704 40,53.2964 40.6077,48.2081 42.3383,43.8944 44.9283,41.0121 47.9834,40 192.016,40 195.072,41.0121 197.662,43.8944 199.392,48.2081 200,53.2964 200,146.704" targetPointX="120" targetPointY="100" usesGrid="false"></defaultConnectable>
+				<svg baseProfile="tiny" height="160" version="1.2" width="200" xmlns="http://www.w3.org/2000/svg">
+					<rect fill="rgb(255,224,192)" height="120" rx="6" ry="10" stroke="rgb(0,0,0)" stroke-width="1" width="160" x="40" y="40">
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</rect>
 					<textArea display-align="after" fill="rgb(0,0,0)" font-family="#sans serif" font-size="20" font-style="normal" font-weight="normal" height="30" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="160" x="40" y="50">
@@ -1922,6 +2018,38 @@ id
 					</textArea>
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="11" font-style="normal" font-weight="normal" height="10" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="140" x="50" y="40">
 						Vulnerability
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="48" y="80">
+						scope:
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="108" y="80">
+						PropertyTextSource:kscann
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="44" y="100">
+						exploitCodeMaturity:
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="104" y="100">
+						PropertyTextSource:ktcata
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="44" y="121">
+						remediationLevel:
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="104" y="121">
+						PropertyTextSource:kucaxa
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="48" y="139">
+						reportConfidence:
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="30" x="108" y="139">
+						PropertyTextSource:kvcazb
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 				</svg>
@@ -1999,6 +2127,33 @@ id
 				</property>
 			</slot>
 			<identProp slotID="mccb3a"></identProp>
+			<objectSymbol offset="213,89" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
+				<defaultConnectable isSticky="true" points="373,177.92 372.392,182.16 370.662,185.755 368.072,188.157 365.016,189 220.983,189 217.928,188.157 215.338,185.755 213.608,182.16 213,177.92 213,100.08 213.608,95.8401 215.338,92.2453 217.928,89.8434 220.983,89 365.016,89 368.072,89.8434 370.662,92.2453 372.392,95.8401 373,100.08 373,177.92" targetPointX="293" targetPointY="139" usesGrid="false"></defaultConnectable>
+				<svg baseProfile="tiny" height="189" version="1.2" width="373" xmlns="http://www.w3.org/2000/svg">
+					<rect fill="rgb(255,224,192)" height="100" rx="6" ry="10" stroke="rgb(0,0,0)" stroke-width="1" width="160" x="213" y="89">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</rect>
+					<textArea display-align="after" fill="rgb(0,0,0)" font-family="#sans serif" font-size="20" font-style="normal" font-weight="normal" height="30" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="160" x="213" y="99">
+						PropertyTextSource:mccb3a
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="11" font-style="normal" font-weight="normal" height="10" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="140" x="223" y="89">
+						Score
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<line stroke="rgb(0,0,0)" stroke-width="1" x1="213" x2="373" y1="129" y2="129">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="215" y="136">
+						value:
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="40" x="275" y="136">
+						PropertyTextSource:mbcb5i
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+				</svg>
+			</objectSymbol>
 		</object>
 		<object type="Object_OperationalSituation_sysadmin_3509602770" typeName="OperationalSituation">
 			<description>An operational situation is a state, condition or scenario in the environment that may influence the vehicle. The Operational Situation may be further detailed by a functional definition in the EnvironmentModel.</description>
@@ -2067,7 +2222,46 @@ id
 					</listValues>
 				</property>
 			</slot>
-			<identProp slotID="a0cd17"></identProp>
+			<slot id="a1cgcz" name="SecurityConceptName" unique="false">
+				<property type="Property_SecurityConceptName_sysadmin_3745834217" typeName="SecurityConceptName">
+					<description></description>
+					<dataType>
+						<simpleType>String</simpleType>
+					</dataType>
+					<defaultValue>
+						<string></string>
+					</defaultValue>
+					<widget>Input Field</widget>
+				</property>
+			</slot>
+			<identProp slotID="a1cgcz"></identProp>
+			<objectSymbol offset="212,170" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
+				<defaultConnectable isSticky="true" points="372,258.92 371.392,263.16 369.662,266.755 367.072,269.157 364.016,270 219.983,270 216.928,269.157 214.338,266.755 212.608,263.16 212,258.92 212,181.08 212.608,176.84 214.338,173.245 216.928,170.843 219.983,170 364.016,170 367.072,170.843 369.662,173.245 371.392,176.84 372,181.08 372,258.92" targetPointX="292" targetPointY="220" usesGrid="false"></defaultConnectable>
+				<svg baseProfile="tiny" height="270" version="1.2" width="372" xmlns="http://www.w3.org/2000/svg">
+					<rect fill="rgb(255,224,192)" height="100" rx="6" ry="10" stroke="rgb(0,0,0)" stroke-width="1" width="160" x="212" y="170">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</rect>
+					<textArea display-align="after" fill="rgb(0,0,0)" font-family="#sans serif" font-size="20" font-style="normal" font-weight="normal" height="30" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="160" x="212" y="180">
+						PropertyTextSource:a1cgcz
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="11" font-style="normal" font-weight="normal" height="10" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="140" x="222" y="170">
+						SecurityConcept
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<line stroke="rgb(0,0,0)" stroke-width="1" x1="212" x2="372" y1="210" y2="210">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="60" x="214" y="217">
+						motivatedBy:
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="40" x="274" y="217">
+						PropertyTextSource:a0cd17
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+				</svg>
+			</objectSymbol>
 		</object>
 		<relationship id="Relationship_Association_sysadmin_3719758098" type="Relationship_Association_sysadmin_3719758098" typeName="Association">
 			<description></description>
