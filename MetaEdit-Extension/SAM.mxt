@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gxl dbName="EAST-ADL" dbPath="c:\EAST-ADL_ME" timeStamp="2019-09-13T11:31:10.585Z" version="5.5" xmlns="http://www.metacase.com/gxlGOPRRType" xmlns:sym="http://www.metacase.com/symbol">
+<gxl dbName="EAST-ADL" dbPath="c:\EAST-ADL_ME" timeStamp="2019-09-18T16:05:03.172Z" version="5.5" xmlns="http://www.metacase.com/gxlGOPRRType" xmlns:sym="http://www.metacase.com/symbol">
 	<graph type="Graph_SAM_061218_sysadmin_3721553581" typeName="SAM">
 		<description></description>
 		<slot id="a0uke8" name="Name" unique="false">
@@ -1676,12 +1676,11 @@ endif
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</rect>
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="40" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="110" x="80" y="40">
-						ReportTextSource::Name; newline
-:DevelopmentCategory
+						PropertyTextSource:hm2cb5
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="12" font-style="italic" font-weight="normal" height="40" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="end" width="110" x="80" y="40">
-						ReportTextSource:type
+						
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 				</svg>
@@ -2101,7 +2100,7 @@ id
 				</svg>
 			</objectSymbol>
 		</object>
-		<object type="Object_Score_sysadmin_3745830848" typeName="Score">
+		<object id="Object_Score_sysadmin_3745830848" type="Object_Score_sysadmin_3745830848" typeName="Score">
 			<description></description>
 			<slot id="mbcb5i" name="value" unique="false">
 				<property type="Property_value_sysadmin_3745830843" typeName="value">
@@ -2155,7 +2154,7 @@ id
 				</svg>
 			</objectSymbol>
 		</object>
-		<object type="Object_OperationalSituation_sysadmin_3509602770" typeName="OperationalSituation">
+		<object id="Object_OperationalSituation_sysadmin_3509602770" type="Object_OperationalSituation_sysadmin_3509602770" typeName="OperationalSituation">
 			<description>An operational situation is a state, condition or scenario in the environment that may influence the vehicle. The Operational Situation may be further detailed by a functional definition in the EnvironmentModel.</description>
 			<slot id="iac6bi" name="__UUID" unique="false">
 				<property type="Property___UUID_sysadmin_3604668056" typeName="__UUID">
@@ -2203,7 +2202,7 @@ id
 				</svg>
 			</objectSymbol>
 		</object>
-		<object type="Object_SecurityConcept_sysadmin_3745832015" typeName="SecurityConcept">
+		<object id="Object_SecurityConcept_sysadmin_3745832015" type="Object_SecurityConcept_sysadmin_3745832015" typeName="SecurityConcept">
 			<description></description>
 			<slot id="a0cd17" name="motivatedBy" unique="false">
 				<property type="Property_motivatedBy_sysadmin_3745832061" typeName="motivatedBy">
@@ -2444,7 +2443,16 @@ id
 		<role id="Role_vulnerability_sysadmin_3723886255" type="Role_vulnerability_sysadmin_3723886255" typeName="vulnerability">
 			<description></description>
 		</role>
-		<role type="Role__score_sysadmin_3745830875" typeName="score">
+		<role id="Role__score_sysadmin_3745830875" type="Role__score_sysadmin_3745830875" typeName="score">
+			<description></description>
+		</role>
+		<role id="Role_score_from_sysadmin_3746280042" type="Role_score_from_sysadmin_3746280042" typeName="score_from">
+			<description></description>
+		</role>
+		<role id="Role_concept_from_sysadmin_3746282210" type="Role_concept_from_sysadmin_3746282210" typeName="concept_from">
+			<description></description>
+		</role>
+		<role id="Role_concept_sysadmin_3746282328" type="Role_concept_sysadmin_3746282328" typeName="concept">
 			<description></description>
 		</role>
 		<binding>
@@ -2541,6 +2549,58 @@ id
 			<relationship href="#Relationship_Association_sysadmin_3719758098"></relationship>
 			<connection>
 				<cardinality start="1" stop="1"></cardinality>
+				<role href="#Role_concept_sysadmin_3746282328"></role>
+				<object href="#Object_SecurityConcept_sysadmin_3745832015"></object>
+			</connection>
+			<connection>
+				<cardinality start="1" stop="1"></cardinality>
+				<role href="#Role_concept_from_sysadmin_3746282210"></role>
+				<object href="#Object_Attack_sysadmin_3718888403"></object>
+			</connection>
+		</binding>
+		<binding>
+			<relationship href="#Relationship_Association_sysadmin_3719758098"></relationship>
+			<connection>
+				<cardinality start="1" stop="1"></cardinality>
+				<role href="#Role_concept_sysadmin_3746282328"></role>
+				<object href="#Object_SecurityConcept_sysadmin_3745832015"></object>
+			</connection>
+			<connection>
+				<cardinality start="1" stop="1"></cardinality>
+				<role href="#Role_concept_from_sysadmin_3746282210"></role>
+				<object href="#Object_ADLRequirement_user_3400763726"></object>
+			</connection>
+		</binding>
+		<binding>
+			<relationship href="#Relationship_Association_sysadmin_3719758098"></relationship>
+			<connection>
+				<cardinality start="1" stop="1"></cardinality>
+				<role href="#Role_concept_from_sysadmin_3746282210"></role>
+				<object href="#Object_Attack_sysadmin_3718888403"></object>
+			</connection>
+			<connection>
+				<cardinality start="1" stop="1"></cardinality>
+				<role href="#Role_concept_sysadmin_3746282328"></role>
+				<object href="#Object_SecurityConcept_sysadmin_3745832015"></object>
+			</connection>
+		</binding>
+		<binding>
+			<relationship href="#Relationship_Association_sysadmin_3719758098"></relationship>
+			<connection>
+				<cardinality start="1" stop="1"></cardinality>
+				<role href="#Role_concept_from_sysadmin_3746282210"></role>
+				<object href="#Object_ADLRequirement_user_3400763726"></object>
+			</connection>
+			<connection>
+				<cardinality start="1" stop="1"></cardinality>
+				<role href="#Role_concept_sysadmin_3746282328"></role>
+				<object href="#Object_SecurityConcept_sysadmin_3745832015"></object>
+			</connection>
+		</binding>
+		<binding>
+			<relationship href="#Relationship_Association_sysadmin_3719758098"></relationship>
+			<connection>
+				<cardinality start="1" stop="1"></cardinality>
 				<role href="#Role_derived_sysadmin_3719753631"></role>
 				<object href="#Object_Item_sysadmin_3509259179"></object>
 			</connection>
@@ -2658,6 +2718,19 @@ id
 			<relationship href="#Relationship_Association_sysadmin_3719758098"></relationship>
 			<connection>
 				<cardinality start="1" stop="1"></cardinality>
+				<role href="#Role_Mode_sysadmin_3509604357"></role>
+				<object href="#Object_OperationalSituation_sysadmin_3509602770"></object>
+			</connection>
+			<connection>
+				<cardinality start="1" stop="1"></cardinality>
+				<role href="#Role_operatingMode_from_sysadmin_3723882618"></role>
+				<object href="#Object_Attack_sysadmin_3718888403"></object>
+			</connection>
+		</binding>
+		<binding>
+			<relationship href="#Relationship_Association_sysadmin_3719758098"></relationship>
+			<connection>
+				<cardinality start="1" stop="1"></cardinality>
 				<role href="#Role_operatingMode_from_sysadmin_3723882618"></role>
 				<object href="#Object_Attack_sysadmin_3718888403"></object>
 			</connection>
@@ -2691,6 +2764,32 @@ id
 				<cardinality start="1" stop="1"></cardinality>
 				<role href="#Role_operationalSituationUseCase_sysadmin_3719752696"></role>
 				<object href="#Object_UseCase_user_3462616740"></object>
+			</connection>
+		</binding>
+		<binding>
+			<relationship href="#Relationship_Association_sysadmin_3719758098"></relationship>
+			<connection>
+				<cardinality start="1" stop="1"></cardinality>
+				<role href="#Role__score_sysadmin_3745830875"></role>
+				<object href="#Object_Score_sysadmin_3745830848"></object>
+			</connection>
+			<connection>
+				<cardinality start="1" stop="1"></cardinality>
+				<role href="#Role_score_from_sysadmin_3746280042"></role>
+				<object href="#Object_Attack_sysadmin_3718888403"></object>
+			</connection>
+		</binding>
+		<binding>
+			<relationship href="#Relationship_Association_sysadmin_3719758098"></relationship>
+			<connection>
+				<cardinality start="1" stop="1"></cardinality>
+				<role href="#Role_score_from_sysadmin_3746280042"></role>
+				<object href="#Object_Attack_sysadmin_3718888403"></object>
+			</connection>
+			<connection>
+				<cardinality start="1" stop="1"></cardinality>
+				<role href="#Role__score_sysadmin_3745830875"></role>
+				<object href="#Object_Score_sysadmin_3745830848"></object>
 			</connection>
 		</binding>
 		<binding>
@@ -2802,6 +2901,11 @@ id
 			<connectivity>
 				<object href="#Object_Item_sysadmin_3509259179"></object>
 				<role href="#Role_vehicleFeature_from_sysadmin_3723882672"></role>
+				<max>1</max>
+			</connectivity>
+			<connectivity>
+				<object href="#Object_OperationalSituation_sysadmin_3509602770"></object>
+				<role href="#Role_attackFrom_sysadmin_3719755018"></role>
 				<max>1</max>
 			</connectivity>
 			<connectivity>
