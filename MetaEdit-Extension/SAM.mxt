@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gxl dbName="EAST-ADL" dbPath="c:\EAST-ADL_ME" timeStamp="2019-09-18T16:05:03.172Z" version="5.5" xmlns="http://www.metacase.com/gxlGOPRRType" xmlns:sym="http://www.metacase.com/symbol">
+<gxl dbName="EAST-ADL" dbPath="c:\EAST-ADL_ME" timeStamp="2019-10-11T15:38:37.547Z" version="5.5" xmlns="http://www.metacase.com/gxlGOPRRType" xmlns:sym="http://www.metacase.com/symbol">
 	<graph type="Graph_SAM_061218_sysadmin_3721553581" typeName="SAM">
 		<description></description>
 		<slot id="a0uke8" name="Name" unique="false">
@@ -2357,7 +2357,7 @@ id
 				</rolelineGOs>
 				<svg baseProfile="tiny" height="80" version="1.2" width="140" xmlns="http://www.w3.org/2000/svg">
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="end" width="130" x="10" y="60">
-						ReportTextSource:type
+						
 						<metaInfo shouldRotate="false" xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 				</svg>
@@ -2371,7 +2371,7 @@ id
 				</rolelineGOs>
 				<svg baseProfile="tiny" height="80" version="1.2" width="140" xmlns="http://www.w3.org/2000/svg">
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="end" width="130" x="10" y="60">
-						ReportTextSource:type
+						
 						<metaInfo shouldRotate="false" xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 				</svg>
