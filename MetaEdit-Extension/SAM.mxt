@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gxl dbName="EAST-ADL" dbPath="c:\EAST-ADL_ME" timeStamp="2019-11-14T13:31:34.053Z" version="5.5" xmlns="http://www.metacase.com/gxlGOPRRType" xmlns:ns="http://www.w3.org/1999/xlink" xmlns:sym="http://www.metacase.com/symbol">
+<gxl dbName="EAST-ADL" dbPath="c:\MetaEdit+_Repos\EAST-ADL_ME" timeStamp="2019-11-14T14:12:11.736Z" version="5.5" xmlns="http://www.metacase.com/gxlGOPRRType" xmlns:ns="http://www.w3.org/1999/xlink" xmlns:sym="http://www.metacase.com/symbol">
 	<graph id="Graph_Allocation_Matrix_user_3492975668" type="Graph_Allocation_Matrix_user_3492975668" typeName="AllocationMatrix">
 		<description>EAST-ADL version M2.1.12
 AllocationMatrix specifies how design functions are been allocated to hardware components.</description>
@@ -408,6 +408,7 @@ if $LiveCheck &lt;&gt; 'T' then
 			newline 	
 		endif
 	}
+
 endif</report>
 				<report>Report '_checkings for the graph'
 /*******************/
@@ -4244,6 +4245,7 @@ do :UnitReference
 		variable 'reported_elements' append oid ' ' close
 		variable 'type_name' write type%minus%upper close
 		_unit_details()
+
 		do :Quantity { _quantity() }
 	endif
 }
@@ -4667,6 +4669,7 @@ if :LuminousIntensityExp = '' then
 		/* When the Type is used in some FAA/FDA model */	
 		_reportError_level3(@errorType)
 		_extendedCheckOutput_level4()
+
 	else
 		/* When the Type is defined in Package model */	
 		_reportError_level2(@errorType)
@@ -12088,6 +12091,7 @@ endif
 																			<objectSymbol offset="70,60" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
 																				<defaultConnectable isSticky="true" points="70,72.2222 80,60 230,60 240,72.2222 240,157.778 230,170 80,170 70,157.778 70,72.2222" targetPointX="155" targetPointY="115" usesGrid="true"></defaultConnectable>
 																				<svg baseProfile="tiny" height="170" version="1.2" width="240" xmlns="http://www.w3.org/2000/svg">
+
 																					<defs>
 																						<radialGradient cx="0.352941" cy="0.345454" gradientUnits="objectBoundingBox" id="gradient3" r="0.920388" sym:correctGamma="true" sym:fillType="PathFill">
 																							<stop offset="0" stop-color="rgb(255,255,255)"></stop>
@@ -14994,6 +14998,7 @@ close
 '&lt;CONNECTORS&gt;'
 foreach &gt;HardwareConnector
 {	if not $hardwarePortConnectors =~ oid%wildsp And not $reported_relationships =~ oid%wildsp then
+
 		variable 'reported_relationships' append oid ' ' close
 		newline
 		'&lt;!-- HARDWARE-CONNECTOR name: ' 
@@ -15586,6 +15591,7 @@ endreport</report>
 					<dataType>
 						<simpleType>Collection</simpleType>
 					</dataType>
+
 					<contentsDataType>
 						<object href="#Object_Quantification_sysadmin_3508139708"></object>
 					</contentsDataType>
@@ -27856,6 +27862,7 @@ else 'X' endif
 </displayCondition>
 										</metaInfo>
 									</template>
+
 									<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="50" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="160" x="40" y="50">
 										ReportTextSource:id
 										<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
@@ -31695,12 +31702,12 @@ do :motivatedBy {id }
 		<binding>
 			<relationship href="#Relationship_Association_sysadmin_3719758098"></relationship>
 			<connection>
-				<cardinality start="1" stop="1"></cardinality>
+				<cardinality start="0" stop="N"></cardinality>
 				<role href="#Role_subAttacks_from_sysadmin_3723882661"></role>
 				<object href="#Object_Attack_sysadmin_3718888403"></object>
 			</connection>
 			<connection>
-				<cardinality start="1" stop="1"></cardinality>
+				<cardinality start="0" stop="N"></cardinality>
 				<role href="#Role_subAttacks_sysadmin_3719753425"></role>
 				<object href="#Object_Attack_sysadmin_3718888403"></object>
 			</connection>
@@ -31734,12 +31741,12 @@ do :motivatedBy {id }
 		<binding>
 			<relationship href="#Relationship_Association_sysadmin_3719758098"></relationship>
 			<connection>
-				<cardinality start="1" stop="1"></cardinality>
+				<cardinality start="1" stop="N"></cardinality>
 				<role href="#Role_vulnerability_sysadmin_3723886255"></role>
 				<object href="#Object_AttackableProperty_sysadmin_3718886755"></object>
 			</connection>
 			<connection>
-				<cardinality start="1" stop="1"></cardinality>
+				<cardinality start="1" stop="N"></cardinality>
 				<role href="#Role_vulnerability_from_sysadmin_3723886223"></role>
 				<object href="#Object_Vulnerability_sysadmin_3718887241"></object>
 			</connection>
@@ -31747,12 +31754,12 @@ do :motivatedBy {id }
 		<binding>
 			<relationship href="#Relationship_Association_sysadmin_3719758098"></relationship>
 			<connection>
-				<cardinality start="1" stop="1"></cardinality>
+				<cardinality start="1" stop="N"></cardinality>
 				<role href="#Role_vulnerability_from_sysadmin_3723886223"></role>
 				<object href="#Object_Vulnerability_sysadmin_3718887241"></object>
 			</connection>
 			<connection>
-				<cardinality start="1" stop="1"></cardinality>
+				<cardinality start="1" stop="N"></cardinality>
 				<role href="#Role_vulnerability_sysadmin_3723886255"></role>
 				<object href="#Object_AttackableProperty_sysadmin_3718886755"></object>
 			</connection>
@@ -31844,11 +31851,6 @@ foreach .Item; where not ~() {
 			<connectivity>
 				<object href="#Object_Vulnerability_sysadmin_3718887241"></object>
 				<role href="#Role_nonFulfilledRequirement_from_sysadmin_3723882605"></role>
-				<max>1</max>
-			</connectivity>
-			<connectivity>
-				<object href="#Object_Vulnerability_sysadmin_3718887241"></object>
-				<role href="#Role_vulnerability_from_sysadmin_3723886223"></role>
 				<max>1</max>
 			</connectivity>
 		</constraints>
