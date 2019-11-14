@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gxl dbName="EAST-ADL" dbPath="c:\EAST-ADL_ME" timeStamp="2019-09-18T16:02:47.265Z" version="5.5" xmlns="http://www.metacase.com/gxlGOPRR">
+<gxl dbName="EAST-ADL" dbPath="c:\EAST-ADL_ME" timeStamp="2019-11-14T13:30:20.634Z" version="5.5" xmlns="http://www.metacase.com/gxlGOPRR">
 	<graph id="_19_176607" oid="_19_176607" type="Graph_SAM_061218_sysadmin_3721553581" typeName="SAM">
 		<slot id="a0uke8" name="Name">
 			<property oid="_19_176610" type="Property_Name_sysadmin_3718454651" typeName="Name"></property>
@@ -223,7 +223,7 @@
 			<slot id="aeer14" name="Name">
 				<property oid="_19_176691" type="Property_2ECUName_user_3310972947" typeName="ModelName"></property>
 				<value>
-					<string>Diagnostics</string>
+					<string>ExternalDiagnosticsAccess</string>
 				</value>
 			</slot>
 			<slot id="afer4z" name="Cardinality">
@@ -457,7 +457,7 @@
 			<objectRepr id="_19_176625" oid="_19_176625" place="240,700" scale="1.84,1.34545">
 				<object href="#_19_176615" xmlns="http://www.metacase.com/gxlGOPRR"></object>
 			</objectRepr>
-			<objectRepr id="_19_176638" oid="_19_176638" place="280,210" scale="2.825,3.35484">
+			<objectRepr id="_19_176638" oid="_19_176638" place="280,210" scale="2.825,1.51357">
 				<object href="#_19_176626" xmlns="http://www.metacase.com/gxlGOPRR"></object>
 			</objectRepr>
 			<objectRepr id="_19_176643" oid="_19_176643" place="170,480" scale="1.1875,0.92">
@@ -499,7 +499,7 @@
 					<objectRepr href="#_19_176762"></objectRepr>
 				</connectionRepr>
 			</bindingRepr>
-			<bindingRepr isStraight="true" oid="_19_176780" place="346,518" scale="1,1">
+			<bindingRepr isStraight="true" oid="_19_176780" place="346,463" scale="1,1">
 				<binding href="#_19_176778" xmlns="http://www.metacase.com/gxlGOPRR"></binding>
 				<connectionRepr id="1" objTargetOffset="66,201">
 					<objectRepr href="#_19_176638"></objectRepr>
