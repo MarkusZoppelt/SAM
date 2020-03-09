@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gxl dbName="EAST-ADL_r18MovablePorts2_withSam" dbPath="EAST-ADL_r18MovablePorts2_withSam" timeStamp="2020-02-29T14:44:14.720Z" version="5.5" xmlns="http://www.metacase.com/gxlGOPRR">
+	<graph id="_19_192956" oid="_19_192956" type="Graph_Security_sysadmin_3758565629" typeName="Security">
+		<slot id="c6cao0" name="__UUID">
+			<property oid="_19_192963" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+			<value>
+				<string>IuT5vBXLQ5OoF14QJhh9zw</string>
+			</value>
+		</slot>
+		<slot id="chi7ju" name="Short name">
+			<property oid="_19_192965" type="Property_2ModelName_user_3310896462" typeName="Short name"></property>
+			<value>
+				<string>Honeypot</string>
+			</value>
+		</slot>
+		<slot id="cii7k5" name="Name">
+			<property oid="_19_192967" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+			<value>
+				<string></string>
+			</value>
+		</slot>
+		<slot id="cji7kh" name="Description">
+			<property oid="_19_192969" type="Property_2Description_user_3310902697" typeName="Description"></property>
+			<value>
+				<text></text>
+			</value>
+		</slot>
+		<object id="_19_193457" oid="_19_193457" type="Object_Attack_sysadmin_3758638313" typeName="Attack">
+			<slot id="nelbmk" name="__UUID">
+				<property oid="_19_193459" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+				<value>
+					<string>n+lJlnDNSuSpbCt9+roenA</string>
+				</value>
+			</slot>
+			<slot id="nflbmx" name="Short name">
+				<property oid="_19_193461" type="Property_2ModelName_user_3310896462" typeName="Short name"></property>
+				<value>
+					<string>ConnectToHoneypot</string>
+				</value>
+			</slot>
+			<slot id="nglbn5" name="Name">
+				<property oid="_19_193463" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+				<value>
+					<string>3.1 Connect to Honeypot</string>
+				</value>
+			</slot>
+			<slot id="nhlbnl" name="AccessRequired">
+				<property oid="_19_193465" type="Property_AccessRequired_sysadmin_3758565268" typeName="AccessRequired"></property>
+				<value>
+					<string>Network</string>
+				</value>
+			</slot>
+			<slot id="nilbny" name="PrivilegesRequired">
+				<property oid="_19_193467" type="Property_PrivilegesRequired_sysadmin_3758565363" typeName="PrivilegesRequired"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="njlbod" name="UserInteraction">
+				<property oid="_19_193469" type="Property_UserInteraction_sysadmin_3758565465" typeName="UserInteraction"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nmlbpo" name="ConfidentialityImpact">
+				<property oid="_19_193471" type="Property_Confidentiality_Impact_sysadmin_3758564501" typeName="ConfidentialityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nnlbq6" name="IntegrityImpact">
+				<property oid="_19_193473" type="Property_IntegrityImpact_sysadmin_3758564580" typeName="IntegrityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nklboo" name="AvailabilityImpact">
+				<property oid="_19_193475" type="Property_AvailabilityImpact_sysadmin_3758564320" typeName="AvailabilityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nolbqh" name="SafetyRelevance">
+				<property oid="_19_193477" type="Property_SafetyRelevance_sysadmin_3758564655" typeName="SafetyRelevance"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nllboy" name="Breaks security goals">
+				<property oid="_19_193479" type="Property_Breaks_security_goals_sysadmin_3758564445" typeName="Breaks security goals"></property>
+				<value>
+					<object oid="_19_193431" type="Object_SecurityGoal_sysadmin_3758565916" typeName="SecurityGoal">
+						<slot id="moi7so" name="Confidentiality">
+							<property oid="_19_193445" type="Property_Confidentiality_sysadmin_3758565756" typeName="Confidentiality"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mpi7u0" name="Integrity">
+							<property oid="_19_193447" type="Property_Integrity_sysadmin_3758565780" typeName="Integrity"></property>
+							<value>
+								<bool>false</bool>
+							</value>
+						</slot>
+						<slot id="mqi7ui" name="Availability">
+							<property oid="_19_193449" type="Property_Availability_sysadmin_3758565789" typeName="Availability"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mri7vc" name="Authenticity">
+							<property oid="_19_193451" type="Property_Authenticity_sysadmin_3758565804" typeName="Authenticity"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="msi7w0" name="Reliability">
+							<property oid="_19_193453" type="Property_Reliability_sysadmin_3758565816" typeName="Reliability"></property>
+							<value>
+								<bool>false</bool>
+							</value>
+						</slot>
+						<slot id="mti7wv" name="Accountability">
+							<property oid="_19_193455" type="Property_Accountability_sysadmin_3758565831" typeName="Accountability"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+					</object>
+				</value>
+			</slot>
+			<slot id="nplbqy" name="Description">
+				<property oid="_19_193481" type="Property_2Description_user_3310902697" typeName="Description"></property>
+				<value>
+					<text></text>
+				</value>
+			</slot>
+		</object>
+		<object id="_19_193404" oid="_19_193404" type="Object_Attack_sysadmin_3758638313" typeName="Attack">
+			<slot id="nelbmk" name="__UUID">
+				<property oid="_19_193406" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+				<value>
+					<string>VFDiCSLFRGK0AjaJ8xDkzQ</string>
+				</value>
+			</slot>
+			<slot id="nflbmx" name="Short name">
+				<property oid="_19_193408" type="Property_2ModelName_user_3310896462" typeName="Short name"></property>
+				<value>
+					<string>AccessCarShell</string>
+				</value>
+			</slot>
+			<slot id="nglbn5" name="Name">
+				<property oid="_19_193410" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+				<value>
+					<string>3.2 Access Car Shell</string>
+				</value>
+			</slot>
+			<slot id="nhlbnl" name="AccessRequired">
+				<property oid="_19_193412" type="Property_AccessRequired_sysadmin_3758565268" typeName="AccessRequired"></property>
+				<value>
+					<string>Network</string>
+				</value>
+			</slot>
+			<slot id="nilbny" name="PrivilegesRequired">
+				<property oid="_19_193414" type="Property_PrivilegesRequired_sysadmin_3758565363" typeName="PrivilegesRequired"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="njlbod" name="UserInteraction">
+				<property oid="_19_193416" type="Property_UserInteraction_sysadmin_3758565465" typeName="UserInteraction"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nmlbpo" name="ConfidentialityImpact">
+				<property oid="_19_193418" type="Property_Confidentiality_Impact_sysadmin_3758564501" typeName="ConfidentialityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nnlbq6" name="IntegrityImpact">
+				<property oid="_19_193420" type="Property_IntegrityImpact_sysadmin_3758564580" typeName="IntegrityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nklboo" name="AvailabilityImpact">
+				<property oid="_19_193422" type="Property_AvailabilityImpact_sysadmin_3758564320" typeName="AvailabilityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nolbqh" name="SafetyRelevance">
+				<property oid="_19_193424" type="Property_SafetyRelevance_sysadmin_3758564655" typeName="SafetyRelevance"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nllboy" name="Breaks security goals">
+				<property oid="_19_193426" type="Property_Breaks_security_goals_sysadmin_3758564445" typeName="Breaks security goals"></property>
+				<value>
+					<object oid="_19_193378" type="Object_SecurityGoal_sysadmin_3758565916" typeName="SecurityGoal">
+						<slot id="moi7so" name="Confidentiality">
+							<property oid="_19_193392" type="Property_Confidentiality_sysadmin_3758565756" typeName="Confidentiality"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mpi7u0" name="Integrity">
+							<property oid="_19_193394" type="Property_Integrity_sysadmin_3758565780" typeName="Integrity"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mqi7ui" name="Availability">
+							<property oid="_19_193396" type="Property_Availability_sysadmin_3758565789" typeName="Availability"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mri7vc" name="Authenticity">
+							<property oid="_19_193398" type="Property_Authenticity_sysadmin_3758565804" typeName="Authenticity"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="msi7w0" name="Reliability">
+							<property oid="_19_193400" type="Property_Reliability_sysadmin_3758565816" typeName="Reliability"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mti7wv" name="Accountability">
+							<property oid="_19_193402" type="Property_Accountability_sysadmin_3758565831" typeName="Accountability"></property>
+							<value>
+								<bool>false</bool>
+							</value>
+						</slot>
+					</object>
+				</value>
+			</slot>
+			<slot id="nplbqy" name="Description">
+				<property oid="_19_193428" type="Property_2Description_user_3310902697" typeName="Description"></property>
+				<value>
+					<text></text>
+				</value>
+			</slot>
+		</object>
+		<object id="_19_193209" oid="_19_193209" type="Object_Attack_sysadmin_3758638313" typeName="Attack">
+			<slot id="nelbmk" name="__UUID">
+				<property oid="_19_193211" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+				<value>
+					<string>jLswqoMYQg+v19tGHtMnfQ</string>
+				</value>
+			</slot>
+			<slot id="nflbmx" name="Short name">
+				<property oid="_19_193213" type="Property_2ModelName_user_3310896462" typeName="Short name"></property>
+				<value>
+					<string>RootPrivilege</string>
+				</value>
+			</slot>
+			<slot id="nglbn5" name="Name">
+				<property oid="_19_193215" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+				<value>
+					<string>3.3 Root Privilege</string>
+				</value>
+			</slot>
+			<slot id="nhlbnl" name="AccessRequired">
+				<property oid="_19_193217" type="Property_AccessRequired_sysadmin_3758565268" typeName="AccessRequired"></property>
+				<value>
+					<string>Network</string>
+				</value>
+			</slot>
+			<slot id="nilbny" name="PrivilegesRequired">
+				<property oid="_19_193219" type="Property_PrivilegesRequired_sysadmin_3758565363" typeName="PrivilegesRequired"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="njlbod" name="UserInteraction">
+				<property oid="_19_193221" type="Property_UserInteraction_sysadmin_3758565465" typeName="UserInteraction"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nmlbpo" name="ConfidentialityImpact">
+				<property oid="_19_193223" type="Property_Confidentiality_Impact_sysadmin_3758564501" typeName="ConfidentialityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nnlbq6" name="IntegrityImpact">
+				<property oid="_19_193225" type="Property_IntegrityImpact_sysadmin_3758564580" typeName="IntegrityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nklboo" name="AvailabilityImpact">
+				<property oid="_19_193227" type="Property_AvailabilityImpact_sysadmin_3758564320" typeName="AvailabilityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nolbqh" name="SafetyRelevance">
+				<property oid="_19_193229" type="Property_SafetyRelevance_sysadmin_3758564655" typeName="SafetyRelevance"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nllboy" name="Breaks security goals">
+				<property oid="_19_193231" type="Property_Breaks_security_goals_sysadmin_3758564445" typeName="Breaks security goals"></property>
+				<value>
+					<object oid="_19_193262" type="Object_SecurityGoal_sysadmin_3758565916" typeName="SecurityGoal">
+						<slot id="moi7so" name="Confidentiality">
+							<property oid="_19_193276" type="Property_Confidentiality_sysadmin_3758565756" typeName="Confidentiality"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mpi7u0" name="Integrity">
+							<property oid="_19_193278" type="Property_Integrity_sysadmin_3758565780" typeName="Integrity"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mqi7ui" name="Availability">
+							<property oid="_19_193280" type="Property_Availability_sysadmin_3758565789" typeName="Availability"></property>
+							<value>
+								<bool>false</bool>
+							</value>
+						</slot>
+						<slot id="mri7vc" name="Authenticity">
+							<property oid="_19_193282" type="Property_Authenticity_sysadmin_3758565804" typeName="Authenticity"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="msi7w0" name="Reliability">
+							<property oid="_19_193284" type="Property_Reliability_sysadmin_3758565816" typeName="Reliability"></property>
+							<value>
+								<bool>false</bool>
+							</value>
+						</slot>
+						<slot id="mti7wv" name="Accountability">
+							<property oid="_19_193286" type="Property_Accountability_sysadmin_3758565831" typeName="Accountability"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+					</object>
+				</value>
+			</slot>
+			<slot id="nplbqy" name="Description">
+				<property oid="_19_193233" type="Property_2Description_user_3310902697" typeName="Description"></property>
+				<value>
+					<text></text>
+				</value>
+			</slot>
+		</object>
+		<object id="_19_193182" oid="_19_193182" type="Object_Attack_sysadmin_3758638313" typeName="Attack">
+			<slot id="nelbmk" name="__UUID">
+				<property oid="_19_193184" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+				<value>
+					<string>9MEdKcQMRXmnMYnlO77QHQ</string>
+				</value>
+			</slot>
+			<slot id="nflbmx" name="Short name">
+				<property oid="_19_193186" type="Property_2ModelName_user_3310896462" typeName="Short name"></property>
+				<value>
+					<string>AccessofEmbeddedSystem_ICandParrot</string>
+				</value>
+			</slot>
+			<slot id="nglbn5" name="Name">
+				<property oid="_19_193188" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+				<value>
+					<string>3.4 Access of Embedded System (IC and Parrot)</string>
+				</value>
+			</slot>
+			<slot id="nhlbnl" name="AccessRequired">
+				<property oid="_19_193190" type="Property_AccessRequired_sysadmin_3758565268" typeName="AccessRequired"></property>
+				<value>
+					<string>Network</string>
+				</value>
+			</slot>
+			<slot id="nilbny" name="PrivilegesRequired">
+				<property oid="_19_193192" type="Property_PrivilegesRequired_sysadmin_3758565363" typeName="PrivilegesRequired"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="njlbod" name="UserInteraction">
+				<property oid="_19_193194" type="Property_UserInteraction_sysadmin_3758565465" typeName="UserInteraction"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nmlbpo" name="ConfidentialityImpact">
+				<property oid="_19_193196" type="Property_Confidentiality_Impact_sysadmin_3758564501" typeName="ConfidentialityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nnlbq6" name="IntegrityImpact">
+				<property oid="_19_193198" type="Property_IntegrityImpact_sysadmin_3758564580" typeName="IntegrityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nklboo" name="AvailabilityImpact">
+				<property oid="_19_193200" type="Property_AvailabilityImpact_sysadmin_3758564320" typeName="AvailabilityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nolbqh" name="SafetyRelevance">
+				<property oid="_19_193202" type="Property_SafetyRelevance_sysadmin_3758564655" typeName="SafetyRelevance"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nllboy" name="Breaks security goals">
+				<property oid="_19_193204" type="Property_Breaks_security_goals_sysadmin_3758564445" typeName="Breaks security goals"></property>
+				<value>
+					<object oid="_19_193156" type="Object_SecurityGoal_sysadmin_3758565916" typeName="SecurityGoal">
+						<slot id="moi7so" name="Confidentiality">
+							<property oid="_19_193170" type="Property_Confidentiality_sysadmin_3758565756" typeName="Confidentiality"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mpi7u0" name="Integrity">
+							<property oid="_19_193172" type="Property_Integrity_sysadmin_3758565780" typeName="Integrity"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mqi7ui" name="Availability">
+							<property oid="_19_193174" type="Property_Availability_sysadmin_3758565789" typeName="Availability"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mri7vc" name="Authenticity">
+							<property oid="_19_193176" type="Property_Authenticity_sysadmin_3758565804" typeName="Authenticity"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="msi7w0" name="Reliability">
+							<property oid="_19_193178" type="Property_Reliability_sysadmin_3758565816" typeName="Reliability"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mti7wv" name="Accountability">
+							<property oid="_19_193180" type="Property_Accountability_sysadmin_3758565831" typeName="Accountability"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+					</object>
+				</value>
+			</slot>
+			<slot id="nplbqy" name="Description">
+				<property oid="_19_193206" type="Property_2Description_user_3310902697" typeName="Description"></property>
+				<value>
+					<text></text>
+				</value>
+			</slot>
+		</object>
+		<object id="_19_193129" oid="_19_193129" type="Object_Attack_sysadmin_3758638313" typeName="Attack">
+			<slot id="nelbmk" name="__UUID">
+				<property oid="_19_193131" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+				<value>
+					<string>qDQGtQxQQhyqyWLU9L/2RQ</string>
+				</value>
+			</slot>
+			<slot id="nflbmx" name="Short name">
+				<property oid="_19_193133" type="Property_2ModelName_user_3310896462" typeName="Short name"></property>
+				<value>
+					<string>AccessofEmbeddedSystem</string>
+				</value>
+			</slot>
+			<slot id="nglbn5" name="Name">
+				<property oid="_19_193135" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+				<value>
+					<string>3.5 Access of Embedded System (Gateway)</string>
+				</value>
+			</slot>
+			<slot id="nhlbnl" name="AccessRequired">
+				<property oid="_19_193137" type="Property_AccessRequired_sysadmin_3758565268" typeName="AccessRequired"></property>
+				<value>
+					<string>Network</string>
+				</value>
+			</slot>
+			<slot id="nilbny" name="PrivilegesRequired">
+				<property oid="_19_193139" type="Property_PrivilegesRequired_sysadmin_3758565363" typeName="PrivilegesRequired"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="njlbod" name="UserInteraction">
+				<property oid="_19_193141" type="Property_UserInteraction_sysadmin_3758565465" typeName="UserInteraction"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nmlbpo" name="ConfidentialityImpact">
+				<property oid="_19_193143" type="Property_Confidentiality_Impact_sysadmin_3758564501" typeName="ConfidentialityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nnlbq6" name="IntegrityImpact">
+				<property oid="_19_193145" type="Property_IntegrityImpact_sysadmin_3758564580" typeName="IntegrityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nklboo" name="AvailabilityImpact">
+				<property oid="_19_193147" type="Property_AvailabilityImpact_sysadmin_3758564320" typeName="AvailabilityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nolbqh" name="SafetyRelevance">
+				<property oid="_19_193149" type="Property_SafetyRelevance_sysadmin_3758564655" typeName="SafetyRelevance"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nllboy" name="Breaks security goals">
+				<property oid="_19_193151" type="Property_Breaks_security_goals_sysadmin_3758564445" typeName="Breaks security goals"></property>
+				<value>
+					<object oid="_19_193103" type="Object_SecurityGoal_sysadmin_3758565916" typeName="SecurityGoal">
+						<slot id="moi7so" name="Confidentiality">
+							<property oid="_19_193117" type="Property_Confidentiality_sysadmin_3758565756" typeName="Confidentiality"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mpi7u0" name="Integrity">
+							<property oid="_19_193119" type="Property_Integrity_sysadmin_3758565780" typeName="Integrity"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mqi7ui" name="Availability">
+							<property oid="_19_193121" type="Property_Availability_sysadmin_3758565789" typeName="Availability"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mri7vc" name="Authenticity">
+							<property oid="_19_193123" type="Property_Authenticity_sysadmin_3758565804" typeName="Authenticity"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="msi7w0" name="Reliability">
+							<property oid="_19_193125" type="Property_Reliability_sysadmin_3758565816" typeName="Reliability"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mti7wv" name="Accountability">
+							<property oid="_19_193127" type="Property_Accountability_sysadmin_3758565831" typeName="Accountability"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+					</object>
+				</value>
+			</slot>
+			<slot id="nplbqy" name="Description">
+				<property oid="_19_193153" type="Property_2Description_user_3310902697" typeName="Description"></property>
+				<value>
+					<text></text>
+				</value>
+			</slot>
+		</object>
+		<object id="_19_193076" oid="_19_193076" type="Object_Attack_sysadmin_3758638313" typeName="Attack">
+			<slot id="nelbmk" name="__UUID">
+				<property oid="_19_193078" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+				<value>
+					<string>VeiEK8ttRvGYOiJYjsy5DA</string>
+				</value>
+			</slot>
+			<slot id="nflbmx" name="Short name">
+				<property oid="_19_193080" type="Property_2ModelName_user_3310896462" typeName="Short name"></property>
+				<value>
+					<string>VehicleDysfunctionThroughInjectedCANMessages</string>
+				</value>
+			</slot>
+			<slot id="nglbn5" name="Name">
+				<property oid="_19_193082" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+				<value>
+					<string>3.6 Vehicle Dysfunction Through Injected CAN Messages</string>
+				</value>
+			</slot>
+			<slot id="nhlbnl" name="AccessRequired">
+				<property oid="_19_193084" type="Property_AccessRequired_sysadmin_3758565268" typeName="AccessRequired"></property>
+				<value>
+					<string>Network</string>
+				</value>
+			</slot>
+			<slot id="nilbny" name="PrivilegesRequired">
+				<property oid="_19_193086" type="Property_PrivilegesRequired_sysadmin_3758565363" typeName="PrivilegesRequired"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="njlbod" name="UserInteraction">
+				<property oid="_19_193088" type="Property_UserInteraction_sysadmin_3758565465" typeName="UserInteraction"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nmlbpo" name="ConfidentialityImpact">
+				<property oid="_19_193090" type="Property_Confidentiality_Impact_sysadmin_3758564501" typeName="ConfidentialityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nnlbq6" name="IntegrityImpact">
+				<property oid="_19_193092" type="Property_IntegrityImpact_sysadmin_3758564580" typeName="IntegrityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nklboo" name="AvailabilityImpact">
+				<property oid="_19_193094" type="Property_AvailabilityImpact_sysadmin_3758564320" typeName="AvailabilityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nolbqh" name="SafetyRelevance">
+				<property oid="_19_193096" type="Property_SafetyRelevance_sysadmin_3758564655" typeName="SafetyRelevance"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="nllboy" name="Breaks security goals">
+				<property oid="_19_193098" type="Property_Breaks_security_goals_sysadmin_3758564445" typeName="Breaks security goals"></property>
+				<value>
+					<object oid="_19_193236" type="Object_SecurityGoal_sysadmin_3758565916" typeName="SecurityGoal">
+						<slot id="moi7so" name="Confidentiality">
+							<property oid="_19_193250" type="Property_Confidentiality_sysadmin_3758565756" typeName="Confidentiality"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mpi7u0" name="Integrity">
+							<property oid="_19_193252" type="Property_Integrity_sysadmin_3758565780" typeName="Integrity"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mqi7ui" name="Availability">
+							<property oid="_19_193254" type="Property_Availability_sysadmin_3758565789" typeName="Availability"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mri7vc" name="Authenticity">
+							<property oid="_19_193256" type="Property_Authenticity_sysadmin_3758565804" typeName="Authenticity"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="msi7w0" name="Reliability">
+							<property oid="_19_193258" type="Property_Reliability_sysadmin_3758565816" typeName="Reliability"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+						<slot id="mti7wv" name="Accountability">
+							<property oid="_19_193260" type="Property_Accountability_sysadmin_3758565831" typeName="Accountability"></property>
+							<value>
+								<bool>true</bool>
+							</value>
+						</slot>
+					</object>
+				</value>
+			</slot>
+			<slot id="nplbqy" name="Description">
+				<property oid="_19_193100" type="Property_2Description_user_3310902697" typeName="Description"></property>
+				<value>
+					<text></text>
+				</value>
+			</slot>
+		</object>
+		<object id="_19_193333" oid="_19_193333" type="Object_Item_sysadmin_3509259179" typeName="Item">
+			<slot id="hpc8j1" name="__UUID">
+				<property oid="_19_193335" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+				<value>
+					<string>3NaAmArYSwy0HIEmQdhxow</string>
+				</value>
+			</slot>
+			<slot id="hm2cb5" name="Short name">
+				<property oid="_19_193337" type="Property_ItemName_sysadmin_3509612264" typeName="ItemName"></property>
+				<value>
+					<string>CID</string>
+				</value>
+			</slot>
+			<slot id="hqc8ja" name="Name">
+				<property oid="_19_193339" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+				<value>
+					<string></string>
+				</value>
+			</slot>
+			<slot id="hln75v" name="DevelopmentCategory">
+				<property oid="_19_193341" type="Property_DevelopmentCategory_sysadmin_3509259009" typeName="DevelopmentCategory"></property>
+				<value>
+					<string>New</string>
+				</value>
+			</slot>
+			<slot id="hrf1b9" name="Vehicle features">
+				<property oid="_19_193343" type="Property_Features_sysadmin_3619083441" typeName="Vehicle features"></property>
+				<value>
+					<seq></seq>
+				</value>
+			</slot>
+			<slot id="hnro8y" name="Text">
+				<property oid="_19_193345" type="Property_2Description_user_3310902697" typeName="Description"></property>
+				<value>
+					<text></text>
+				</value>
+			</slot>
+		</object>
+		<object id="_19_193288" oid="_19_193288" type="Object_Item_sysadmin_3509259179" typeName="Item">
+			<slot id="hpc8j1" name="__UUID">
+				<property oid="_19_193290" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+				<value>
+					<string>d7TD+O8CQOatKuOgPbJchQ</string>
+				</value>
+			</slot>
+			<slot id="hm2cb5" name="Short name">
+				<property oid="_19_193292" type="Property_ItemName_sysadmin_3509612264" typeName="ItemName"></property>
+				<value>
+					<string>ECU</string>
+				</value>
+			</slot>
+			<slot id="hqc8ja" name="Name">
+				<property oid="_19_193294" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+				<value>
+					<string></string>
+				</value>
+			</slot>
+			<slot id="hln75v" name="DevelopmentCategory">
+				<property oid="_19_193296" type="Property_DevelopmentCategory_sysadmin_3509259009" typeName="DevelopmentCategory"></property>
+				<value>
+					<string>New</string>
+				</value>
+			</slot>
+			<slot id="hrf1b9" name="Vehicle features">
+				<property oid="_19_193298" type="Property_Features_sysadmin_3619083441" typeName="Vehicle features"></property>
+				<value>
+					<seq></seq>
+				</value>
+			</slot>
+			<slot id="hnro8y" name="Text">
+				<property oid="_19_193300" type="Property_2Description_user_3310902697" typeName="Description"></property>
+				<value>
+					<text></text>
+				</value>
+			</slot>
+		</object>
+		<object id="_19_193318" oid="_19_193318" type="Object_Item_sysadmin_3509259179" typeName="Item">
+			<slot id="hpc8j1" name="__UUID">
+				<property oid="_19_193320" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+				<value>
+					<string>V7NcmfCVTpCoG5LEKepQPA</string>
+				</value>
+			</slot>
+			<slot id="hm2cb5" name="Short name">
+				<property oid="_19_193322" type="Property_ItemName_sysadmin_3509612264" typeName="ItemName"></property>
+				<value>
+					<string>ECUUC_or_ECUParrot</string>
+				</value>
+			</slot>
+			<slot id="hqc8ja" name="Name">
+				<property oid="_19_193324" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+				<value>
+					<string>ECU IC or ECU Parrit</string>
+				</value>
+			</slot>
+			<slot id="hln75v" name="DevelopmentCategory">
+				<property oid="_19_193326" type="Property_DevelopmentCategory_sysadmin_3509259009" typeName="DevelopmentCategory"></property>
+				<value>
+					<string>New</string>
+				</value>
+			</slot>
+			<slot id="hrf1b9" name="Vehicle features">
+				<property oid="_19_193328" type="Property_Features_sysadmin_3619083441" typeName="Vehicle features"></property>
+				<value>
+					<seq></seq>
+				</value>
+			</slot>
+			<slot id="hnro8y" name="Text">
+				<property oid="_19_193330" type="Property_2Description_user_3310902697" typeName="Description"></property>
+				<value>
+					<text></text>
+				</value>
+			</slot>
+		</object>
+		<object id="_19_193303" oid="_19_193303" type="Object_Item_sysadmin_3509259179" typeName="Item">
+			<slot id="hpc8j1" name="__UUID">
+				<property oid="_19_193305" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+				<value>
+					<string>JPtiKfjERCiLvFYaqwr9Qw</string>
+				</value>
+			</slot>
+			<slot id="hm2cb5" name="Short name">
+				<property oid="_19_193307" type="Property_ItemName_sysadmin_3509612264" typeName="ItemName"></property>
+				<value>
+					<string>ECUGateway</string>
+				</value>
+			</slot>
+			<slot id="hqc8ja" name="Name">
+				<property oid="_19_193309" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+				<value>
+					<string></string>
+				</value>
+			</slot>
+			<slot id="hln75v" name="DevelopmentCategory">
+				<property oid="_19_193311" type="Property_DevelopmentCategory_sysadmin_3509259009" typeName="DevelopmentCategory"></property>
+				<value>
+					<string>New</string>
+				</value>
+			</slot>
+			<slot id="hrf1b9" name="Vehicle features">
+				<property oid="_19_193313" type="Property_Features_sysadmin_3619083441" typeName="Vehicle features"></property>
+				<value>
+					<seq></seq>
+				</value>
+			</slot>
+			<slot id="hnro8y" name="Text">
+				<property oid="_19_193315" type="Property_2Description_user_3310902697" typeName="Description"></property>
+				<value>
+					<text></text>
+				</value>
+			</slot>
+		</object>
+		<object id="_19_193348" oid="_19_193348" type="Object_Item_sysadmin_3509259179" typeName="Item">
+			<slot id="hpc8j1" name="__UUID">
+				<property oid="_19_193350" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+				<value>
+					<string>p9NLgJElSGCSaWWEgnIGqA</string>
+				</value>
+			</slot>
+			<slot id="hm2cb5" name="Short name">
+				<property oid="_19_193352" type="Property_ItemName_sysadmin_3509612264" typeName="ItemName"></property>
+				<value>
+					<string>WebBrowser</string>
+				</value>
+			</slot>
+			<slot id="hqc8ja" name="Name">
+				<property oid="_19_193354" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+				<value>
+					<string></string>
+				</value>
+			</slot>
+			<slot id="hln75v" name="DevelopmentCategory">
+				<property oid="_19_193356" type="Property_DevelopmentCategory_sysadmin_3509259009" typeName="DevelopmentCategory"></property>
+				<value>
+					<string>New</string>
+				</value>
+			</slot>
+			<slot id="hrf1b9" name="Vehicle features">
+				<property oid="_19_193358" type="Property_Features_sysadmin_3619083441" typeName="Vehicle features"></property>
+				<value>
+					<seq></seq>
+				</value>
+			</slot>
+			<slot id="hnro8y" name="Text">
+				<property oid="_19_193360" type="Property_2Description_user_3310902697" typeName="Description"></property>
+				<value>
+					<text></text>
+				</value>
+			</slot>
+		</object>
+		<object id="_19_193363" oid="_19_193363" type="Object_Item_sysadmin_3509259179" typeName="Item">
+			<slot id="hpc8j1" name="__UUID">
+				<property oid="_19_193365" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+				<value>
+					<string>+Fm3My5DSZyM9Vhrplzy6Q</string>
+				</value>
+			</slot>
+			<slot id="hm2cb5" name="Short name">
+				<property oid="_19_193367" type="Property_ItemName_sysadmin_3509612264" typeName="ItemName"></property>
+				<value>
+					<string>WiFi</string>
+				</value>
+			</slot>
+			<slot id="hqc8ja" name="Name">
+				<property oid="_19_193369" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+				<value>
+					<string></string>
+				</value>
+			</slot>
+			<slot id="hln75v" name="DevelopmentCategory">
+				<property oid="_19_193371" type="Property_DevelopmentCategory_sysadmin_3509259009" typeName="DevelopmentCategory"></property>
+				<value>
+					<string>New</string>
+				</value>
+			</slot>
+			<slot id="hrf1b9" name="Vehicle features">
+				<property oid="_19_193373" type="Property_Features_sysadmin_3619083441" typeName="Vehicle features"></property>
+				<value>
+					<seq></seq>
+				</value>
+			</slot>
+			<slot id="hnro8y" name="Text">
+				<property oid="_19_193375" type="Property_2Description_user_3310902697" typeName="Description"></property>
+				<value>
+					<text></text>
+				</value>
+			</slot>
+		</object>
+		<binding id="_19_193490" nextConnectionId="3" oid="_19_193490">
+			<relationship oid="_19_193484" type="Relationship_reference_sysadmin_3524947284" typeName="Reference"></relationship>
+			<connection id="1">
+				<role oid="_19_193486" type="Role_referred_from_sysadmin_3524947545" typeName="referred_from"></role>
+				<object href="#_19_193457"></object>
+			</connection>
+			<connection id="2">
+				<role oid="_19_193488" type="Role_refer_to_sysadmin_3524947529" typeName="refer_to"></role>
+				<object href="#_19_193363"></object>
+			</connection>
+		</binding>
+		<binding id="_19_193499" nextConnectionId="3" oid="_19_193499">
+			<relationship oid="_19_193493" type="Relationship_reference_sysadmin_3524947284" typeName="Reference"></relationship>
+			<connection id="1">
+				<role oid="_19_193495" type="Role_referred_from_sysadmin_3524947545" typeName="referred_from"></role>
+				<object href="#_19_193404"></object>
+			</connection>
+			<connection id="2">
+				<role oid="_19_193497" type="Role_refer_to_sysadmin_3524947529" typeName="refer_to"></role>
+				<object href="#_19_193348"></object>
+			</connection>
+		</binding>
+		<binding id="_19_193508" nextConnectionId="3" oid="_19_193508">
+			<relationship oid="_19_193502" type="Relationship_reference_sysadmin_3524947284" typeName="Reference"></relationship>
+			<connection id="1">
+				<role oid="_19_193504" type="Role_referred_from_sysadmin_3524947545" typeName="referred_from"></role>
+				<object href="#_19_193209"></object>
+			</connection>
+			<connection id="2">
+				<role oid="_19_193506" type="Role_refer_to_sysadmin_3524947529" typeName="refer_to"></role>
+				<object href="#_19_193333"></object>
+			</connection>
+		</binding>
+		<binding id="_19_193517" nextConnectionId="3" oid="_19_193517">
+			<relationship oid="_19_193511" type="Relationship_reference_sysadmin_3524947284" typeName="Reference"></relationship>
+			<connection id="1">
+				<role oid="_19_193513" type="Role_referred_from_sysadmin_3524947545" typeName="referred_from"></role>
+				<object href="#_19_193182"></object>
+			</connection>
+			<connection id="2">
+				<role oid="_19_193515" type="Role_refer_to_sysadmin_3524947529" typeName="refer_to"></role>
+				<object href="#_19_193318"></object>
+			</connection>
+		</binding>
+		<binding id="_19_193526" nextConnectionId="3" oid="_19_193526">
+			<relationship oid="_19_193520" type="Relationship_reference_sysadmin_3524947284" typeName="Reference"></relationship>
+			<connection id="1">
+				<role oid="_19_193522" type="Role_referred_from_sysadmin_3524947545" typeName="referred_from"></role>
+				<object href="#_19_193129"></object>
+			</connection>
+			<connection id="2">
+				<role oid="_19_193524" type="Role_refer_to_sysadmin_3524947529" typeName="refer_to"></role>
+				<object href="#_19_193303"></object>
+			</connection>
+		</binding>
+		<binding id="_19_193535" nextConnectionId="3" oid="_19_193535">
+			<relationship oid="_19_193529" type="Relationship_reference_sysadmin_3524947284" typeName="Reference"></relationship>
+			<connection id="1">
+				<role oid="_19_193531" type="Role_referred_from_sysadmin_3524947545" typeName="referred_from"></role>
+				<object href="#_19_193076"></object>
+			</connection>
+			<connection id="2">
+				<role oid="_19_193533" type="Role_refer_to_sysadmin_3524947529" typeName="refer_to"></role>
+				<object href="#_19_193288"></object>
+			</connection>
+		</binding>
+		<binding id="_19_193546" nextConnectionId="3" oid="_19_193546">
+			<relationship oid="_19_193538" type="Relationship_SubAttackGroup_sysadmin_3758910458" typeName="SubAttackGroup">
+				<slot id="b3wzq8" name="Kind">
+					<property oid="_19_193540" type="Property_SubAttackGroupKind_sysadmin_3758910448" typeName="SubAttackGroupKind"></property>
+					<value>
+						<string></string>
+					</value>
+				</slot>
+			</relationship>
+			<connection id="1">
+				<role oid="_19_193542" type="Role_SubAttackGroup_sysadmin_3758910614" typeName="SubAttackGroup"></role>
+				<object href="#_19_193457"></object>
+			</connection>
+			<connection id="2">
+				<role oid="_19_193544" type="Role_SubAttack_sysadmin_3758910628" typeName="SubAttack"></role>
+				<object href="#_19_193404"></object>
+			</connection>
+		</binding>
+		<binding id="_19_193558" nextConnectionId="3" oid="_19_193558">
+			<relationship oid="_19_193550" type="Relationship_SubAttackGroup_sysadmin_3758910458" typeName="SubAttackGroup">
+				<slot id="b3wzq8" name="Kind">
+					<property oid="_19_193552" type="Property_SubAttackGroupKind_sysadmin_3758910448" typeName="SubAttackGroupKind"></property>
+					<value>
+						<string></string>
+					</value>
+				</slot>
+			</relationship>
+			<connection id="1">
+				<role oid="_19_193554" type="Role_SubAttackGroup_sysadmin_3758910614" typeName="SubAttackGroup"></role>
+				<object href="#_19_193404"></object>
+			</connection>
+			<connection id="2">
+				<role oid="_19_193556" type="Role_SubAttack_sysadmin_3758910628" typeName="SubAttack"></role>
+				<object href="#_19_193209"></object>
+			</connection>
+		</binding>
+		<binding id="_19_193591" nextConnectionId="3" oid="_19_193591">
+			<relationship oid="_19_193583" type="Relationship_SubAttackGroup_sysadmin_3758910458" typeName="SubAttackGroup">
+				<slot id="b3wzq8" name="Kind">
+					<property oid="_19_193585" type="Property_SubAttackGroupKind_sysadmin_3758910448" typeName="SubAttackGroupKind"></property>
+					<value>
+						<string></string>
+					</value>
+				</slot>
+			</relationship>
+			<connection id="1">
+				<role oid="_19_193587" type="Role_SubAttackGroup_sysadmin_3758910614" typeName="SubAttackGroup"></role>
+				<object href="#_19_193129"></object>
+			</connection>
+			<connection id="2">
+				<role oid="_19_193589" type="Role_SubAttack_sysadmin_3758910628" typeName="SubAttack"></role>
+				<object href="#_19_193076"></object>
+			</connection>
+		</binding>
+		<binding id="_19_193580" nextConnectionId="4" oid="_19_193580">
+			<relationship oid="_19_193572" type="Relationship_SubAttackGroup_sysadmin_3758910458" typeName="SubAttackGroup">
+				<slot id="b3wzq8" name="Kind">
+					<property oid="_19_193574" type="Property_SubAttackGroupKind_sysadmin_3758910448" typeName="SubAttackGroupKind"></property>
+					<value>
+						<string>OR</string>
+					</value>
+				</slot>
+			</relationship>
+			<connection id="1">
+				<role oid="_19_193576" type="Role_SubAttackGroup_sysadmin_3758910614" typeName="SubAttackGroup"></role>
+				<object href="#_19_193209"></object>
+			</connection>
+			<connection id="2">
+				<role oid="_19_193578" type="Role_SubAttack_sysadmin_3758910628" typeName="SubAttack"></role>
+				<object href="#_19_193129"></object>
+			</connection>
+			<connection id="3">
+				<role oid="_19_193594" type="Role_SubAttack_sysadmin_3758910628" typeName="SubAttack"></role>
+				<object href="#_19_193182"></object>
+			</connection>
+		</binding>
+		<diagram displayGrid="false" grid="10,10" oid="_19_192971" timeStamp="2020-02-28T19:33:58.285Z" useGrid="true" xmlns="http://www.metacase.com/gxlGOPRRRepr">
+			<graph href="#_19_192956" xmlns="http://www.metacase.com/gxlGOPRR"></graph>
+			<objectRepr id="_19_193102" oid="_19_193102" place="730,88.318" scale="1,1">
+				<object href="#_19_193076" xmlns="http://www.metacase.com/gxlGOPRR"></object>
+			</objectRepr>
+			<objectRepr id="_19_193155" oid="_19_193155" place="730,298.318" scale="1,1">
+				<object href="#_19_193129" xmlns="http://www.metacase.com/gxlGOPRR"></object>
+			</objectRepr>
+			<objectRepr id="_19_193208" oid="_19_193208" place="360,160" scale="1.08192,1.01181">
+				<object href="#_19_193182" xmlns="http://www.metacase.com/gxlGOPRR"></object>
+			</objectRepr>
+			<objectRepr id="_19_193235" oid="_19_193235" place="360,428.318" scale="1,1">
+				<object href="#_19_193209" xmlns="http://www.metacase.com/gxlGOPRR"></object>
+			</objectRepr>
+			<objectRepr id="_19_193302" oid="_19_193302" place="980,88.318" scale="1,1">
+				<object href="#_19_193288" xmlns="http://www.metacase.com/gxlGOPRR"></object>
+			</objectRepr>
+			<objectRepr id="_19_193317" oid="_19_193317" place="980,298.318" scale="1,1">
+				<object href="#_19_193303" xmlns="http://www.metacase.com/gxlGOPRR"></object>
+			</objectRepr>
+			<objectRepr id="_19_193332" oid="_19_193332" place="120,160" scale="1,1">
+				<object href="#_19_193318" xmlns="http://www.metacase.com/gxlGOPRR"></object>
+			</objectRepr>
+			<objectRepr id="_19_193347" oid="_19_193347" place="110,428.318" scale="1,1">
+				<object href="#_19_193333" xmlns="http://www.metacase.com/gxlGOPRR"></object>
+			</objectRepr>
+			<objectRepr id="_19_193362" oid="_19_193362" place="110,628.318" scale="1,1">
+				<object href="#_19_193348" xmlns="http://www.metacase.com/gxlGOPRR"></object>
+			</objectRepr>
+			<objectRepr id="_19_193377" oid="_19_193377" place="110,838.318" scale="1,1">
+				<object href="#_19_193363" xmlns="http://www.metacase.com/gxlGOPRR"></object>
+			</objectRepr>
+			<objectRepr id="_19_193430" oid="_19_193430" place="360,628.318" scale="1,1">
+				<object href="#_19_193404" xmlns="http://www.metacase.com/gxlGOPRR"></object>
+			</objectRepr>
+			<objectRepr id="_19_193483" oid="_19_193483" place="360,838.318" scale="1,1">
+				<object href="#_19_193457" xmlns="http://www.metacase.com/gxlGOPRR"></object>
+			</objectRepr>
+			<bindingRepr isStraight="true" oid="_19_193492" place="207,838" scale="1,1">
+				<binding href="#_19_193490" xmlns="http://www.metacase.com/gxlGOPRR"></binding>
+				<connectionRepr id="1">
+					<objectRepr href="#_19_193483"></objectRepr>
+				</connectionRepr>
+				<connectionRepr id="2">
+					<objectRepr href="#_19_193377"></objectRepr>
+				</connectionRepr>
+			</bindingRepr>
+			<bindingRepr isStraight="true" oid="_19_193501" place="207,628" scale="1,1">
+				<binding href="#_19_193499" xmlns="http://www.metacase.com/gxlGOPRR"></binding>
+				<connectionRepr id="1">
+					<objectRepr href="#_19_193430"></objectRepr>
+				</connectionRepr>
+				<connectionRepr id="2">
+					<objectRepr href="#_19_193362"></objectRepr>
+				</connectionRepr>
+			</bindingRepr>
+			<bindingRepr isStraight="true" oid="_19_193510" place="207,428" scale="1,1">
+				<binding href="#_19_193508" xmlns="http://www.metacase.com/gxlGOPRR"></binding>
+				<connectionRepr id="1">
+					<objectRepr href="#_19_193235"></objectRepr>
+				</connectionRepr>
+				<connectionRepr id="2">
+					<objectRepr href="#_19_193347"></objectRepr>
+				</connectionRepr>
+			</bindingRepr>
+			<bindingRepr isStraight="true" oid="_19_193519" place="208,160" scale="1,1">
+				<binding href="#_19_193517" xmlns="http://www.metacase.com/gxlGOPRR"></binding>
+				<connectionRepr id="1">
+					<objectRepr href="#_19_193208"></objectRepr>
+				</connectionRepr>
+				<connectionRepr id="2">
+					<objectRepr href="#_19_193332"></objectRepr>
+				</connectionRepr>
+			</bindingRepr>
+			<bindingRepr isStraight="true" oid="_19_193528" place="882,298" scale="1,1">
+				<binding href="#_19_193526" xmlns="http://www.metacase.com/gxlGOPRR"></binding>
+				<connectionRepr id="1">
+					<objectRepr href="#_19_193155"></objectRepr>
+				</connectionRepr>
+				<connectionRepr id="2">
+					<objectRepr href="#_19_193317"></objectRepr>
+				</connectionRepr>
+			</bindingRepr>
+			<bindingRepr isStraight="true" oid="_19_193537" place="882,88" scale="1,1">
+				<binding href="#_19_193535" xmlns="http://www.metacase.com/gxlGOPRR"></binding>
+				<connectionRepr id="1">
+					<objectRepr href="#_19_193102"></objectRepr>
+				</connectionRepr>
+				<connectionRepr id="2">
+					<objectRepr href="#_19_193302"></objectRepr>
+				</connectionRepr>
+			</bindingRepr>
+			<bindingRepr isStraight="true" oid="_19_193548" place="360,733" scale="1,1">
+				<binding href="#_19_193546" xmlns="http://www.metacase.com/gxlGOPRR"></binding>
+				<connectionRepr id="1">
+					<objectRepr href="#_19_193483"></objectRepr>
+				</connectionRepr>
+				<connectionRepr id="2">
+					<objectRepr href="#_19_193430"></objectRepr>
+				</connectionRepr>
+			</bindingRepr>
+			<bindingRepr isStraight="true" oid="_19_193560" place="360,528" scale="1,1">
+				<binding href="#_19_193558" xmlns="http://www.metacase.com/gxlGOPRR"></binding>
+				<connectionRepr id="1">
+					<objectRepr href="#_19_193430"></objectRepr>
+				</connectionRepr>
+				<connectionRepr id="2">
+					<objectRepr href="#_19_193235"></objectRepr>
+				</connectionRepr>
+			</bindingRepr>
+			<bindingRepr isStraight="false" oid="_19_193582" place="360,298.318" scale="1,1">
+				<binding href="#_19_193580" xmlns="http://www.metacase.com/gxlGOPRR"></binding>
+				<connectionRepr id="1">
+					<objectRepr href="#_19_193235"></objectRepr>
+				</connectionRepr>
+				<connectionRepr id="2">
+					<objectRepr href="#_19_193155"></objectRepr>
+				</connectionRepr>
+				<connectionRepr id="3">
+					<objectRepr href="#_19_193208"></objectRepr>
+				</connectionRepr>
+			</bindingRepr>
+			<bindingRepr isStraight="true" oid="_19_193593" place="730,193" scale="1,1">
+				<binding href="#_19_193591" xmlns="http://www.metacase.com/gxlGOPRR"></binding>
+				<connectionRepr id="1">
+					<objectRepr href="#_19_193155"></objectRepr>
+				</connectionRepr>
+				<connectionRepr id="2">
+					<objectRepr href="#_19_193102"></objectRepr>
+				</connectionRepr>
+			</bindingRepr>
+		</diagram>
+	</graph>
+</gxl>

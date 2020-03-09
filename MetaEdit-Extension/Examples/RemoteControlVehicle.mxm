@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gxl dbName="EAST-ADL_r18MovablePorts2_withSam" dbPath="EAST-ADL_r18MovablePorts2_withSam" timeStamp="2020-02-29T14:44:35.137Z" version="5.5" xmlns="http://www.metacase.com/gxlGOPRR">
+	<graph id="_19_192940" oid="_19_192940" type="Graph_Security_sysadmin_3758565629" typeName="Security">
+		<slot id="c6cao0" name="__UUID">
+			<property oid="_19_192947" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+			<value>
+				<string>7wyLPmuES6eMQ0OQuHKPTQ</string>
+			</value>
+		</slot>
+		<slot id="chi7ju" name="Short name">
+			<property oid="_19_192949" type="Property_2ModelName_user_3310896462" typeName="Short name"></property>
+			<value>
+				<string>RemoteControlVehicle</string>
+			</value>
+		</slot>
+		<slot id="cii7k5" name="Name">
+			<property oid="_19_192951" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+			<value>
+				<string></string>
+			</value>
+		</slot>
+		<slot id="cji7kh" name="Description">
+			<property oid="_19_192953" type="Property_2Description_user_3310902697" typeName="Description"></property>
+			<value>
+				<text></text>
+			</value>
+		</slot>
+		<object id="_19_193004" oid="_19_193004" type="Object___AttackMotivation_sysadmin_3758564669" typeName="AttackMotivation">
+			<slot id="mbi575" name="__UUID">
+				<property oid="_19_193006" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+				<value>
+					<string>4IL/gmcvSm679sYemt+hWg</string>
+				</value>
+			</slot>
+			<slot id="mci57f" name="Short name">
+				<property oid="_19_193008" type="Property_2ModelName_user_3310896462" typeName="Short name"></property>
+				<value>
+					<string>RemoteControlVehicle</string>
+				</value>
+			</slot>
+			<slot id="mdi57p" name="Name">
+				<property oid="_19_193010" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+				<value>
+					<string></string>
+				</value>
+			</slot>
+			<slot id="mki6aa" name="Motivation">
+				<property oid="_19_193012" type="Property_Motivation_sysadmin_3758564776" typeName="Motivation"></property>
+				<value>
+					<string>Harm</string>
+				</value>
+			</slot>
+			<slot id="mgi5uy" name="ConfidentialityImpact">
+				<property oid="_19_193014" type="Property_Confidentiality_Impact_sysadmin_3758564501" typeName="ConfidentialityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="mhi5zc" name="IntegrityImpact">
+				<property oid="_19_193016" type="Property_IntegrityImpact_sysadmin_3758564580" typeName="IntegrityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="mei5kw" name="AvailabilityImpact">
+				<property oid="_19_193018" type="Property_AvailabilityImpact_sysadmin_3758564320" typeName="AvailabilityImpact"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="mii63k" name="SafetyRelevance">
+				<property oid="_19_193020" type="Property_SafetyRelevance_sysadmin_3758564655" typeName="SafetyRelevance"></property>
+				<value>
+					<string>(N)one</string>
+				</value>
+			</slot>
+			<slot id="mfi5rv" name="Breaks security goals">
+				<property oid="_19_193022" type="Property_Breaks_security_goals_sysadmin_3758564445" typeName="Breaks security goals"></property>
+				<value></value>
+			</slot>
+			<slot id="mji644" name="Description">
+				<property oid="_19_193024" type="Property_2Description_user_3310902697" typeName="Description"></property>
+				<value>
+					<text></text>
+				</value>
+			</slot>
+		</object>
+		<object id="_19_193042" oid="_19_193042" type="Object_Item_sysadmin_3509259179" typeName="Item">
+			<slot id="hpc8j1" name="__UUID">
+				<property oid="_19_193044" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+				<value>
+					<string>l00pa1rRR4OBW3xQkPqAJw</string>
+				</value>
+			</slot>
+			<slot id="hm2cb5" name="Short name">
+				<property oid="_19_193046" type="Property_ItemName_sysadmin_3509612264" typeName="ItemName"></property>
+				<value>
+					<string>BusSystem</string>
+				</value>
+			</slot>
+			<slot id="hqc8ja" name="Name">
+				<property oid="_19_193048" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+				<value>
+					<string></string>
+				</value>
+			</slot>
+			<slot id="hln75v" name="DevelopmentCategory">
+				<property oid="_19_193050" type="Property_DevelopmentCategory_sysadmin_3509259009" typeName="DevelopmentCategory"></property>
+				<value>
+					<string>New</string>
+				</value>
+			</slot>
+			<slot id="hrf1b9" name="Vehicle features">
+				<property oid="_19_193052" type="Property_Features_sysadmin_3619083441" typeName="Vehicle features"></property>
+				<value>
+					<seq></seq>
+				</value>
+			</slot>
+			<slot id="hnro8y" name="Text">
+				<property oid="_19_193054" type="Property_2Description_user_3310902697" typeName="Description"></property>
+				<value>
+					<text></text>
+				</value>
+			</slot>
+		</object>
+		<object id="_19_193027" oid="_19_193027" type="Object_Item_sysadmin_3509259179" typeName="Item">
+			<slot id="hpc8j1" name="__UUID">
+				<property oid="_19_193029" type="Property___UUID_sysadmin_3604668056" typeName="__UUID"></property>
+				<value>
+					<string>uYbAFwgwThKIHEUzA6pc9A</string>
+				</value>
+			</slot>
+			<slot id="hm2cb5" name="Short name">
+				<property oid="_19_193031" type="Property_ItemName_sysadmin_3509612264" typeName="ItemName"></property>
+				<value>
+					<string>ECUs</string>
+				</value>
+			</slot>
+			<slot id="hqc8ja" name="Name">
+				<property oid="_19_193033" type="Property_Name_sysadmin_3536998876" typeName="Name"></property>
+				<value>
+					<string></string>
+				</value>
+			</slot>
+			<slot id="hln75v" name="DevelopmentCategory">
+				<property oid="_19_193035" type="Property_DevelopmentCategory_sysadmin_3509259009" typeName="DevelopmentCategory"></property>
+				<value>
+					<string>New</string>
+				</value>
+			</slot>
+			<slot id="hrf1b9" name="Vehicle features">
+				<property oid="_19_193037" type="Property_Features_sysadmin_3619083441" typeName="Vehicle features"></property>
+				<value>
+					<seq></seq>
+				</value>
+			</slot>
+			<slot id="hnro8y" name="Text">
+				<property oid="_19_193039" type="Property_2Description_user_3310902697" typeName="Description"></property>
+				<value>
+					<text></text>
+				</value>
+			</slot>
+		</object>
+		<binding id="_19_193072" nextConnectionId="3" oid="_19_193072">
+			<relationship oid="_19_193066" type="Relationship_reference_sysadmin_3524947284" typeName="Reference"></relationship>
+			<connection id="1">
+				<role oid="_19_193068" type="Role_referred_from_sysadmin_3524947545" typeName="referred_from"></role>
+				<object href="#_19_193004"></object>
+			</connection>
+			<connection id="2">
+				<role oid="_19_193070" type="Role_refer_to_sysadmin_3524947529" typeName="refer_to"></role>
+				<object href="#_19_193042"></object>
+			</connection>
+		</binding>
+		<binding id="_19_193063" nextConnectionId="3" oid="_19_193063">
+			<relationship oid="_19_193057" type="Relationship_reference_sysadmin_3524947284" typeName="Reference"></relationship>
+			<connection id="1">
+				<role oid="_19_193059" type="Role_referred_from_sysadmin_3524947545" typeName="referred_from"></role>
+				<object href="#_19_193004"></object>
+			</connection>
+			<connection id="2">
+				<role oid="_19_193061" type="Role_refer_to_sysadmin_3524947529" typeName="refer_to"></role>
+				<object href="#_19_193027"></object>
+			</connection>
+		</binding>
+		<diagram displayGrid="false" grid="10,10" oid="_19_192955" timeStamp="2020-02-28T19:33:51.526Z" useGrid="true" xmlns="http://www.metacase.com/gxlGOPRRRepr">
+			<graph href="#_19_192940" xmlns="http://www.metacase.com/gxlGOPRR"></graph>
+			<objectRepr id="_19_193026" oid="_19_193026" place="180,80" scale="1,1">
+				<object href="#_19_193004" xmlns="http://www.metacase.com/gxlGOPRR"></object>
+			</objectRepr>
+			<objectRepr id="_19_193041" oid="_19_193041" place="420,50" scale="1,1">
+				<object href="#_19_193027" xmlns="http://www.metacase.com/gxlGOPRR"></object>
+			</objectRepr>
+			<objectRepr id="_19_193056" oid="_19_193056" place="420,120" scale="1,1">
+				<object href="#_19_193042" xmlns="http://www.metacase.com/gxlGOPRR"></object>
+			</objectRepr>
+			<bindingRepr isStraight="true" oid="_19_193065" place="327,61" scale="1,1">
+				<binding href="#_19_193063" xmlns="http://www.metacase.com/gxlGOPRR"></binding>
+				<connectionRepr id="1">
+					<objectRepr href="#_19_193026"></objectRepr>
+				</connectionRepr>
+				<connectionRepr id="2">
+					<objectRepr href="#_19_193041"></objectRepr>
+				</connectionRepr>
+			</bindingRepr>
+			<bindingRepr isStraight="true" oid="_19_193074" place="327,104" scale="1,1">
+				<binding href="#_19_193072" xmlns="http://www.metacase.com/gxlGOPRR"></binding>
+				<connectionRepr id="1">
+					<objectRepr href="#_19_193026"></objectRepr>
+				</connectionRepr>
+				<connectionRepr id="2">
+					<objectRepr href="#_19_193056"></objectRepr>
+				</connectionRepr>
+			</bindingRepr>
+		</diagram>
+	</graph>
+</gxl>

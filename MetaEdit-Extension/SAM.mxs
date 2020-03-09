@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbolLibrary xmlns="http://www.metacase.com/symbol" xmlns:sym="http://www.metacase.com/symbol">
+	<librarySymbol name="Attack_symbol">
+		<objectSymbol offset="50,20" scaleFilter="0,0">
+			<defaultConnectable isSticky="true" points="50,20 65,20 65,37 50,37 50,20" targetPointX="58" targetPointY="29" usesGrid="false"></defaultConnectable>
+			<svg baseProfile="tiny" height="37" version="1.2" width="65" xmlns="http://www.w3.org/2000/svg">
+				<g fill="none" stroke="rgb(128,0,0)" stroke-width="1" sym:height="15" sym:width="15" sym:x="5.0e1" sym:y="2.2e1">
+					<line stroke="rgb(128,0,0)" stroke-width="1" x1="50" x2="55" y1="29.5" y2="29.5">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<line stroke="rgb(128,0,0)" stroke-width="1" x1="60" x2="65" y1="29.5" y2="29.5">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<line stroke="rgb(128,0,0)" stroke-width="1" x1="57.5" x2="57.5" y1="22" y2="27">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<line stroke="rgb(128,0,0)" stroke-width="1" x1="57.5" x2="57.5" y1="32" y2="37">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<ellipse cx="57.5" cy="29.5" fill="none" rx="5" ry="5" stroke="rgb(128,0,0)" stroke-width="1" sym:startAngle="3.6e2" sym:sweepAngle="-3.6e2">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</ellipse>
+					<ellipse cx="57.5" cy="29.5" fill="rgb(255,255,255)" rx="2.5" ry="2.5" stroke="rgb(128,0,0)" stroke-width="1" sym:startAngle="3.6e2" sym:sweepAngle="-3.6e2">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</ellipse>
+					<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+				</g>
+				<rect fill="none" height="17" rx="0" ry="0" stroke="none" stroke-width="1" width="15" x="50" y="20">
+					<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+				</rect>
+			</svg>
+		</objectSymbol>
+	</librarySymbol>
+	<librarySymbol name="Vulnerability_symbol">
+		<objectSymbol offset="37,27" scaleFilter="1,1">
+			<defaultConnectable isSticky="true" points="37,27 57,27 57,47 37,47 37,27" targetPointX="47" targetPointY="37" usesGrid="false"></defaultConnectable>
+			<svg baseProfile="tiny" height="47" version="1.2" width="57" xmlns="http://www.w3.org/2000/svg">
+				<rect fill="none" height="20" rx="0" ry="0" stroke="none" stroke-width="1" width="20" x="37" y="27">
+					<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+				</rect>
+				<g fill="none" stroke="none" stroke-width="1" sym:height="20" sym:width="17" sym:x="3.85e1" sym:y="2.7e1">
+					<polygon fill="rgb(255,64,64)" points="46,28 38.5,43 53.5,43" stroke="rgb(0,0,0)" stroke-width="1">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</polygon>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="bold" height="20" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="17" x="38.5" y="27">
+						!
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+				</g>
+			</svg>
+		</objectSymbol>
+	</librarySymbol>
+</symbolLibrary>
