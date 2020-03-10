@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Score</title>
+<title>SubAttackGroup</title>
 <link href="../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Score", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("SubAttackGroup", " : "))</script>  : Public   Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">11.12.2018 14:41:48</td>
+			<td width="85%" class="ObjectDetailsValue">04.12.2019 15:54:19</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">11.12.2018 14:42:13</td>
+			<td class="ObjectDetailsValue">10.03.2020 12:36:15</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,7 +51,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">mz</td>
+			<td class="ObjectDetailsValue">zoppelt2</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -87,18 +87,19 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{B3A754B7-37CF-4952-8A40-0D46CD2A0B33}</td>
+			<td class="ObjectDetailsValue">{6482A80E-4E28-4a1d-8880-03213431BA49}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="EA1.htm">Security</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">SubAttackGroup is used to create compositions of attacks in form of an attack tree.&lt;br/&gt;Attacks can have multiple subattacks. These subattacks can be linked either with an AND, OR or CUSTOM connector.&lt;br/&gt;&lt;br/&gt;The default kind used for security attack trees is OR.&lt;br/&gt;&lt;br/&gt;Semantics:&lt;br/&gt;&lt;br/&gt;Attack trees describe the semantic of the hierarchy and sequence of attacks.&lt;br/&gt;We defined two ways to read those attack trees:&lt;br/&gt;For every attack (higher in the tree) to be successful, every sub-attack (attacks lower in the tree) needs to be successful. The root of the tree is the attack behind an adversary&#8217;s main motivation and every sub attack is a means to an end for the root attack to succeed.&lt;br/&gt;&lt;br/&gt;Attacks that are possible after the particular attack was successful are called &#8220;follow-up attacks&#8221;. If one or more follow-up attacks are possible after the attack (you can see this because it is a leaf or sub-attack in the tree) the scope of the particular vulnerability needs to be &#8220;(C)anged&#8221; in CVSS.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Notation:&lt;br/&gt;&lt;br/&gt;The SubAttackGroup is shown as a connector between attacks and subattacks. If the SubAttackGroupKind is AND, a Y-connector is used. If the SubAttackGroupKind is OR, two seperate | connectors are used between attack and each of the subattacks. CUSTOM allows for a combination of the other two options. Example: 3 subattacks: (1 AND 2) OR 3&lt;br/&gt;&lt;br/&gt;Extension: Specialization of SysML::Requirement&lt;br/&gt;&lt;br/&gt;</div>
+
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
-			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -108,43 +109,43 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Float</i><br /><strong>&nbsp;&nbsp;value</strong>
+					<i>Public <a href="EA21.htm">SubAttackGroupKind</a></i><br /><strong>&nbsp;&nbsp;kind</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes40')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes40" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes51')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes51" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes40_00" style="display: none;">
+						<tr id="DetailsImageAttributes51_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes40_01" style="display: none;">
+						<tr id="DetailsImageAttributes51_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes40_02" style="display: none;">
+						<tr id="DetailsImageAttributes51_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes40_03" style="display: none;">
+						<tr id="DetailsImageAttributes51_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes40_04" style="display: none;">
+						<tr id="DetailsImageAttributes51_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes40_05" style="display: none;">
+						<tr id="DetailsImageAttributes51_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes40_06" style="display: none;">
+						<tr id="DetailsImageAttributes51_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes40_07" style="display: none;">
+							<tr id="DetailsImageAttributes51_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
@@ -154,68 +155,10 @@ function nameClassifier(name, separator)
 						&nbsp;
 						
 				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public String</i><br /><strong>&nbsp;&nbsp;calculationFormula</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes41')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes41" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes41_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes41_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes41_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes41_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes41_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
-						</tr>
-						<tr id="DetailsImageAttributes41_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes41_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes41_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Score system used, e.g., CVSS, SecL, etc.&lt;br/&gt;&lt;br/&gt;Alternatively, empirical value or expert opinion if this attribute is empty.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
 			</tr>
 	</table>
 </div>
-		<div class="ItemBody" id="AssociationsFromTable">
+		<div class="ItemBody" id="AssociationsToTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="40%" class="TableHeading">Element</td>
@@ -224,7 +167,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA27.htm">Vulnerability</a><br />
+						<a href="EA5.htm">Attack</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -232,14 +175,37 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> score<br />
+						<strong>Name:</strong> &nbsp;<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink42" onclick="parent.toggleDiv('detailsDIVLink42','DetailsImageLink42')" />Details:
-							<div id="detailsDIVLink42" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink52" onclick="parent.toggleDiv('detailsDIVLink52','DetailsImageLink52')" />Details:
+							<div id="detailsDIVLink52" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA5.htm">Attack</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink53" onclick="parent.toggleDiv('detailsDIVLink53','DetailsImageLink53')" />Details:
+							<div id="detailsDIVLink53" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -256,6 +222,13 @@ function nameClassifier(name, separator)
 					<td width="10%" class="TableHeading">Connection</td>
 					<td width="10%" class="TableHeading">Direction</td>
 					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA5.htm">Attack</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Strong</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
 					<td width="30%" class="TableRow" valign="top">TraceableSpecification</td>
