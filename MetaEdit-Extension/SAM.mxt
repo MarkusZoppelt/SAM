@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gxl dbName="EAST-ADL_r18MovablePorts2_withSam" dbPath="EAST-ADL_r18MovablePorts2_withSam" timeStamp="2020-02-29T14:41:44.018Z" version="5.5" xmlns="http://www.metacase.com/gxlGOPRRType" xmlns:ns="http://www.w3.org/1999/xlink" xmlns:sym="http://www.metacase.com/symbol">
+<gxl dbName="Sam2020313" dbPath="Sam2020313" timeStamp="2020-03-20T12:23:12.273Z" version="5.5" xmlns="http://www.metacase.com/gxlGOPRRType" xmlns:ns="http://www.w3.org/1999/xlink" xmlns:sym="http://www.metacase.com/symbol">
 	<graph type="Graph_Security_sysadmin_3758565629" typeName="Security">
 		<description>Security Abstraction Model </description>
 		<superType>
@@ -7220,18 +7220,18 @@ endif
 			</objectSymbol>
 		</object>
 		<object href="#Object_VehicleFeature_user_3400133821"></object>
-		<object id="Object_AttackableProperty_sysadmin_3758566797" type="Object_AttackableProperty_sysadmin_3758566797" typeName="AttackableProperty">
-			<description>AttackableProperties are certain properties or characteristics an adversary searches / needs for his attack to succeed.</description>
-			<slot id="n3i990" name="__UUID" unique="false">
+		<object id="Object_Vulnerability_sysadmin_3758567422" type="Object_Vulnerability_sysadmin_3758567422" typeName="Vulnerability">
+			<description>In order to represent the weak spots in the system architecture, Vulnerability describes the weakness and affiliation to one or more Items.</description>
+			<slot id="n7i9l7" name="__UUID" unique="false">
 				<property href="#Property___UUID_sysadmin_3604668056"></property>
 			</slot>
-			<slot id="n4i99f" name="Short name" unique="false">
+			<slot id="n8i9lm" name="Short name" unique="false">
 				<property href="#Property_2ModelName_user_3310896462"></property>
 			</slot>
-			<slot id="n5i99m" name="Name" unique="false">
+			<slot id="n9i9lv" name="Name" unique="false">
 				<property href="#Property_Name_sysadmin_3536998876"></property>
 			</slot>
-			<slot id="n6i9di" name="ConditionPrerequisiteComplexity" unique="false">
+			<slot id="nfrx5x" name="ConditionPrerequisiteComplexity" unique="false">
 				<property type="Property_ConditionPrerequisiteComplexity_sysadmin_3758566779" typeName="ConditionPrerequisiteComplexity">
 					<description>This metric describes the conditions beyond the attacker's control that must exist in order to exploit the vulnerability. As described below, such conditions may require the collection of more information about the target, the presence of certain system configuration settings, or computational exceptions. Importantly, the assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability (such conditions are captured in the User Interaction metric). This metric value is largest for the least complex attacks.
 
@@ -7253,43 +7253,6 @@ High (H) A successful attack depends on conditions beyond the attacker's control
 						<string>(H)igh</string>
 					</listValues>
 				</property>
-			</slot>
-			<identReport>if :Name; then :Name; else :Short name; endif</identReport>
-			<objectSymbol offset="40,30" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
-				<defaultConnectable isSticky="true" points="40,30 240,30 240,80 40,80 40,30" targetPointX="140" targetPointY="55" usesGrid="false"></defaultConnectable>
-				<svg baseProfile="tiny" height="80" version="1.2" width="240" xmlns="http://www.w3.org/2000/svg">
-					<rect fill="rgb(255,255,255)" height="50" rx="0" ry="0" stroke="rgb(0,0,0)" stroke-width="1" width="200" x="40" y="30">
-						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-					</rect>
-					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="bold" height="50" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="200" x="40" y="30">
-						ReportTextSource:id
-						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-					</textArea>
-					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="50" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="false" text-anchor="middle" width="200" x="40" y="30">
-						ReportTextSource:newline; 
-'_______________________________________________________________________________________________________________________________________________'
-						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-					</textArea>
-					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="50" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="3" sym:wordWrap="true" text-anchor="start" width="200" x="40" y="30">
-						ReportTextSource:newline
-newline
-do :ConditionPrerequisiteComplexity {' ConditionPrerequisiteComplexity: ' _levelColoring() }
-
-						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-					</textArea>
-				</svg>
-			</objectSymbol>
-		</object>
-		<object id="Object_Vulnerability_sysadmin_3758567422" type="Object_Vulnerability_sysadmin_3758567422" typeName="Vulnerability">
-			<description>In order to represent the weak spots in the system architecture, Vulnerability describes the weakness and affiliation to one or more Items.</description>
-			<slot id="n7i9l7" name="__UUID" unique="false">
-				<property href="#Property___UUID_sysadmin_3604668056"></property>
-			</slot>
-			<slot id="n8i9lm" name="Short name" unique="false">
-				<property href="#Property_2ModelName_user_3310896462"></property>
-			</slot>
-			<slot id="n9i9lv" name="Name" unique="false">
-				<property href="#Property_Name_sysadmin_3536998876"></property>
 			</slot>
 			<slot id="ndiabu" name="Scope" unique="false">
 				<property type="Property_Scope_sysadmin_3758567397" typeName="Scope">
@@ -7405,28 +7368,30 @@ Official Fix (O) A complete vendor solution is available. Either the vendor has 
 			</slot>
 			<identReport>if :Name; then :Name; else :Short name; endif</identReport>
 			<objectSymbol offset="30,20" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
-				<defaultConnectable isSticky="true" points="30,20 240,20 240,121 30,121 30,20" targetPointX="135" targetPointY="71" usesGrid="false"></defaultConnectable>
-				<svg baseProfile="tiny" height="124" version="1.2" width="243" xmlns="http://www.w3.org/2000/svg">
-					<rect fill="rgb(213,213,213)" height="101" rx="6" ry="10" stroke="rgb(213,213,213)" stroke-width="1" width="210" x="33" y="23">
+				<defaultConnectable isSticky="true" points="240,134 239.543,136.296 238.243,138.243 236.296,139.543 234,140 35.75,140 33.4539,139.543 31.5074,138.243 30.2067,136.296 29.75,134 29.75,25.75 30.2067,23.4539 31.5074,21.5074 33.4539,20.2067 35.75,19.75 234,19.75 236.296,20.2067 238.243,21.5074 239.543,23.4539 240,25.75 240,134" targetPointX="135" targetPointY="80" usesGrid="false"></defaultConnectable>
+				<svg baseProfile="tiny" height="143" version="1.2" width="243" xmlns="http://www.w3.org/2000/svg">
+					<rect fill="rgb(213,213,213)" height="120" rx="6" ry="10" stroke="rgb(213,213,213)" stroke-width="1" width="210" x="33" y="23">
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</rect>
-					<rect fill="rgb(224,255,224)" height="101" rx="6" ry="6" stroke="rgb(0,0,0)" stroke-width="1" width="210" x="30" y="20">
+					<rect fill="rgb(224,255,224)" height="120" rx="6" ry="6" stroke="rgb(0,0,0)" stroke-width="1" width="210" x="30" y="20">
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</rect>
-					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="bold" height="101" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="210" x="30" y="20">
+					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="bold" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="210" x="30" y="20">
 						ReportTextSource:newline
 id
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
-					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="12" font-style="normal" font-weight="normal" height="101" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="210" x="30" y="20">
+					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="12" font-style="normal" font-weight="normal" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="210" x="30" y="20">
 						ReportTextSource:type
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
-					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="101" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="3" sym:wordWrap="true" text-anchor="start" width="210" x="30" y="20">
+					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="3" sym:wordWrap="true" text-anchor="start" width="210" x="30" y="20">
 						ReportTextSource:newline
 newline
 newline
-do :Scope; { _symGetScope() } 
+do :ConditionPrerequisiteComplexity {_levelColoring() ' conditionPrerequisiteComplexity'} newline
+_symGetScope()
+/* do :Scope; { id ' scope' newline }  */
 do :ExploitCodeMaturity; { id ' exploit code maturity' newline}
 do :RemediationLevel; { id ' remediation level' newline}
 do :ReportConfidence; { id ' report confidence' }
@@ -7434,7 +7399,7 @@ do :ReportConfidence; { id ' report confidence' }
 
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
-					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="101" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="false" text-anchor="middle" width="210" x="30" y="20">
+					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="false" text-anchor="middle" width="210" x="30" y="20">
 						ReportTextSource:newline; newline; 
 '_______________________________________________________________________________________________________________________________________________'
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
@@ -7455,99 +7420,6 @@ do :ReportConfidence; { id ' report confidence' }
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="40" font-style="normal" font-weight="bold" height="62" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="59" x="51" y="37">!</textArea>
 				</svg>
 			</icon>
-		</object>
-		<object id="Object_Actor_user_3610197079" type="Object_Actor_user_3610197079" typeName="Actor">
-			<description>Actor represents a type of role played by an entity that interacts with the Use case.</description>
-			<slot id="lnu3ma" name="__UUID" unique="false">
-				<property href="#Property___UUID_sysadmin_3604668056"></property>
-			</slot>
-			<slot id="lou3mk" name="Short name" unique="false">
-				<property href="#Property_2ECUName_user_3310972947"></property>
-			</slot>
-			<slot id="lpu3mt" name="Name" unique="false">
-				<property href="#Property_Name_sysadmin_3536998876"></property>
-			</slot>
-			<slot id="lqu3n2" name="Description" unique="false">
-				<property href="#Property_2Description_user_3310902697"></property>
-			</slot>
-			<identReport>if :Name; then :Name; else :Short name; endif</identReport>
-			<objectSymbol offset="30,70" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
-				<defaultConnectable isSticky="true" points="65,70 75,70 85,100 110,100 110,115 30,115 30,100 55,100 65,70" targetPointX="70" targetPointY="90" usesGrid="true"></defaultConnectable>
-				<svg baseProfile="tiny" height="130" version="1.2" width="110" xmlns="http://www.w3.org/2000/svg">
-					<template aligmentPointX="0.5" aligmentPointY="0.5" isMovable="false" revealConnectables="false" rotation="false" scaleFilter="0,0" subsymbolExtentX="40" subsymbolExtentY="45" useTargetpoint="false" width="1" xmlns="http://www.metacase.com/symbol">
-						<pathLayout allocation="start" layoutDistance="40" lineSegmentTable="" points="70,100" startDistance="0">
-							<layoutPath allocation="start" layoutDistance="9999" lineSegmentTable="true" points="0,0 0,-30" startDistance="10"></layoutPath>
-						</pathLayout>
-						<noneNPSource></noneNPSource>
-						<librarySubsymbolSource>Actor</librarySubsymbolSource>
-						<metaInfo></metaInfo>
-					</template>
-					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="30" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="80" x="30" y="100">
-						ReportTextSource:id
-						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-					</textArea>
-				</svg>
-			</objectSymbol>
-			<icon offset="50,30" xmlns="http://www.metacase.com/icon">
-				<svg baseProfile="tiny" height="75.76" version="1.2" width="76.4" xmlns="http://www.w3.org/2000/svg">
-					<defs>
-						<radialGradient cx="0.342857" cy="0.225" gradientUnits="objectBoundingBox" id="gradient1" r="1.12887" sym:correctGamma="true" sym:fillType="PathFill">
-							<stop offset="0" stop-color="rgb(255,255,255)"></stop>
-							<stop offset="1" stop-color="rgb(0,128,0)"></stop>
-						</radialGradient>
-						<radialGradient cx="0.348485" cy="0.351852" gradientUnits="objectBoundingBox" id="gradient2" r="0.919004" sym:correctGamma="true" sym:fillType="PathFill">
-							<stop offset="0" stop-color="rgb(255,255,255)"></stop>
-							<stop offset="1" stop-color="rgb(0,128,0)"></stop>
-						</radialGradient>
-					</defs>
-					<g fill="none" stroke="rgb(0,128,0)" stroke-width="0" sym:height="45.76" sym:width="26.4" sym:x="5.0e1" sym:y="3.0e1">
-						<ellipse cx="63.2" cy="60.36" fill="url(#gradient1)" rx="13.2" ry="15.4" stroke="rgb(0,128,0)" stroke-width="0" sym:startAngle="1.8e2" sym:sweepAngle="1.8e2"></ellipse>
-						<ellipse cx="63.2" cy="37.48" fill="url(#gradient2)" rx="6.6" ry="7.48" stroke="rgb(0,128,0)" stroke-width="0" sym:startAngle="0.0e0" sym:sweepAngle="3.6e2"></ellipse>
-					</g>
-				</svg>
-			</icon>
-		</object>
-		<object id="Object_OperationalSituation_sysadmin_3509602770" type="Object_OperationalSituation_sysadmin_3509602770" typeName="OperationalSituation">
-			<description>An operational situation is a state, condition or scenario in the environment that may influence the vehicle. The Operational Situation may be further detailed by a functional definition in the EnvironmentModel.</description>
-			<slot id="iac6bi" name="__UUID" unique="false">
-				<property href="#Property___UUID_sysadmin_3604668056"></property>
-			</slot>
-			<slot id="i81xm5" name="Short name" unique="false">
-				<property type="Property_OperationalSituationName_sysadmin_3509602742" typeName="OperationalSituationName">
-					<description>Short name is mandatory and must start with an alphabetical character. It may contain characters, numbers or underscores.</description>
-					<dataType>
-						<simpleType>String</simpleType>
-					</dataType>
-					<defaultValue>
-						<string></string>
-					</defaultValue>
-					<regex>[a-zA-Z]([a-zA-Z0-9]|_[a-zA-Z0-9])*_?</regex>
-					<widget>Input Field</widget>
-				</property>
-			</slot>
-			<slot id="ibc6bz" name="Name" unique="false">
-				<property href="#Property_Name_sysadmin_3536998876"></property>
-			</slot>
-			<slot id="i91xnc" name="Description" unique="false">
-				<property href="#Property_2Description_user_3310902697"></property>
-			</slot>
-			<identReport>if :Name; then :Name; else :Short name; endif</identReport>
-			<objectSymbol offset="90,50" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
-				<defaultConnectable isSticky="true" points="230,80 229.239,83.8268 227.071,87.0711 223.827,89.2388 220,90 99.75,90 95.9232,89.2388 92.6789,87.0711 90.5112,83.8268 89.75,80 89.75,59.75 90.5112,55.9232 92.6789,52.6789 95.9232,50.5112 99.75,49.75 220,49.75 223.827,50.5112 227.071,52.6789 229.239,55.9232 230,59.75 230,80" targetPointX="159.875" targetPointY="69.875" usesGrid="true"></defaultConnectable>
-				<svg baseProfile="tiny" height="90" version="1.2" width="230" xmlns="http://www.w3.org/2000/svg">
-					<rect fill="rgb(0,128,0)" height="40" rx="10" ry="10" stroke="rgb(0,0,0)" stroke-width="1" width="140" x="90" y="50">
-						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-					</rect>
-					<textArea display-align="center" fill="rgb(255,255,255)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="bold" height="40" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="140" x="90" y="50">
-						ReportTextSource:id
-						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-					</textArea>
-					<textArea display-align="before" fill="rgb(255,255,255)" font-family="#sans serif" font-size="12" font-style="italic" font-weight="normal" height="40" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="end" width="137" x="90" y="50">
-						OperationalSituation
-						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-					</textArea>
-				</svg>
-			</objectSymbol>
 		</object>
 		<object id="Object_Score_sysadmin_3758566237" type="Object_Score_sysadmin_3758566237" typeName="Score">
 			<description></description>
@@ -7596,7 +7468,9 @@ do :ReportConfidence; { id ' report confidence' }
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</rect>
 					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="35" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="90" x="50" y="35">
-						ReportTextSource:'Score ' if not :Value; then '?' else :Value; endif  ' in ' :CalculationFormula
+						ReportTextSource:'Score ' 
+if not :Value; then '?' else :Value; endif  
+' in ' :CalculationFormula
 
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
@@ -7832,13 +7706,64 @@ endif
 				</svg>
 			</objectSymbol>
 		</object>
-		<object id="Object_FeatureFlaw_sysadmin_3509607953" type="Object_FeatureFlaw_sysadmin_3509607953" typeName="FeatureFlaw">
-			<description>FeatureFlaw represents functional anomalies derivable from each foreseeable source. nonFulfilledRequirements identifies those requirements that correspond to the FeatureFlaw.</description>
-			<slot id="idc9yk" name="__UUID" unique="false">
+		<object id="Object_Actor_user_3610197079" type="Object_Actor_user_3610197079" typeName="Actor">
+			<description>Actor represents a type of role played by an entity that interacts with the Use case.</description>
+			<slot id="lnu3ma" name="__UUID" unique="false">
 				<property href="#Property___UUID_sysadmin_3604668056"></property>
 			</slot>
-			<slot id="ia25m1" name="Short name" unique="false">
-				<property type="Property_FeatureFlawName_sysadmin_3509607923" typeName="FeatureFlawName">
+			<slot id="lou3mk" name="Short name" unique="false">
+				<property href="#Property_2ECUName_user_3310972947"></property>
+			</slot>
+			<slot id="lpu3mt" name="Name" unique="false">
+				<property href="#Property_Name_sysadmin_3536998876"></property>
+			</slot>
+			<slot id="lqu3n2" name="Description" unique="false">
+				<property href="#Property_2Description_user_3310902697"></property>
+			</slot>
+			<identReport>if :Name; then :Name; else :Short name; endif</identReport>
+			<objectSymbol offset="30,70" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
+				<defaultConnectable isSticky="true" points="65,70 75,70 85,100 110,100 110,115 30,115 30,100 55,100 65,70" targetPointX="70" targetPointY="90" usesGrid="true"></defaultConnectable>
+				<svg baseProfile="tiny" height="130" version="1.2" width="110" xmlns="http://www.w3.org/2000/svg">
+					<template aligmentPointX="0.5" aligmentPointY="0.5" isMovable="false" revealConnectables="false" rotation="false" scaleFilter="0,0" subsymbolExtentX="40" subsymbolExtentY="45" useTargetpoint="false" width="1" xmlns="http://www.metacase.com/symbol">
+						<pathLayout allocation="start" layoutDistance="40" lineSegmentTable="" points="70,100" startDistance="0">
+							<layoutPath allocation="start" layoutDistance="9999" lineSegmentTable="true" points="0,0 0,-30" startDistance="10"></layoutPath>
+						</pathLayout>
+						<noneNPSource></noneNPSource>
+						<librarySubsymbolSource>Actor</librarySubsymbolSource>
+						<metaInfo></metaInfo>
+					</template>
+					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="30" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="80" x="30" y="100">
+						ReportTextSource:id
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+				</svg>
+			</objectSymbol>
+			<icon offset="50,30" xmlns="http://www.metacase.com/icon">
+				<svg baseProfile="tiny" height="75.76" version="1.2" width="76.4" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<radialGradient cx="0.342857" cy="0.225" gradientUnits="objectBoundingBox" id="gradient1" r="1.12887" sym:correctGamma="true" sym:fillType="PathFill">
+							<stop offset="0" stop-color="rgb(255,255,255)"></stop>
+							<stop offset="1" stop-color="rgb(0,128,0)"></stop>
+						</radialGradient>
+						<radialGradient cx="0.348485" cy="0.351852" gradientUnits="objectBoundingBox" id="gradient2" r="0.919004" sym:correctGamma="true" sym:fillType="PathFill">
+							<stop offset="0" stop-color="rgb(255,255,255)"></stop>
+							<stop offset="1" stop-color="rgb(0,128,0)"></stop>
+						</radialGradient>
+					</defs>
+					<g fill="none" stroke="rgb(0,128,0)" stroke-width="0" sym:height="45.76" sym:width="26.4" sym:x="5.0e1" sym:y="3.0e1">
+						<ellipse cx="63.2" cy="60.36" fill="url(#gradient1)" rx="13.2" ry="15.4" stroke="rgb(0,128,0)" stroke-width="0" sym:startAngle="1.8e2" sym:sweepAngle="1.8e2"></ellipse>
+						<ellipse cx="63.2" cy="37.48" fill="url(#gradient2)" rx="6.6" ry="7.48" stroke="rgb(0,128,0)" stroke-width="0" sym:startAngle="0.0e0" sym:sweepAngle="3.6e2"></ellipse>
+					</g>
+				</svg>
+			</icon>
+		</object>
+		<object id="Object_OperationalSituation_sysadmin_3509602770" type="Object_OperationalSituation_sysadmin_3509602770" typeName="OperationalSituation">
+			<description>An operational situation is a state, condition or scenario in the environment that may influence the vehicle. The Operational Situation may be further detailed by a functional definition in the EnvironmentModel.</description>
+			<slot id="iac6bi" name="__UUID" unique="false">
+				<property href="#Property___UUID_sysadmin_3604668056"></property>
+			</slot>
+			<slot id="i81xm5" name="Short name" unique="false">
+				<property type="Property_OperationalSituationName_sysadmin_3509602742" typeName="OperationalSituationName">
 					<description>Short name is mandatory and must start with an alphabetical character. It may contain characters, numbers or underscores.</description>
 					<dataType>
 						<simpleType>String</simpleType>
@@ -7850,26 +7775,89 @@ endif
 					<widget>Input Field</widget>
 				</property>
 			</slot>
-			<slot id="ieca09" name="Name" unique="false">
+			<slot id="ibc6bz" name="Name" unique="false">
 				<property href="#Property_Name_sysadmin_3536998876"></property>
 			</slot>
-			<slot id="ib25mq" name="Text" unique="false">
+			<slot id="i91xnc" name="Description" unique="false">
 				<property href="#Property_2Description_user_3310902697"></property>
 			</slot>
-			<slot id="iczo2w" name="nonFullfilledRequirement" unique="false">
-				<property type="Property_nonFullfilledRequirement_sysadmin_3548181076" typeName="nonFullfilledRequirement">
-					<description></description>
+			<identReport>if :Name; then :Name; else :Short name; endif</identReport>
+			<objectSymbol offset="90,50" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
+				<defaultConnectable isSticky="true" points="230,80 229.239,83.8268 227.071,87.0711 223.827,89.2388 220,90 99.75,90 95.9232,89.2388 92.6789,87.0711 90.5112,83.8268 89.75,80 89.75,59.75 90.5112,55.9232 92.6789,52.6789 95.9232,50.5112 99.75,49.75 220,49.75 223.827,50.5112 227.071,52.6789 229.239,55.9232 230,59.75 230,80" targetPointX="159.875" targetPointY="69.875" usesGrid="true"></defaultConnectable>
+				<svg baseProfile="tiny" height="90" version="1.2" width="230" xmlns="http://www.w3.org/2000/svg">
+					<rect fill="rgb(0,128,0)" height="40" rx="10" ry="10" stroke="rgb(0,0,0)" stroke-width="1" width="140" x="90" y="50">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</rect>
+					<textArea display-align="center" fill="rgb(255,255,255)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="bold" height="40" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="140" x="90" y="50">
+						ReportTextSource:id
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="before" fill="rgb(255,255,255)" font-family="#sans serif" font-size="12" font-style="italic" font-weight="normal" height="40" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="end" width="137" x="90" y="50">
+						OperationalSituation
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+				</svg>
+			</objectSymbol>
+		</object>
+		<object id="Object_ADLRequirement_user_3400763726" type="Object_ADLRequirement_user_3400763726" typeName="Requirement">
+			<description>The Requirement represents a capability or condition that must (or should) be satisfied.</description>
+			<slot id="cm94t5" name="__UUID" unique="false">
+				<property href="#Property___UUID_sysadmin_3604668056"></property>
+			</slot>
+			<slot id="cegc53" name="Short name" unique="false">
+				<property type="Property_2RequirementName_user_3310903808" typeName="RequirementName">
+					<description>Short name is mandatory and must start with an alphabetical character. It may contain characters, numbers or underscores.</description>
+					<dataType>
+						<simpleType>String</simpleType>
+					</dataType>
+					<defaultValue>
+						<string></string>
+					</defaultValue>
+					<regex>[a-zA-Z]([a-zA-Z0-9]|_[a-zA-Z0-9])*_?</regex>
+					<widget>Input Field</widget>
+				</property>
+			</slot>
+			<slot id="cl94sa" name="Name" unique="false">
+				<property href="#Property_Name_sysadmin_3536998876"></property>
+			</slot>
+			<slot id="cilf4e" name="Formalism" unique="false">
+				<property type="Property_Formalism_user_3462188263" typeName="Formalism">
+					<description>Specifies the language used for the requirement statement. </description>
+					<dataType>
+						<simpleType>String</simpleType>
+					</dataType>
+					<defaultValue>
+						<string></string>
+					</defaultValue>
+					<widget>Input Field</widget>
+				</property>
+			</slot>
+			<slot id="cjlf5t" name="Url" unique="false">
+				<property type="Property_Url_user_3462188288" typeName="Url">
+					<description>Reference to possible external file containing the requirement statement. </description>
+					<dataType>
+						<simpleType>String</simpleType>
+					</dataType>
+					<defaultValue>
+						<string></string>
+					</defaultValue>
+					<widget>Input Field</widget>
+				</property>
+			</slot>
+			<slot id="ck5kxl" name="Modes" unique="false">
+				<property type="Property_Modes_sysadmin_3543224568" typeName="Modes">
+					<description>The mode(s) where this requirement is valid.</description>
 					<dataType>
 						<simpleType>Collection</simpleType>
 					</dataType>
 					<contentsDataType>
-						<object id="Object_ADLRequirement_user_3400763726" type="Object_ADLRequirement_user_3400763726" typeName="Requirement">
-							<description>The Requirement represents a capability or condition that must (or should) be satisfied.</description>
-							<slot id="cm94t5" name="__UUID" unique="false">
+						<object type="Object_Mode_sysadmin_3509262593" typeName="Mode">
+							<description>Modes are a way to introduce various configurations in the system to account for different states of the system, or of a hardware entity, or an application. The use of modes can be used to filter different views of the model. Modes are characterized by a Boolean condition provided as a String, which evaluates to true when the Mode is active. The Mode is active if and only if the condition is true.</description>
+							<slot id="hyc9tj" name="__UUID" unique="false">
 								<property href="#Property___UUID_sysadmin_3604668056"></property>
 							</slot>
-							<slot id="cegc53" name="Short name" unique="false">
-								<property type="Property_2RequirementName_user_3310903808" typeName="RequirementName">
+							<slot id="hvn6km" name="Short name" unique="false">
+								<property type="Property_Mode_name_sysadmin_3509258627" typeName="Mode name">
 									<description>Short name is mandatory and must start with an alphabetical character. It may contain characters, numbers or underscores.</description>
 									<dataType>
 										<simpleType>String</simpleType>
@@ -7881,12 +7869,12 @@ endif
 									<widget>Input Field</widget>
 								</property>
 							</slot>
-							<slot id="cl94sa" name="Name" unique="false">
+							<slot id="hzc9tr" name="Name" unique="false">
 								<property href="#Property_Name_sysadmin_3536998876"></property>
 							</slot>
-							<slot id="cilf4e" name="Formalism" unique="false">
-								<property type="Property_Formalism_user_3462188263" typeName="Formalism">
-									<description>Specifies the language used for the requirement statement. </description>
+							<slot id="hxn6oj" name="Condition" unique="false">
+								<property type="Property_Condition_sysadmin_3509258696" typeName="Condition">
+									<description>A Boolean expression that characterizes the Mode, it evaluates to true when the Mode is active. The syntax and grammar of this expression is unspecified.</description>
 									<dataType>
 										<simpleType>String</simpleType>
 									</dataType>
@@ -7896,254 +7884,167 @@ endif
 									<widget>Input Field</widget>
 								</property>
 							</slot>
-							<slot id="cjlf5t" name="Url" unique="false">
-								<property type="Property_Url_user_3462188288" typeName="Url">
-									<description>Reference to possible external file containing the requirement statement. </description>
-									<dataType>
-										<simpleType>String</simpleType>
-									</dataType>
-									<defaultValue>
-										<string></string>
-									</defaultValue>
-									<widget>Input Field</widget>
-								</property>
-							</slot>
-							<slot id="ck5kxl" name="Modes" unique="false">
-								<property type="Property_Modes_sysadmin_3543224568" typeName="Modes">
-									<description>The mode(s) where this requirement is valid.</description>
-									<dataType>
-										<simpleType>Collection</simpleType>
-									</dataType>
-									<contentsDataType>
-										<object type="Object_Mode_sysadmin_3509262593" typeName="Mode">
-											<description>Modes are a way to introduce various configurations in the system to account for different states of the system, or of a hardware entity, or an application. The use of modes can be used to filter different views of the model. Modes are characterized by a Boolean condition provided as a String, which evaluates to true when the Mode is active. The Mode is active if and only if the condition is true.</description>
-											<slot id="hyc9tj" name="__UUID" unique="false">
-												<property href="#Property___UUID_sysadmin_3604668056"></property>
-											</slot>
-											<slot id="hvn6km" name="Short name" unique="false">
-												<property type="Property_Mode_name_sysadmin_3509258627" typeName="Mode name">
-													<description>Short name is mandatory and must start with an alphabetical character. It may contain characters, numbers or underscores.</description>
-													<dataType>
-														<simpleType>String</simpleType>
-													</dataType>
-													<defaultValue>
-														<string></string>
-													</defaultValue>
-													<regex>[a-zA-Z]([a-zA-Z0-9]|_[a-zA-Z0-9])*_?</regex>
-													<widget>Input Field</widget>
-												</property>
-											</slot>
-											<slot id="hzc9tr" name="Name" unique="false">
-												<property href="#Property_Name_sysadmin_3536998876"></property>
-											</slot>
-											<slot id="hxn6oj" name="Condition" unique="false">
-												<property type="Property_Condition_sysadmin_3509258696" typeName="Condition">
-													<description>A Boolean expression that characterizes the Mode, it evaluates to true when the Mode is active. The syntax and grammar of this expression is unspecified.</description>
-													<dataType>
-														<simpleType>String</simpleType>
-													</dataType>
-													<defaultValue>
-														<string></string>
-													</defaultValue>
-													<widget>Input Field</widget>
-												</property>
-											</slot>
-											<slot id="hwn6kv" name="Description" unique="false">
-												<property href="#Property_2Description_user_3310902697"></property>
-											</slot>
-											<identReport>if :Name; then :Name; else :Short name; endif</identReport>
-											<objectSymbol offset="90,50" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
-												<defaultConnectable isSticky="true" points="230,80 229.239,83.8268 227.071,87.0711 223.827,89.2388 220,90 99.75,90 95.9232,89.2388 92.6789,87.0711 90.5112,83.8268 89.75,80 89.75,59.75 90.5112,55.9232 92.6789,52.6789 95.9232,50.5112 99.75,49.75 220,49.75 223.827,50.5112 227.071,52.6789 229.239,55.9232 230,59.75 230,80" targetPointX="159.875" targetPointY="69.875" usesGrid="true"></defaultConnectable>
-												<svg baseProfile="tiny" height="90" version="1.2" width="230" xmlns="http://www.w3.org/2000/svg">
-													<rect fill="rgb(192,224,255)" height="40" rx="10" ry="10" stroke="rgb(0,0,0)" stroke-width="1" width="140" x="90" y="50">
-														<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-													</rect>
-													<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="bold" height="40" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="140" x="90" y="50">
-														ReportTextSource:id
-														<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-													</textArea>
-													<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="12" font-style="italic" font-weight="normal" height="40" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="end" width="136" x="94" y="50">
-														Mode
-														<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-													</textArea>
-												</svg>
-											</objectSymbol>
-										</object>
-									</contentsDataType>
-								</property>
-							</slot>
-							<slot id="ch5a4q" name="Description" unique="false">
+							<slot id="hwn6kv" name="Description" unique="false">
 								<property href="#Property_2Description_user_3310902697"></property>
 							</slot>
 							<identReport>if :Name; then :Name; else :Short name; endif</identReport>
-							<objectSymbol offset="30,20" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
-								<defaultConnectable isSticky="true" points="30,20 210,20 210,140 30,140 30,20" targetPointX="120" targetPointY="80" usesGrid="true"></defaultConnectable>
-								<svg baseProfile="tiny" height="142" version="1.2" width="212" xmlns="http://www.w3.org/2000/svg">
-									<defs>
-										<radialGradient cx="0.5" cy="0.5" gradientUnits="objectBoundingBox" id="gradient1" r="0.70711" sym:correctGamma="true" sym:fillType="RadialFill">
-											<stop offset="0" stop-color="rgb(255,255,255)"></stop>
-											<stop offset="1" stop-color="rgb(192,192,255)"></stop>
-										</radialGradient>
-									</defs>
-									<rect fill="rgb(128,128,255)" height="120" rx="0" ry="0" stroke="rgb(128,128,255)" stroke-width="1" width="180" x="32" y="22">
+							<objectSymbol offset="90,50" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
+								<defaultConnectable isSticky="true" points="230,80 229.239,83.8268 227.071,87.0711 223.827,89.2388 220,90 99.75,90 95.9232,89.2388 92.6789,87.0711 90.5112,83.8268 89.75,80 89.75,59.75 90.5112,55.9232 92.6789,52.6789 95.9232,50.5112 99.75,49.75 220,49.75 223.827,50.5112 227.071,52.6789 229.239,55.9232 230,59.75 230,80" targetPointX="159.875" targetPointY="69.875" usesGrid="true"></defaultConnectable>
+								<svg baseProfile="tiny" height="90" version="1.2" width="230" xmlns="http://www.w3.org/2000/svg">
+									<rect fill="rgb(192,224,255)" height="40" rx="10" ry="10" stroke="rgb(0,0,0)" stroke-width="1" width="140" x="90" y="50">
 										<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 									</rect>
-									<rect fill="url(#gradient1)" height="120" rx="0" ry="0" stroke="rgb(0,0,0)" stroke-width="1" width="180" x="30" y="20">
-										<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-									</rect>
-									<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="12" font-style="italic" font-weight="normal" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="end" width="180" x="30" y="20">
-										Req
+									<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="bold" height="40" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="140" x="90" y="50">
+										ReportTextSource:id
 										<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 									</textArea>
-									<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="180" x="30" y="20">
-										ReportTextSource:newline newline newline
-if :Description; then :Description; newline endif;
-
-										<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-									</textArea>
-									<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="13" font-style="normal" font-weight="normal" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="false" text-anchor="start" width="180" x="30" y="20">
-										ReportTextSource:newline newline newline
-'¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯'
-										<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-									</textArea>
-									<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="bold" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="180" x="30" y="20">
-										ReportTextSource:newline
-id
+									<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="12" font-style="italic" font-weight="normal" height="40" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="end" width="136" x="94" y="50">
+										Mode
 										<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 									</textArea>
 								</svg>
 							</objectSymbol>
-							<icon offset="110,70" xmlns="http://www.metacase.com/icon">
-								<svg baseProfile="tiny" height="180" version="1.2" width="290" xmlns="http://www.w3.org/2000/svg">
-									<defs>
-										<radialGradient cx="0.5" cy="0.5" gradientUnits="objectBoundingBox" id="gradient1" r="0.70711" sym:correctGamma="true" sym:fillType="RadialFill">
-											<stop offset="0" stop-color="rgb(255,255,255)"></stop>
-											<stop offset="1" stop-color="rgb(192,192,255)"></stop>
-										</radialGradient>
-									</defs>
-									<rect fill="url(#gradient1)" height="110" rx="0" ry="0" stroke="rgb(0,0,0)" stroke-width="1" width="180" x="110" y="70"></rect>
-									<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="96" font-style="normal" font-weight="bold" height="110" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="180" x="110" y="70">R</textArea>
-								</svg>
-							</icon>
 						</object>
 					</contentsDataType>
-					<contentsDataTypeSubtype>
-						<object id="Object_QualityRequirement_user_3400822352" type="Object_QualityRequirement_user_3400822352" typeName="QualityRequirement">
-							<description>QualityRequirement element represent a requirement which is non-functional. </description>
-							<superType>
-								<object href="#Object_ADLRequirement_user_3400763726"></object>
-							</superType>
-							<slot id="cgiuks" name="Kind" unique="false">
-								<property type="Property_QualityRequirementKind_user_3400822210" typeName="QualityRequirementKind">
-									<description>QualityRequirementKind represents the kind of QualityRequirement given by the definition of the respective Enumeration Literal.</description>
-									<dataType>
-										<simpleType>String</simpleType>
-									</dataType>
-									<defaultValue>
-										<string>Other</string>
-									</defaultValue>
-									<widget>Fixed List</widget>
-									<listValues>
-										<string>Configurability</string>
-										<string>Ergonomy</string>
-										<string>HumanMachineInterface</string>
-										<string>Safety</string>
-										<string>Security</string>
-										<string>Timing</string>
-										<string>Other</string>
-										<string>Availability</string>
-										<string>Reliability</string>
-										<string>Confidentiality  </string>
-										<string>Integrity</string>
-										<string>Maintainability</string>
-										<string>Performance</string>
-									</listValues>
-								</property>
-							</slot>
-							<identReport>if :Name; then :Name; else :Short name; endif</identReport>
-							<objectSymbol offset="30,20" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
-								<defaultConnectable isSticky="true" points="30,20 210,20 210,140 30,140 30,20" targetPointX="120" targetPointY="80" usesGrid="true"></defaultConnectable>
-								<svg baseProfile="tiny" height="141" version="1.2" width="211" xmlns="http://www.w3.org/2000/svg">
-									<defs>
-										<radialGradient cx="0.5" cy="0.5" gradientUnits="objectBoundingBox" id="gradient1" r="0.70711" sym:correctGamma="true" sym:fillType="RadialFill">
-											<stop offset="0" stop-color="rgb(255,255,255)"></stop>
-											<stop offset="1" stop-color="rgb(255,224,192)"></stop>
-										</radialGradient>
-									</defs>
-									<rect fill="rgb(255,128,128)" height="119" rx="0" ry="0" stroke="rgb(255,128,128)" stroke-width="1" width="180" x="31" y="22">
-										<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-									</rect>
-									<rect fill="url(#gradient1)" height="120" rx="0" ry="0" stroke="rgb(0,0,0)" stroke-width="1" width="180" x="30" y="20">
-										<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-									</rect>
-									<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="12" font-style="italic" font-weight="normal" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="end" width="180" x="30" y="20">
-										QReq
-										<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-									</textArea>
-									<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="180" x="30" y="20">
-										ReportTextSource:if :Kind; then 'Kind: ' :Kind; endif
-newline newline newline
-if :Description; then :Description; newline endif;
-										<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-									</textArea>
-									<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="13" font-style="normal" font-weight="normal" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="false" text-anchor="start" width="180" x="30" y="20">
-										ReportTextSource:newline newline newline
-'¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯'
-										<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-									</textArea>
-									<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="bold" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="180" x="30" y="20">
-										ReportTextSource:newline
-id
-										<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
-									</textArea>
-								</svg>
-							</objectSymbol>
-							<icon offset="70,30" xmlns="http://www.metacase.com/icon">
-								<svg baseProfile="tiny" height="140" version="1.2" width="250" xmlns="http://www.w3.org/2000/svg">
-									<defs>
-										<radialGradient cx="0.5" cy="0.5" gradientUnits="objectBoundingBox" id="gradient1" r="0.70711" sym:correctGamma="true" sym:fillType="RadialFill">
-											<stop offset="0" stop-color="rgb(255,255,255)"></stop>
-											<stop offset="1" stop-color="rgb(255,224,192)"></stop>
-										</radialGradient>
-									</defs>
-									<rect fill="url(#gradient1)" height="110" rx="0" ry="0" stroke="rgb(0,0,0)" stroke-width="1" width="180" x="70" y="30"></rect>
-									<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="96" font-style="normal" font-weight="bold" height="110" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="180" x="70" y="30">QR</textArea>
-								</svg>
-							</icon>
-						</object>
-					</contentsDataTypeSubtype>
 				</property>
 			</slot>
+			<slot id="ch5a4q" name="Description" unique="false">
+				<property href="#Property_2Description_user_3310902697"></property>
+			</slot>
 			<identReport>if :Name; then :Name; else :Short name; endif</identReport>
-			<objectSymbol offset="60,20" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
-				<defaultConnectable isSticky="true" points="210,74.0249 209.24,76.3115 207.076,78.25 203.837,79.5452 200.017,80 69.9834,80 66.1629,79.5452 62.9241,78.25 60.7599,76.3115 60,74.0249 60,25.9751 60.7599,23.6885 62.9241,21.7501 66.1629,20.4548 69.9834,20 200.017,20 203.837,20.4548 207.076,21.7501 209.24,23.6885 210,25.9751 210,74.0249" targetPointX="135" targetPointY="50" usesGrid="false"></defaultConnectable>
-				<svg baseProfile="tiny" height="83" version="1.2" width="213" xmlns="http://www.w3.org/2000/svg">
+			<objectSymbol offset="30,20" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
+				<defaultConnectable isSticky="true" points="30,20 210,20 210,140 30,140 30,20" targetPointX="120" targetPointY="80" usesGrid="true"></defaultConnectable>
+				<svg baseProfile="tiny" height="142" version="1.2" width="212" xmlns="http://www.w3.org/2000/svg">
 					<defs>
-						<radialGradient cx="0.486667" cy="0.516667" gradientUnits="objectBoundingBox" id="gradient1" r="0.695421" sym:correctGamma="true" sym:fillType="PathFill">
+						<radialGradient cx="0.5" cy="0.5" gradientUnits="objectBoundingBox" id="gradient1" r="0.70711" sym:correctGamma="true" sym:fillType="RadialFill">
 							<stop offset="0" stop-color="rgb(255,255,255)"></stop>
-							<stop offset="0.808846" stop-color="rgb(212,235,212)"></stop>
-							<stop offset="1" stop-color="rgb(169,225,169)"></stop>
+							<stop offset="1" stop-color="rgb(192,192,255)"></stop>
 						</radialGradient>
 					</defs>
-					<rect fill="rgb(128,0,0)" height="60" rx="10" ry="6" stroke="rgb(128,0,0)" stroke-width="1" width="150" x="63" y="23">
+					<rect fill="rgb(128,128,255)" height="120" rx="0" ry="0" stroke="rgb(128,128,255)" stroke-width="1" width="180" x="32" y="22">
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</rect>
-					<rect fill="url(#gradient1)" height="60" rx="10" ry="6" stroke="rgb(128,0,0)" stroke-width="1" width="150" x="60" y="20">
+					<rect fill="url(#gradient1)" height="120" rx="0" ry="0" stroke="rgb(0,0,0)" stroke-width="1" width="180" x="30" y="20">
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</rect>
-					<textArea display-align="center" fill="rgb(128,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="60" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="150" x="60" y="20">
-						ReportTextSource:id
+					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="12" font-style="italic" font-weight="normal" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="end" width="180" x="30" y="20">
+						Req
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
-					<textArea display-align="before" fill="rgb(96,96,96)" font-family="#sans serif" font-size="12" font-style="italic" font-weight="normal" height="60" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="end" width="150" x="60" y="20">
-						FeatureFlaw
+					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="180" x="30" y="20">
+						ReportTextSource:newline newline newline
+if :Description; then :Description; newline endif;
+
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="13" font-style="normal" font-weight="normal" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="false" text-anchor="start" width="180" x="30" y="20">
+						ReportTextSource:newline newline newline
+'¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯'
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="bold" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="180" x="30" y="20">
+						ReportTextSource:newline
+id
 						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
 					</textArea>
 				</svg>
 			</objectSymbol>
+			<icon offset="110,70" xmlns="http://www.metacase.com/icon">
+				<svg baseProfile="tiny" height="180" version="1.2" width="290" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<radialGradient cx="0.5" cy="0.5" gradientUnits="objectBoundingBox" id="gradient1" r="0.70711" sym:correctGamma="true" sym:fillType="RadialFill">
+							<stop offset="0" stop-color="rgb(255,255,255)"></stop>
+							<stop offset="1" stop-color="rgb(192,192,255)"></stop>
+						</radialGradient>
+					</defs>
+					<rect fill="url(#gradient1)" height="110" rx="0" ry="0" stroke="rgb(0,0,0)" stroke-width="1" width="180" x="110" y="70"></rect>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="96" font-style="normal" font-weight="bold" height="110" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="180" x="110" y="70">R</textArea>
+				</svg>
+			</icon>
 		</object>
-		<object href="#Object_ADLRequirement_user_3400763726"></object>
-		<object href="#Object_QualityRequirement_user_3400822352"></object>
+		<object id="Object_QualityRequirement_user_3400822352" type="Object_QualityRequirement_user_3400822352" typeName="QualityRequirement">
+			<description>QualityRequirement element represent a requirement which is non-functional. </description>
+			<superType>
+				<object href="#Object_ADLRequirement_user_3400763726"></object>
+			</superType>
+			<slot id="cgiuks" name="Kind" unique="false">
+				<property type="Property_QualityRequirementKind_user_3400822210" typeName="QualityRequirementKind">
+					<description>QualityRequirementKind represents the kind of QualityRequirement given by the definition of the respective Enumeration Literal.</description>
+					<dataType>
+						<simpleType>String</simpleType>
+					</dataType>
+					<defaultValue>
+						<string>Other</string>
+					</defaultValue>
+					<widget>Fixed List</widget>
+					<listValues>
+						<string>Configurability</string>
+						<string>Ergonomy</string>
+						<string>HumanMachineInterface</string>
+						<string>Safety</string>
+						<string>Security</string>
+						<string>Timing</string>
+						<string>Other</string>
+						<string>Availability</string>
+						<string>Reliability</string>
+						<string>Confidentiality  </string>
+						<string>Integrity</string>
+						<string>Maintainability</string>
+						<string>Performance</string>
+					</listValues>
+				</property>
+			</slot>
+			<identReport>if :Name; then :Name; else :Short name; endif</identReport>
+			<objectSymbol offset="30,20" scaleFilter="1,1" xmlns="http://www.metacase.com/symbol">
+				<defaultConnectable isSticky="true" points="30,20 210,20 210,140 30,140 30,20" targetPointX="120" targetPointY="80" usesGrid="true"></defaultConnectable>
+				<svg baseProfile="tiny" height="141" version="1.2" width="211" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<radialGradient cx="0.5" cy="0.5" gradientUnits="objectBoundingBox" id="gradient1" r="0.70711" sym:correctGamma="true" sym:fillType="RadialFill">
+							<stop offset="0" stop-color="rgb(255,255,255)"></stop>
+							<stop offset="1" stop-color="rgb(255,224,192)"></stop>
+						</radialGradient>
+					</defs>
+					<rect fill="rgb(255,128,128)" height="119" rx="0" ry="0" stroke="rgb(255,128,128)" stroke-width="1" width="180" x="31" y="22">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</rect>
+					<rect fill="url(#gradient1)" height="120" rx="0" ry="0" stroke="rgb(0,0,0)" stroke-width="1" width="180" x="30" y="20">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</rect>
+					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="12" font-style="italic" font-weight="normal" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="end" width="180" x="30" y="20">
+						QReq
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="normal" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="start" width="180" x="30" y="20">
+						ReportTextSource:if :Kind; then 'Kind: ' :Kind; endif
+newline newline newline
+if :Description; then :Description; newline endif;
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="13" font-style="normal" font-weight="normal" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="false" text-anchor="start" width="180" x="30" y="20">
+						ReportTextSource:newline newline newline
+'¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯'
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+					<textArea display-align="before" fill="rgb(0,0,0)" font-family="#sans serif" font-size="14" font-style="normal" font-weight="bold" height="120" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="180" x="30" y="20">
+						ReportTextSource:newline
+id
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</textArea>
+				</svg>
+			</objectSymbol>
+			<icon offset="70,30" xmlns="http://www.metacase.com/icon">
+				<svg baseProfile="tiny" height="140" version="1.2" width="250" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<radialGradient cx="0.5" cy="0.5" gradientUnits="objectBoundingBox" id="gradient1" r="0.70711" sym:correctGamma="true" sym:fillType="RadialFill">
+							<stop offset="0" stop-color="rgb(255,255,255)"></stop>
+							<stop offset="1" stop-color="rgb(255,224,192)"></stop>
+						</radialGradient>
+					</defs>
+					<rect fill="url(#gradient1)" height="110" rx="0" ry="0" stroke="rgb(0,0,0)" stroke-width="1" width="180" x="70" y="30"></rect>
+					<textArea display-align="center" fill="rgb(0,0,0)" font-family="#sans serif" font-size="96" font-style="normal" font-weight="bold" height="110" sym:characterBackgroundFill="none" sym:textboxFill="none" sym:textboxStroke="none" sym:textboxStroke-width="1" sym:wordWrap="true" text-anchor="middle" width="180" x="70" y="30">QR</textArea>
+				</svg>
+			</icon>
+		</object>
 		<object id="Object_Joker_user_3399887441" type="Object_Joker_user_3399887441" typeName="Comment">
 			<description>Commenting the metamodel or model, can be connected to all objects.</description>
 			<slot id="a2y9ru" name="Comment" unique="false">
@@ -8194,7 +8095,7 @@ id
 			</icon>
 		</relationship>
 		<relationship id="Relationship_SubAttackGroup_sysadmin_3758910458" type="Relationship_SubAttackGroup_sysadmin_3758910458" typeName="SubAttackGroup">
-			<description>Specifies if an attack contains one or more subattacks.</description>
+			<description>SubAttackGroup is used to create compositions of attacks in form of an attack tree. Attacks can have multiple subattacks. These subattacks can be linked either with an AND, OR or CUSTOM connector.</description>
 			<slot id="b3wzq8" name="Kind" unique="false">
 				<property type="Property_SubAttackGroupKind_sysadmin_3758910448" typeName="SubAttackGroupKind">
 					<description></description>
@@ -8318,10 +8219,8 @@ id
 				<role href="#Role_Comment_user_3460793566"></role>
 				<object href="#Object_Actor_user_3610197079"></object>
 				<object href="#Object_Attack_sysadmin_3758638313"></object>
-				<object href="#Object_AttackableProperty_sysadmin_3758566797"></object>
 				<object href="#Object___AttackMotivation_sysadmin_3758564669"></object>
 				<object href="#Object_Feature_user_3399887361"></object>
-				<object href="#Object_FeatureFlaw_sysadmin_3509607953"></object>
 				<object href="#Object_Hazard_sysadmin_3509606795"></object>
 				<object href="#Object_Item_sysadmin_3509259179"></object>
 				<object href="#Object_OperationalSituation_sysadmin_3509602770"></object>
@@ -8350,10 +8249,8 @@ id
 				<role href="#Role_Comment_user_3460793566"></role>
 				<object href="#Object_Actor_user_3610197079"></object>
 				<object href="#Object_Attack_sysadmin_3758638313"></object>
-				<object href="#Object_AttackableProperty_sysadmin_3758566797"></object>
 				<object href="#Object___AttackMotivation_sysadmin_3758564669"></object>
 				<object href="#Object_Feature_user_3399887361"></object>
-				<object href="#Object_FeatureFlaw_sysadmin_3509607953"></object>
 				<object href="#Object_Hazard_sysadmin_3509606795"></object>
 				<object href="#Object_Item_sysadmin_3509259179"></object>
 				<object href="#Object_OperationalSituation_sysadmin_3509602770"></object>
@@ -8389,23 +8286,9 @@ id
 				<cardinality start="1" stop="1"></cardinality>
 				<role href="#Role_refer_to_sysadmin_3524947529"></role>
 				<object href="#Object_Actor_user_3610197079"></object>
-				<object href="#Object_AttackableProperty_sysadmin_3758566797"></object>
 				<object href="#Object_Hazard_sysadmin_3509606795"></object>
 				<object href="#Object_Item_sysadmin_3509259179"></object>
-				<object href="#Object_Score_sysadmin_3758566237"></object>
-			</connection>
-		</binding>
-		<binding>
-			<relationship href="#Relationship_reference_sysadmin_3524947284"></relationship>
-			<connection>
-				<cardinality start="1" stop="1"></cardinality>
-				<role href="#Role_referred_from_sysadmin_3524947545"></role>
-				<object href="#Object_AttackableProperty_sysadmin_3758566797"></object>
-			</connection>
-			<connection>
-				<cardinality start="1" stop="1"></cardinality>
-				<role href="#Role_refer_to_sysadmin_3524947529"></role>
-				<object href="#Object_Item_sysadmin_3509259179"></object>
+				<object href="#Object_Vulnerability_sysadmin_3758567422"></object>
 			</connection>
 		</binding>
 		<binding>
@@ -8419,23 +8302,8 @@ id
 				<cardinality start="1" stop="1"></cardinality>
 				<role href="#Role_refer_to_sysadmin_3524947529"></role>
 				<object href="#Object_Attack_sysadmin_3758638313"></object>
-				<object href="#Object_AttackableProperty_sysadmin_3758566797"></object>
 				<object href="#Object___AttackMotivation_sysadmin_3758564669"></object>
 				<object href="#Object_Item_sysadmin_3509259179"></object>
-			</connection>
-		</binding>
-		<binding>
-			<relationship href="#Relationship_reference_sysadmin_3524947284"></relationship>
-			<connection>
-				<cardinality start="1" stop="1"></cardinality>
-				<role href="#Role_referred_from_sysadmin_3524947545"></role>
-				<object href="#Object_FeatureFlaw_sysadmin_3509607953"></object>
-			</connection>
-			<connection>
-				<cardinality start="1" stop="1"></cardinality>
-				<role href="#Role_refer_to_sysadmin_3524947529"></role>
-				<object href="#Object_Item_sysadmin_3509259179"></object>
-				<object href="#Object_ADLRequirement_user_3400763726"></object>
 			</connection>
 		</binding>
 		<binding>
@@ -8448,7 +8316,6 @@ id
 			<connection>
 				<cardinality start="1" stop="1"></cardinality>
 				<role href="#Role_refer_to_sysadmin_3524947529"></role>
-				<object href="#Object_FeatureFlaw_sysadmin_3509607953"></object>
 				<object href="#Object_Item_sysadmin_3509259179"></object>
 			</connection>
 		</binding>
@@ -8489,8 +8356,9 @@ id
 			<connection>
 				<cardinality start="1" stop="1"></cardinality>
 				<role href="#Role_refer_to_sysadmin_3524947529"></role>
-				<object href="#Object_AttackableProperty_sysadmin_3758566797"></object>
+				<object href="#Object_Item_sysadmin_3509259179"></object>
 				<object href="#Object_ADLRequirement_user_3400763726"></object>
+				<object href="#Object_Score_sysadmin_3758566237"></object>
 			</connection>
 		</binding>
 		<binding>
@@ -8550,33 +8418,28 @@ endif
 _translators()
 _CVSStranslators()
 
-foreach .Attack {
-	_initVars()
+foreach .Vulnerability {
 	local 'params' write
 		_getCVSSBase()
 	close
-	external 'https://www.first.org/cvss/calculator/3.0#CVSS:3.0' @params execute }</report>
+	external 'https://www.first.org/cvss/calculator/3.1#CVSS:3.1' @params execute 
+}</report>
 		<report>CVSS-SIG\ Temp()
 /* produces temporal score vector from SAM to CVSS */
 
 _translators()
 _CVSStranslators()
-_CVSSTemporalVars()
 
-foreach .Attack {
-	_initVars()
+foreach .Vulnerability {
 	local 'params' write
 		_getCVSSBase()
-		$visited = ' '
-		_getCVSS-SIGTemporal()
-		'/E:' $ExploitCodeMaturityLetter
-		'/RL:' $RemediationLevelLetter
-		'/RC:' $ReportConfidenceLetter		
-	
+		'/E:' :ExploitCodeMaturity%letter
+		'/RL:' :RemediationLevel%letter
+		'/RC:' :ReportConfidence%letter
 	close
-	external 'https://www.first.org/cvss/calculator/3.0#CVSS:3.0' @params execute 
+	external 'https://www.first.org/cvss/calculator/3.1#CVSS:3.1' @params execute 
 }</report>
-		<report>_AttackAndAttachMotivationIsTree()
+		<report>_AttackAndAttackMotivationIsTree()
 
 $inAttackCycles = ''
 
@@ -8587,90 +8450,114 @@ foreach .(Attack | AttackMotivation) where ~referred_from~refer_to.(Attack | Att
 
 if $inAttackCycles then
 	_reportWarnings()
-	'Warning: Attacks and AttackMotivations (' dowhile $inAttackCycles where id unique id { do contents {id } ', ' } ') are in cyclic structure' newline
+	'Warning: Attacks and AttackMotivations (' dowhile $inAttackCycles where id unique id { do contents {id } ', ' } ') form a cyclic structure' newline
 endif</report>
-		<report>_AttackMotivationMustReferTo()
-/* refer to 
-1,* Item
-1,* AttackableProperty
-max 1 Attack */
+		<report>_AttackMotivationHasOneKind()
+/* each attack motivation may contain one kind of motivation (aka one harm, one gain etc.) */
 
-foreach .(AttackMotivation | Attack) {
-	if not &gt;().Item; then
-		_reportWarnings()
-		'Warning: ' type ' ' id ' is not connected to any Item' newline
-	endif
-	if not &gt;().AttackableProperty; then
-		_reportWarnings()
-		'Warning: ' type ' ' id ' is not connected to any AttackableProperty' newline
-	endif	
-	if type = 'Attack' then
-		@i = '0'
-		if not &gt;().Actor; then
+foreach .AttackMotivation {
+	@kinds = ''
+	do ~refer_to~referred_from.AttackMotivation {
+		if @kinds =~ :Motivation; then
 			_reportWarnings()
-			'Warning: ' type ' ' id ' is not connected to any Actor' newline			
-		endif
-	endif	
-	if type = 'AttackMotivation' then
-		if not ~()~().(Attack | AttackMotivation); then
-			_reportWarnings()
-			'Warning: ' type ' ' id ' is not connected to any Attack or AttackMotivation' newline			
-		endif
-	endif
-}</report>
-		<report>_AttackMustReferToAttackablePropertyAndVulnerability()
-
-foreach .Attack {
-	do &gt;().AttackMotivation {
-		if not &gt;().AttackableProperty; then
-			_reportWarnings()
-			'Warning: ' type ' ' id ' is not connected to any AttackableProperty' newline
-		else
-			do &gt;().AttackableProperty; {
-				if not &gt;().Vulnerability; then
-					_reportWarnings()
-					'Warning: ' type ' ' id ' is not connected to any Vulnerability' newline
-				endif
-			}
+			'Warning: ' type;1 ' ' id;1 ' has already ' :Motivation ' motivation' newline
 		endif	
+		local 'kinds' append :Motivation; close
 	}
 }
 </report>
-		<report>_checking()
+		<report>_AttackMustReferToVulnerability()
 
-/* todo:
-1 Count max if many attacableProperties and Vulnerabilities by "path": not just single max?
-*/
+foreach .Attack {
+	if not &gt;().Vulnerability; then
+		_reportWarnings()
+		'Warning: ' type ' ' id ' is not connected to any Vulnerability' newline
+	endif	
+}
 
-_AttackMustReferToAttackablePropertyAndVulnerability()
-_AttackAndAttachMotivationIsTree()
-_ItemMustReferToVehicleFeatureAndAttachMotivation()
-_HazardMustReferToItemAndFlaw()
-_VulneratiblityToProperty()
-_AttackMotivationMustReferTo()
-_SafetyConceptMustReferToARequirement()</report>
-		<report>_CVSSTemporalVars()
-/* used to give weight to variables so that highest can be applied in case severeal Vulnerabilities exist */
+</report>
+		<report>_calcCVSSvars()
+
+/* Attack Vector (AV) */
+$AccessRequiredN= '0.85' 
+$AccessRequiredA= '0.62' 
+$AccessRequiredL = '0.55' 
+$AccessRequiredP = '0.2'
+
+/* Attack Complexity (AC)
+Attack Complexity - Modified Attack Complexity */
+$ConditionPrerequisiteComplexityL = '0.77'
+$ConditionPrerequisiteComplexityH = '0.44'
+
+/* Privileges Required (PR) */
+$PrivilegesRequiredN = '0.85'
+$PrivilegesRequiredL = '0.62'
+$PrivilegesRequiredH = '0.27'
+$PrivilegesRequiredN_ScopeChanged = '0.85'
+$PrivilegesRequiredL_ScopeChanged = '0.68'
+$PrivilegesRequiredH_ScopeChanged = '0.50'
+
+/* User Interaction (UI) */
+$UserInteractionN = '0.85'
+$UserInteractionR = '0.62'
+
+/* ConfidentialityImpact (C) */
+$ConfidentialityImpactH = '0.56' 
+$ConfidentialityImpactL = '0.22' 
+$ConfidentialityImpactN = '0'
+
+/* IntegrityImpact ()) */
+$IntegrityImpactH = '0.56' 
+$IntegrityImpactL = '0.22' 
+$IntegrityImpactN = '0'
+
+/* AvailabilityImpact (C) */
+$AvailabilityImpactH = '0.56' 
+$AvailabilityImpactL = '0.22' 
+$AvailabilityImpactN = '0'
 
 /* ExploitCodeMaturity (E) */
-$ExploitCodeMaturityOrderX = '1' 
-$ExploitCodeMaturityOrderU = '2' 
-$ExploitCodeMaturityOrderP = '3' 
-$ExploitCodeMaturityOrderF = '4'
-$ExploitCodeMaturityOrderH = '5'
+$ExploitCodeMaturityX = '1' 
+$ExploitCodeMaturityH = '1' 
+$ExploitCodeMaturityF = '0.97' 
+$ExploitCodeMaturityP = '0.94'
+$ExploitCodeMaturityU = '0.91'
 
 /* Remediation Level (RL) */
-$RemediationLevelOrderX = '1'
-$RemediationLevelOrderO = '2'
-$RemediationLevelOrderT = '3'
-$RemediationLevelOrderW = '4'
-$RemediationLevelOrderU = '5'
+$RemediationLevelX = '1'
+$RemediationLevelU = '1'
+$RemediationLevelW = '0.97'
+$RemediationLevelT = '0.96'
+$RemediationLevelO = '0.95'
 
 /* Report Confidence (RC) */
-$ReportConfidenceOrderX = '1'
-$ReportConfidenceOrderU = '2'
-$ReportConfidenceOrderR = '3'
-$ReportConfidenceOrderC = '4'</report>
+$ReportConfidenceX = '1'
+$ReportConfidenceC = '1'
+$ReportConfidenceR = '0.96'
+$ReportConfidenceU = '0.92'
+
+/* Security Requirements – C,I,A Requirements    --- not used
+Not Defined 
+High 
+Medium 
+Low
+1 
+1.5 
+1 
+0.5 */</report>
+		<report>_checking()
+/* constraint checks for SAM models: applied also at live check pane */
+_AttackAndAttackMotivationIsTree()
+_AttackMotivationHasOneKind()
+_AttackMustReferToVulnerability()
+_VulnerabilityToAttack()
+_ItemMustReferToVehicleFeatureAndVulnerabilityAndAttackMotivation()
+_HazardMustReferToItem()
+_SafetyConceptMustReferToARequirement()
+_SecurityConceptWithMotivationOnDocumentedAttacksRefersToAttack()
+_RequirementMustLinkToSecurityConcept()
+_ScoreToVulnerability()
+</report>
 		<report>_CVSStranslators()
 
 to '%letter
@@ -8680,97 +8567,79 @@ endto
 to '%first
 /^(.)(.*)$/ $$1'
 endto</report>
-		<report>_getCVSS-SIGAttackComplexity()
-do &gt;Reference.AttackableProperty {
-	if $Complexity &lt;&gt; 'H' then
-		$Complexity = :ConditionPrerequisiteComplexity%letter
-	endif
-}</report>
-		<report>_getCVSS-SIGScope()
-do ~()~().(AttackableProperty | Vulnerability) {
-	if not $visited =~ oid%wildsp then
-		variable 'visited' append oid ' ' close
-		if type = 'Vulnerability' then
-			if $Scope &lt;&gt; 'C' then
-				$Scope = :Scope%letter
-			endif
-		endif
-		_getCVSS-SIGScope()
-	endif
-}</report>
-		<report>_getCVSS-SIGTemporal()
+		<report>_CVSS_ISSBase()
 
-/* provides highest value in var when multiple vulnerabilities */
-do ~()~().(AttackableProperty | Vulnerability) {
-	if not $visited =~ oid%wildsp then
-		variable 'visited' append oid ' ' close
-		if type = 'Vulnerability' then 
-			@value = __(variable 'ExploitCodeMaturityOrder' :ExploitCodeMaturity%letter read)
-			if $ExploitCodeMaturity = '' or $ExploitCodeMaturity &lt; @value num then
-				$ExploitCodeMaturity = @value /* if value is bigger as biggest value is used */
-				$ExploitCodeMaturityLetter = :ExploitCodeMaturity%letter
-			endif
+math 
+	'1-(' 
+	'(1-' variable 'ConfidentialityImpact' :ConfidentialityImpact%letter read ')'
+	'*(1-' variable 'IntegrityImpact' :IntegrityImpact%letter read ')'
+	'*(1-' variable 'AvailabilityImpact' :AvailabilityImpact%letter read ')'
+	')'
+evaluate</report>
+		<report>_getAttack4CVSS()
+/* highest scale per Attack */
+_calcCVSSvars()
 
-			@value = __(variable 'RemediationLevelOrder' :RemediationLevel%letter read)
-			if $RemediationLevel = '' or $RemediationLevel &lt; @value num then
-				$RemediationLevel = @value /* if value is bigger as biggest value is used */
-				$RemediationLevelLetter = :RemediationLevel%letter
-			endif
+do &gt;().Attack {
+	local 'attacks' append oid newline close /* all attacks for vulnerability */
+	@iss = _CVSS_ISSBase()
+	@exploitability = __(math 
+			variable 'AccessRequired' :AccessRequired%first read
+			'*' variable 'PrivilegesRequired' :PrivilegesRequired%letter read
+			'*' variable 'UserInteraction' :UserInteraction%letter read
+	evaluate)
+	local oid write math @iss '+' @exploitability evaluate close
+}
 
-			@value = __(variable 'ReportConfidenceOrder' :ReportConfidence%letter read)
-			if $ReportConfidence = '' or $ReportConfidence &lt; @value num then
-				$ReportConfidence = @value /* if value is bigger as biggest value is used */
-				$ReportConfidenceLetter = :ReportConfidence%letter
-			endif
-		endif
-		_getCVSS-SIGTemporal()
+do @attacks where id {
+	@this = __(local id read)
+	if @maxVal &lt; @this num then
+		@maxVal = @this
+		@max = id
 	endif
-}</report>
+}
+
+@max /* highest attack */</report>
 		<report>_getCVSSBase()
 
-_getCVSS-SIGAttackComplexity()
-if ~SubAttackGroup; then
-	$Scope = 'C'
-else
-	$visited = ' '
-	_getCVSS-SIGScope()
-endif
+/* get "max" attack as vulnerability could have many */
+@oid = _getAttack4CVSS()
 
-'/AV:' :AccessRequired%first
-'/AC:' $Complexity
-'/PR:' :PrivilegesRequired%letter
-'/UI:' :UserInteraction%letter
-'/S:' $Scope
-'/C:' :ConfidentialityImpact%letter
-'/I:' :IntegrityImpact%letter
-'/A:' :AvailabilityImpact%letter
-</report>
-		<report>_HazardMustReferToItemAndFlaw()
-foreach .Hazard {
-	if not ~()~().Item; then
-		_reportWarnings()
-		'Warning: Hazard ' id ' is not connected to any Item' newline
-	endif
-	if not ~()~().FeatureFlaw; then
-		_reportWarnings()
-		'Warning: Hazard ' id ' is not connected to any FeatureFlaw' newline
-	endif	
+do &gt;().Attack; where oid = @oid { 
+	'/AV:' :AccessRequired%first
+	'/AC:' :ConditionPrerequisiteComplexity;1%letter
+	'/PR:' :PrivilegesRequired%letter
+	'/UI:' :UserInteraction%letter
+	'/S:' _subScope() 
+	'/C:' :ConfidentialityImpact%letter
+	'/I:' :IntegrityImpact%letter
+	'/A:' :AvailabilityImpact%letter
 }</report>
-		<report>_initVars()
-/* global vars are null in case there are multiple attack vectors */
+		<report>_HazardMustReferToItem()
 
-$Complexity = $Scope = $ExploitCodeMaturity = $RemediationLevel = $ReportConfidence = $ExploitCodeMaturityLetter = $RemediationLevelLetter = $ReportConfidenceLetter = ''</report>
-		<report>_ItemMustReferToVehicleFeatureAndAttachMotivation()
+foreach .Hazard {
+	if not &gt;().Item; then
+		_reportWarnings()
+		'Warning: ' type ' ' id ' is not connected to any Item' newline
+	endif
+}
+</report>
+		<report>_ItemMustReferToVehicleFeatureAndVulnerabilityAndAttackMotivation()
 
 foreach .Item {
-	if not ~()~().VehicleFeature; then
+	if not &gt;().VehicleFeature; then
 		_reportWarnings()
-		'Warning: Item ' id ' is not connected to any VehicleFeature' newline
+		'Warning: ' type ' ' id ' is not connected to any VehicleFeature' newline
 	endif
-	
-	if not ~()~().(AttackMotivation | Attack); then
+
+	if not &gt;().Vulnerability; then
 		_reportWarnings()
-		'Warning: Item ' id ' is not connected to any AttackMotivation' newline
+		'Warning: ' type ' ' id ' is not connected to any Vulnerability' newline
+	endif
+
+	if not &gt;().(AttackMotivation | Attack); then
+		_reportWarnings()
+		'Warning: ' type ' ' id ' is not connected to any Attack or AttackMotivation' newline
 	endif	
 	
 }</report>
@@ -8808,50 +8677,124 @@ do ~referred_from~refer_to.(Attack | AttackMotivation) {
 		variable 'inAttackCycles' append oid newline close
 	endif
 }</report>
+		<report>_recommendations()
+
+foreach .Attack; where not &gt;().Actor {
+'It is recommended to associate each attack to an external or internal actors' newline
+}</report>
+		<report>_RequirementMustLinkToSecurityConcept()
+
+foreach .(*Requirement) {
+	if not &gt;().SecurityConcept; then
+		_reportWarnings()
+		'Warning: ' type ' ' id ' is not connected to any SecurityConcept' newline
+	endif
+}</report>
 		<report>_SafetyConceptMustReferToARequirement()
+
 foreach .SecurityConcept {
 	if not ~()~().(*Requirement); then
 		_reportWarnings()
 		'Warning: SafetyConcept ' id ' is not connected to any Requirement' newline
 	endif
 }</report>
+		<report>_ScoreToVulnerability()
+
+foreach .Score {
+	if not &gt;().Vulnerability; then
+		_reportWarnings()
+		'Warning: ' type ' ' id ' is not connected to any Vulnerability' newline
+	endif
+}</report>
+		<report>_SecurityConceptWithMotivationOnDocumentedAttacksRefersToAttack()
+
+foreach .SecurityConcept; where :Motivated by documented attacks; {
+	if not &gt;().Attack; then
+		_reportWarnings()
+		'Warning: ' type ' ' id ' that is motivated by documentAttack is not connected to any Attack' newline
+	endif	
+}</report>
+		<report>_subScope()
+
+do &gt;().Vulnerability; where oid = oid;2 {
+	@result = _symGetScope()
+	if @result =~ '(C*' then
+		'C'
+	else
+		'U'
+	endif
+}</report>
 		<report>_symGetScope()
 
 if :Scope =~ '(U)*' then
-	do &gt;();1.AttackableProperty {
+
+to '%wildsp
+/^(.*)$/ $\*\ $1\ \*'
+endto
+
+	local 'myItems' write 
+		' ' 
 		do &gt;().Attack {
-			if ~SubAttackGroup; then
-				@result = '(C)hanged'
-			endif
+			do &gt;().Item {oid ' ' }
 		}
+	close
+	
+	$visited = ' '
+	local 'otherItems' write
+		do &gt;().Attack {  /* todo: if different attacks */
+			_symOtherItems()
+		}
+	close
+	
+	do @otherItems where id unique id {
+		if not @myItems =~ id%wildsp then
+			@result = '(C)hanged'
+		endif
 	}
+	
 	if @result then
-		@result ' scope as has subattacks'
+		@result ' scope (other sub-items)'
 	else
-		id ' scope' 
+		:Scope ' scope' 
 	endif
 else
-	id ' scope' 
+	:Scope ' scope' 
 endif
 newline</report>
-		<report>_VulneratiblityToProperty()
-foreach .Vulnerability {
-	if not ~()~().AttackableProperty; then
-		_reportWarnings()
-		'Warning: Vulnerability ' id ' is not connected to any AttackableProperty' newline
+		<report>_symOtherItems()
+
+do ~SubAttackGroup~SubAttack.Attack {
+	do &gt;().Item {oid newline}
+	if not $visited =~ oid%wildsp then
+		variable 'visited' append oid ' ' close
+		_symOtherItems()
 	endif
+}</report>
+		<report>_VulnerabilityToAttack()
+
+foreach .Vulnerability {
+	if not &gt;().Attack; then
+		_reportWarnings()
+		'Warning: ' type ' ' id ' is not connected to any Attack' newline
+	endif	
 }</report>
 		<report>__LiveCheck()
 subreport '_translators' run
 $warnings = '0'
 $LiveCheck = 'T'
 
+_recommendations()
 _checking()
 
 if $warnings = '0' then
 	'No warnings' newline
 endif</report>
 		<constraints>
+			<connectivity>
+				<object href="#Object_OperationalSituation_sysadmin_3509602770"></object>
+				<relationship href="#Relationship_reference_sysadmin_3524947284"></relationship>
+				<max>1</max>
+			</connectivity>
 			<connectivity>
 				<object href="#Object_Score_sysadmin_3758566237"></object>
 				<relationship href="#Relationship_reference_sysadmin_3524947284"></relationship>
@@ -8866,15 +8809,7 @@ endif</report>
 				<propertyName>Short name</propertyName>
 			</uniqueness>
 			<uniqueness>
-				<object href="#Object_AttackableProperty_sysadmin_3758566797"></object>
-				<propertyName>Short name</propertyName>
-			</uniqueness>
-			<uniqueness>
 				<object href="#Object___AttackMotivation_sysadmin_3758564669"></object>
-				<propertyName>Short name</propertyName>
-			</uniqueness>
-			<uniqueness>
-				<object href="#Object_FeatureFlaw_sysadmin_3509607953"></object>
 				<propertyName>Short name</propertyName>
 			</uniqueness>
 			<uniqueness>
