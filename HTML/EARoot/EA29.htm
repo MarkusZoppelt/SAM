@@ -2,51 +2,106 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>SecurityGoal</title>
+<title>SecurityConcept</title>
 <link href="../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../js/displayToc.js" type="text/javascript"></script>
 <script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
 }
 
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
 </script>
+<style>
+
+</style>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="pageHeader"></div>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> SecurityConcept </h1>
+			<!-- <img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="EA3.htm">SAM</a> / <a href="EA29.htm">SecurityConcept</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA3.htm">SAM</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("SecurityGoal", " : "))</script>  : Public  &lt;&lt;enumeration&gt;&gt; Class</span>
-	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+	<span class="ObjectTitle">SecurityConcept  : Public   Class</span>
+	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">30.06.2017 11:23:16</td>
+			<td width="85%" class="ObjectDetailsValue">05.02.2018 17:30:59</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">05.02.2018 17:19:16</td>
+			<td class="ObjectDetailsValue">10.03.2020 14:20:57</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj00" style="display: none;">
@@ -78,77 +133,51 @@ function nameClassifier(name, separator)
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj05" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{EAF9C8FF-8F86-45ec-B06D-35E9501FC681}</td>
+			<td class="ObjectDetailsValue">{F0E1B1EC-E719-43ba-8890-77E2B4F3082B}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="EA1.htm">Security</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">This entity offers enumerations for common security goals across any communication or data flow. These goals are: Confidentiality, Integrity, Availability, Authenticity, Reliability and Accountability.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Represents the set of security requirements that together fulfill a SecurityGoal, e.g., according to Com-Criteria (CC) ISO/IEC 15408.&lt;br/&gt;&lt;br/&gt;Constraints:&lt;br/&gt;[1] Whenever motivation is &quot;documentedAttacks&quot; then at least 1 attack has to be connected with this SecurityConcept&lt;br/&gt;&lt;br/&gt;Extension: SysML::Requirement&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent != null ? parent.toggleItem('Attributes') : toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent != null ? parent.toggleItem('AssociationsTo') : toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="parent != null ? parent.toggleItem('Links') : toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
-			<td width="100%" class="TableHeading">Attribute</td>
+			<td width="50%" class="TableHeading">Attribute</td>
+			<td width="25%" class="TableHeading">Scope</td>
+			<td width="25%" class="TableHeading">Type</td>
 		</tr>
 						<tr>
-				<td width="100%" class="TableRow">
-					<i>Public </i><br /><strong>&nbsp;&nbsp;Confidentiality</strong>
+				<td width="50%" class="TableRow">
+					consequencesForQuality*
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					String
 				</td>
 			</tr>
 			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes83')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes83" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes83_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes83_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes83_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes83_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes83_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes83_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes83_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes83_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
+				<td class="TableRowBottomDashed"  colspan="3">										
 					
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
@@ -156,7 +185,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Confidentiality ensures that private or confidential is not made available or disclosed to unauthorized users, and that users control (or influence) what information related to them may be collected and used, and to whom it is disclosed.&lt;br/&gt;
+			Consequences for quality, e.g., regarding performance, usability, time, costs, etc.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -164,300 +193,121 @@ function nameClassifier(name, separator)
 						
 				</td>
 			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public </i><br /><strong>&nbsp;&nbsp;Integrity</strong>
+				<td width="50%" class="TableRow">
+					motivatedBy*
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA30.htm">SecurityConceptMotivation</a>
 				</td>
 			</tr>
 			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes84')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes84" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+				<td class="TableRowBottomDashed"  colspan="3">										
 					
-						<tr id="DetailsImageAttributes84_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes84_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes84_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes84_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes84_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes84_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes84_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes84_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Integrity ensures that information is not changed (modifies) or destroyed in an unauthorized way.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public </i><br /><strong>&nbsp;&nbsp;Availability</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes85')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes85" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes85_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes85_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes85_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes85_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes85_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes85_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes85_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes85_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Availability ensures that a system works promptly, service is not denied to authorized users, and access to and use of information is timely and reliable.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public </i><br /><strong>&nbsp;&nbsp;Authenticity</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes86')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes86" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes86_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes86_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes86_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes86_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes86_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes86_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes86_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes86_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Authenticity is the property of being genuine and able to be verified and trusted. Authenticityis ensured through authentication processes that verify whether users are who they say they are (entity authenticity).&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public </i><br /><strong>&nbsp;&nbsp;Reliability</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes87')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes87" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes87_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes87_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes87_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes87_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes87_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes87_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes87_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes87_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Reliability is the property of a system such that reliance can be justifiably placed on the service it delivers.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public </i><br /><strong>&nbsp;&nbsp;Accountability</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes88')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes88" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes88_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes88_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes88_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes88_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes88_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes88_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes88_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes88_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Accountability refers to the requirements for actions of an entity to be traced uniquely to that entity (e.g., non-repuditation of a communication that took place).&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>
 	</table>
 </div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						Requirement<br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink96" /></button>Details:
+							<div id="detailsDIVLink96" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA6.htm">Attack</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink97" /></button>Details:
+							<div id="detailsDIVLink97" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">RequirementsHierarchy</td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
 	</div>
-<div class="pageFooter"></div>
- 
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
 </body>
 </html>
+

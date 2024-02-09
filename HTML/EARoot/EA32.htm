@@ -2,56 +2,111 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Target</title>
+<title>SecurityProperty</title>
 <link href="../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../js/displayToc.js" type="text/javascript"></script>
 <script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
 }
 
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
 </script>
+<style>
+
+</style>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="pageHeader"></div>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> SecurityProperty </h1>
+			<!-- <img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="EA3.htm">SAM</a> / <a href="EA32.htm">SecurityProperty</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA3.htm">SAM</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Target", " : "))</script>  : Public abstract  Class</span>
-	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+	<span class="ObjectTitle">SecurityProperty  : Public  &lt;&lt;enumeration&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">11.01.2021 11:28:11</td>
+			<td width="85%" class="ObjectDetailsValue">30.06.2017 11:23:16</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">04.11.2022 21:37:19</td>
+			<td class="ObjectDetailsValue">09.02.2024 13:12:46</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">Matthias Bergler</td>
+			<td class="ObjectDetailsValue">mz</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -78,171 +133,222 @@ function nameClassifier(name, separator)
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj05" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{8DCA5C58-000A-425e-8EB9-679AB4F46452}</td>
+			<td class="ObjectDetailsValue">{EAF9C8FF-8F86-45ec-B06D-35E9501FC681}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="EA1.htm">Security</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">The abstract class Target defines the aim of an attack. This abstract class acts as a placeholder for different attack targets. This can either be a person, a system or an item.&lt;br/&gt;&lt;br/&gt;Human Actor:&lt;br/&gt;Target for social engineering attacks on people.&lt;br/&gt;Item:&lt;br/&gt;Target for attacks on items or features of a system.&lt;br/&gt;&lt;br/&gt;More precise specification takes place in the respective subclasses.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">This entity offers enumerations for common security goals across any communication or data flow. These goals are: Confidentiality, Integrity, Availability, Authenticity, Reliability and Accountability.&lt;br/&gt;The entity is named in accordance with ISO/SAE 21434 3.1.20 and is synonymous with a security goal. To avoid confusion with the SecurityGoal entity, which is derived from the standard, the term SecurityProperty is used in deviation from the literature.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
-			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+			<li onClick="parent != null ? parent.toggleItem('Attributes') : toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 		</ul>
-		<div class="ItemBody" id="AssociationsToTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Attribute</td>
+			<td width="25%" class="TableHeading">Scope</td>
+			<td width="25%" class="TableHeading">Type</td>
+		</tr>
+						<tr>
+				<td width="50%" class="TableRow">
+					Confidentiality
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Confidentiality ensures that private or confidential is not made available or disclosed to unauthorized users, and that users control (or influence) what information related to them may be collected and used, and to whom it is disclosed.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Integrity
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Integrity ensures that information is not changed (modifies) or destroyed in an unauthorized way.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Availability
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Availability ensures that a system works promptly, service is not denied to authorized users, and access to and use of information is timely and reliable.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Authenticity
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Authenticity is the property of being genuine and able to be verified and trusted. Authenticityis ensured through authentication processes that verify whether users are who they say they are (entity authenticity).&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Reliability
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Reliability is the property of a system such that reliance can be justifiably placed on the service it delivers.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					Accountability
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Accountability refers to the requirements for actions of an entity to be traced uniquely to that entity (e.g., non-repuditation of a communication that took place).&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
 				<tr>
-					<td width="40%" class="TableHeading">Element</td>
-					<td width="30%" class="TableHeading">Source Role</td>
-					<td width="30%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
 				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA9.htm">AttackMotivation</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink95" onclick="parent.toggleDiv('detailsDIVLink95','DetailsImageLink95')" />Details:
-							<div id="detailsDIVLink95" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA5.htm">Asset</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> relevantAssets<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink96" onclick="parent.toggleDiv('detailsDIVLink96','DetailsImageLink96')" />Details:
-							<div id="detailsDIVLink96" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
 
 			</table>
-		</div>
-		<div class="ItemBody" id="AssociationsFromTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="40%" class="TableHeading">Element</td>
-					<td width="30%" class="TableHeading">Source Role</td>
-					<td width="30%" class="TableHeading">Target Role</td>
+		</div>	</div>
+ </div>
+ </td>
 				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA10.htm">DamageScenario</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink97" onclick="parent.toggleDiv('detailsDIVLink97','DetailsImageLink97')" />Details:
-							<div id="detailsDIVLink97" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA34.htm">Vulnerability</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink98" onclick="parent.toggleDiv('detailsDIVLink98','DetailsImageLink98')" />Details:
-							<div id="detailsDIVLink98" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">An attacker might attack an ItemCharacteristic without there being an Item to actually provide that specific property or characteristic&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-
-			</table>
-		</div>
-		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Connection</td>
-					<td width="10%" class="TableHeading">Direction</td>
-					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA15.htm">HumanActor</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top">Item</td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-
-			</table>
-		</div>
-	</div>
-<div class="pageFooter"></div>
- 
+			</tbody>
+		</table>
+		
+</div>
 </body>
 </html>
+

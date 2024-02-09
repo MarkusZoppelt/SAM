@@ -2,56 +2,111 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>InformationRetrieval</title>
+<title>ImpactRatingScore</title>
 <link href="../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../js/displayToc.js" type="text/javascript"></script>
 <script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
 }
 
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
 </script>
+<style>
+
+</style>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="pageHeader"></div>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> ImpactRatingScore </h1>
+			<!-- <img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="EA3.htm">SAM</a> / <a href="EA18.htm">ImpactRatingScore</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA3.htm">SAM</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("InformationRetrieval", " : "))</script>  : Public   Class</span>
-	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+	<span class="ObjectTitle">ImpactRatingScore  : Public   Class</span>
+	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">31.07.2017 15:29:27</td>
+			<td width="85%" class="ObjectDetailsValue">25.04.2023 13:30:25</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">10.03.2020 16:02:34</td>
+			<td class="ObjectDetailsValue">02.05.2023 10:27:57</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">mz</td>
+			<td class="ObjectDetailsValue">Matthias Bergler</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -63,7 +118,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj03" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
-			<td class="ObjectDetailsValue">Approved</td>
+			<td class="ObjectDetailsValue">Proposed</td>
 		</tr>
 		<tr id="proj04" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
@@ -78,31 +133,60 @@ function nameClassifier(name, separator)
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj05" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{6C8345E1-4F67-4cee-989C-C6205A257201}</td>
+			<td class="ObjectDetailsValue">{4BE40C03-99BA-4ca9-98EA-C704347EC447}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="EA1.htm">Security</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">A threat by an attack meant to, e.g., invade the privacy&#160;&#160;of passengers, other road users and other situational or political stakeholders, e.g., the OEM. Furthermore, getting access to other types of info, e.g., software/firmware by performing reverse engineering. Even research interest to break into the system for academic reasons is subsumed by this motivation.&lt;br/&gt;&lt;br/&gt;Semantics:&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Constraints:&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Notation:&lt;br/&gt;&lt;br/&gt;The AttackMotivation InformationRetrieval is shown as a solid-outline rectangle containing the name. Submotivations and subattacks are connected to their respective supermotivation/superattack by an undirected relationship and are arranged below their supermotivation/superattack (tree view).&lt;br/&gt;&lt;br/&gt;Extension: Specialization of SysML::Requirement&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;b&gt;15.5.1 Inputs&lt;/b&gt;&lt;br/&gt;&lt;b&gt;15.5.1.1 Prerequisites&lt;/b&gt;&lt;br/&gt;The following shall be available:&lt;br/&gt;&#8212; damage scenarios [WP-15-01].&lt;br/&gt;&lt;b&gt;15.5.1.2 Further supporting information&lt;/b&gt;&lt;br/&gt;The following information can be considered:&lt;br/&gt;&#8212; item definition [WP-09-01];&lt;br/&gt;&#8212; assets with cybersecurity properties [WP-15-02].&lt;br/&gt;&lt;b&gt;15.5.2 Requirements and recommendations&lt;/b&gt;&lt;br/&gt;&lt;b&gt;[RQ-15-04] &lt;/b&gt;The damage scenarios shall be assessed against potential adverse consequences for road users in the impact categories of safety, financial, operational, and privacy (S, F, O, P) respectively.&lt;br/&gt;NOTE 1 This document does not provide relationships (e.g. weighting) between different impact categories.&lt;br/&gt;NOTE 2 Additional impact categories can be considered.&lt;br/&gt;NOTE 3 If additional impact categories are considered, then the rationale and explanation of these categories can be shared in the supply chain in accordance with &lt;u&gt;Clause 7&lt;/u&gt;.&lt;br/&gt;&lt;b&gt;[RQ-15-05] &lt;/b&gt;The impact rating of a damage scenario shall be determined for each impact category to be one of the following:&lt;br/&gt;&#8212; severe;&lt;br/&gt;&#8212; major;&lt;br/&gt;&#8212; moderate; or&lt;br/&gt;&#8212; negligible.&lt;br/&gt;NOTE 4 Financial, operational and privacy related impacts can be rated in accordance with tables given in &lt;u&gt;Annex F&lt;/u&gt;.&lt;br/&gt;&lt;b&gt;[RQ-15-06] &lt;/b&gt;Safety related impact ratings shall be derived from ISO 26262-3:2018, 6.4.3.&lt;br/&gt;NOTE 5 &lt;u&gt;Table F.1 &lt;/u&gt;in &lt;u&gt;Annex F &lt;/u&gt;can be used for mapping safety impact criteria to impact ratings.&lt;br/&gt;NOTE 6 Evaluation for functional safety can be reused for this purpose.&lt;br/&gt;&lt;b&gt;[PM-15-07] &lt;/b&gt;If a damage scenario results in an impact rating and an argument can be made that every impact of another impact category is considered less critical, then further analysis for that other impact category may be omitted.&lt;br/&gt;EXAMPLE The safety impact of a damage scenario is rated &#8220;severe&#8221;, consequently financial impact of that damage scenario is not further analysed.&lt;br/&gt;&lt;b&gt;15.5.3 Work products&lt;/b&gt;&lt;br/&gt;&lt;b&gt;[WP-15-04] &lt;/b&gt;Impact ratings with associated impact categories, resulting from [RQ-15-04] to [RQ-15-06]&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;Impact rating for safety damage&lt;/b&gt;&lt;br/&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;br/&gt;&lt;b&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;br/&gt;&lt;b&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+			<li onClick="parent != null ? parent.toggleItem('Attributes') : toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent != null ? parent.toggleItem('AssociationsFrom') : toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="parent != null ? parent.toggleItem('Links') : toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-		<div class="ItemBody" id="AssociationsToTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Attribute</td>
+			<td width="25%" class="TableHeading">Scope</td>
+			<td width="25%" class="TableHeading">Type</td>
+		</tr>
+						<tr>
+				<td width="50%" class="TableRow">
+					value
+				</td>
+				<td width="25%" class="TableRow">
+					Public 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA17.htm">ImpactRating</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">										
+					
+						&nbsp;
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table class="Table ea_table">
 				<tr>
 					<td width="40%" class="TableHeading">Element</td>
 					<td width="30%" class="TableHeading">Source Role</td>
@@ -110,7 +194,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA9.htm">AttackMotivation</a><br />
+						<a href="EA11.htm">DamageScenario</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -124,8 +208,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink56" onclick="parent.toggleDiv('detailsDIVLink56','DetailsImageLink56')" />Details:
-							<div id="detailsDIVLink56" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink64" /></button>Details:
+							<div id="detailsDIVLink64" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -134,21 +218,27 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>
-		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
 					<td width="10%" class="TableHeading">Type</td>
 					<td width="10%" class="TableHeading">Connection</td>
 					<td width="10%" class="TableHeading">Direction</td>
 					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA9.htm">AttackMotivation</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
 					<td width="30%" class="TableRow" valign="top">TraceableSpecification</td>
@@ -161,7 +251,13 @@ function nameClassifier(name, separator)
 			</table>
 		</div>
 	</div>
-<div class="pageFooter"></div>
- 
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
 </body>
 </html>
+

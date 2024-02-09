@@ -2,56 +2,111 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Resilience</title>
+<title>Requirements</title>
 <link href="../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../js/displayToc.js" type="text/javascript"></script>
 <script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
 }
 
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
 </script>
+<style>
+
+</style>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="pageHeader"></div>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Requirements </h1>
+			<!-- <img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="EA3.htm">SAM</a> / <a href="EA24.htm">Requirements</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA3.htm">SAM</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Resilience", " : "))</script>  : Public   Class</span>
-	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+	<span class="ObjectTitle">Requirements  : Public   Class</span>
+	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">19.01.2021 12:18:52</td>
+			<td width="85%" class="ObjectDetailsValue">21.06.2017 09:17:52</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">31.03.2021 16:05:54</td>
+			<td class="ObjectDetailsValue">21.06.2017 14:20:19</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">Matthias Bergler</td>
+			<td class="ObjectDetailsValue">mz</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -78,363 +133,43 @@ function nameClassifier(name, separator)
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj05" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{1A1FE1F4-9113-4330-9D98-DA550D7616CD}</td>
+			<td class="ObjectDetailsValue">{E7B6B159-89A0-48a7-88E3-BE8FEFFDA946}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA1.htm">Security</a></td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Resilience is the ability to mentally or emotionally cope with a crisis or to return to pre-crisis status quickly[1]. Resilience exists when the person uses &quot;mental processes and behaviors in promoting personal assets and protecting self from the potential negative effects of stressors&quot; [2].&lt;br/&gt;&lt;br/&gt;Semantics:&lt;br/&gt;&lt;br/&gt;Resilience represents the properties of a human actor which makes him vulnerable to social engineering attacks. It may either be active (doing something to protect yourself in advance from attacks) or passive (refrain from doing something to not give an usable weakspot)&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;[1] de Terte, Ian; Stephens, Christine (2014). &quot;Psychological Resilience of Workers in High-Risk Occupations&quot;&lt;br/&gt;[2] Robertson, Ivan T.; Cooper, Cary L.; Sarkar, Mustafa; Curran, Thomas (2015-04-25). &quot;Resilience training in the workplace from 2003 to 2014: A systematic review&quot;&lt;br/&gt;</div>
-
+	
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
-			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="parent != null ? parent.toggleItem('Links') : toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-<div class="ItemBody" id="AttributesTable">
-	<table border="0" cellspacing="0" cellpadding="0" class="Table">
-		<tr>
-			<td width="100%" class="TableHeading">Attribute</td>
-		</tr>
-						<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="EA25.htm">ResilienceLevel</a></i><br /><strong>&nbsp;&nbsp;cautiousness</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes61')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes61" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes61_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes61_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes61_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes61_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes61_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes61_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes61_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes61_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Cautiousness describes how attentive a human actor is to helping people or giving unusual instructions.&lt;br/&gt;&lt;br/&gt;https://dictionary.cambridge.org/dictionary/english/cautiousness&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="EA25.htm">ResilienceLevel</a></i><br /><strong>&nbsp;&nbsp;contentment</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes62')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes62" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes62_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes62_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes62_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes62_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes62_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes62_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes62_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes62_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Contentment describes the extent to which a human actor is resistant to bribery, supposed profits or the like.&lt;br/&gt;&lt;br/&gt;https://dictionary.cambridge.org/dictionary/english/contentment&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="EA25.htm">ResilienceLevel</a></i><br /><strong>&nbsp;&nbsp;courage</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes63')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes63" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes63_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes63_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes63_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes63_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes63_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes63_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes63_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes63_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Courage describes the resilience to direct intimidation attempts by the attacker but also, for example, the resistance to the pressure that an attacker exerts on an employee with the stolen identity of the supervisor.&lt;br/&gt;https://dictionary.cambridge.org/dictionary/english/courage&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="EA25.htm">ResilienceLevel</a></i><br /><strong>&nbsp;&nbsp;experience</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes64')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes64" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes64_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes64_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes64_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes64_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes64_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes64_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes64_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes64_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Experience in dealing with certain situations prevents a human actor from being subject to errors and attacks due to lack of experience.&lt;br/&gt;&lt;br/&gt;https://dictionary.cambridge.org/dictionary/english/experience&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="EA25.htm">ResilienceLevel</a></i><br /><strong>&nbsp;&nbsp;knowledge</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes65')" style="text-decoration: none; color: #000000;"><img src="../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes65" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes65_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes65_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes65_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes65_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes65_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes65_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes65_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes65_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Sufficient knowledge in one area prevents the human actor from groping into traps set by the attacker or from being drawn into rash actions.&lt;br/&gt;https://dictionary.cambridge.org/dictionary/english/knowledge&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>
-	</table>
-</div>
-		<div class="ItemBody" id="AssociationsToTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
 				<tr>
-					<td width="40%" class="TableHeading">Element</td>
-					<td width="30%" class="TableHeading">Source Role</td>
-					<td width="30%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
 				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA15.htm">HumanActor</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink66" onclick="parent.toggleDiv('detailsDIVLink66','DetailsImageLink66')" />Details:
-							<div id="detailsDIVLink66" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
 
 			</table>
-		</div>
-		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
 					<td width="10%" class="TableHeading">Type</td>
@@ -453,7 +188,13 @@ function nameClassifier(name, separator)
 			</table>
 		</div>
 	</div>
-<div class="pageFooter"></div>
- 
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
 </body>
 </html>
+
