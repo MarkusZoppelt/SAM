@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CALKind</title>
+<title>AttackFeasibilityScore</title>
 <link href="../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> CALKind </h1>
+			<h1> AttackFeasibilityScore </h1>
 			<!-- <img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="EA3.htm">SAM</a> / <a href="EA10.htm">CALKind</a></p>
+			<p><a href="EA5.htm">SAM</a> / <a href="EA10.htm">AttackFeasibilityScore</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,20 +84,20 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA3.htm">SAM</a></ul>
+<a href="EA5.htm">SAM</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">CALKind  : Public   Enumeration</span>
+	<span class="ObjectTitle">AttackFeasibilityScore  : Public   Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">26.10.2023 08:37:57</td>
+			<td width="85%" class="ObjectDetailsValue">01.03.2023 12:17:05</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">09.02.2024 11:20:47</td>
+			<td class="ObjectDetailsValue">01.03.2023 13:33:31</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -106,7 +106,7 @@
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue"> </td>
+			<td class="ObjectDetailsValue">Matthias Bergler</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -142,19 +142,21 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{83C3BFEC-B87C-419e-A064-4CCA2A3E22D6}</td>
+			<td class="ObjectDetailsValue">{EC786978-80DF-406d-A0AC-3121AC5CE371}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="EA1.htm">Security</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">CALKind is an enumeration metaclass with enumeration literals indicating the level of cybersecurity assurance in accordance with ISO21434.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">To rate information technology security vulnerabilities, the CVSS maintained by the forum of incident response and security teams (FIRST) can be used. Within the base metrics group, the exploitability metrics (cf. Reference [&lt;u&gt;1&lt;/u&gt;], 7.1) can be used to rate attack feasibility. Other CVSS metrics (e.g. impact metrics) are covered by aspects of this document, e.g. damage scenarios and impact assessment.&lt;br/&gt;The exploitability metrics are:&lt;br/&gt;&#8212; attack vector;&lt;br/&gt;&#8212; attack complexity;&lt;br/&gt;&#8212; privileges required; and&lt;br/&gt;&#8212; user interaction.&lt;br/&gt;Evaluation of the CVSS metrics yields numerical values for each metric according within a pre-defined range. The overall exploitability value can be calculated on the basis of a simple formula:&lt;br/&gt;&lt;i&gt;E &lt;/i&gt;= 8,22 &#215; &lt;i&gt;V &lt;/i&gt;&#215; &lt;i&gt;C &lt;/i&gt;&#215; &lt;i&gt;P &lt;/i&gt;&#215; &lt;i&gt;U&lt;/i&gt;&lt;br/&gt;where &lt;br/&gt;- E is the exploitability value;&lt;br/&gt;- V is the numerical value associated to the attack vector, ranging from 0,2 to 0,85;&lt;br/&gt;- C is the numerical value associated with the attack complexity, ranging from 0,44 to 0,77;&lt;br/&gt;- P is the numerical value associated with the privilieges required, ranging from 0,27 to 0,85; and&lt;br/&gt;- U is the numerical value associated with user interaction, ranging from 0,62 to 0,85.&lt;br/&gt;&lt;br/&gt;[1] FORUM OF INCIDENT RESPONSE AND SECURITY TEAMS (FIRST). Common Vulnerability Scoring System (CVSS), &lt;i&gt;Common Vulnerability Scoring System v3.1: Specification Document, &lt;/i&gt;[online]. Available at: &lt;u&gt;https:// www .first .org/ cvss/ v3 .1/ specification -document&lt;/u&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent != null ? parent.toggleItem('Attributes') : toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent != null ? parent.toggleItem('AssociationsFrom') : toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="parent != null ? parent.toggleItem('Links') : toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -165,13 +167,13 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					CAL1
+					calculationFormula
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					
+					String
 				</td>
 			</tr>
 			<tr>
@@ -183,7 +185,7 @@
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Low to moderate cybersecurity assurance is required.&lt;br/&gt;
+			Score system used, e.g., CVSS, company intern, etc. &lt;br/&gt;CVSS based-approach is used as default&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -192,13 +194,13 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					CAL2
+					value
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					
+					<a href="EA9.htm">AttackFeasibilityRating</a>
 				</td>
 			</tr>
 			<tr>
@@ -210,61 +212,7 @@
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Moderate cybersecurity assurance is required.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					CAL3
-				</td>
-				<td width="25%" class="TableRow">
-					Public 
-				</td>
-				<td width="25%" class="TableRow">
-					
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">										
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Moderate to high cybersecurity assurance is required.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					CAL4
-				</td>
-				<td width="25%" class="TableRow">
-					Public 
-				</td>
-				<td width="25%" class="TableRow">
-					
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">										
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			High cybersecurity assurance is required.&lt;br/&gt;
+			Mapping based on the following table as recommended in ISO 21434 G3:&lt;br/&gt;&lt;br/&gt;Attack feasibility rating | CVSS exploitability value&lt;br/&gt;&lt;br/&gt;High | 2,96 - 3,89&lt;br/&gt;Medium | 2,00 -2,95&lt;br/&gt;Low | 1,06 - 1,99&lt;br/&gt;Very Low | 0,12 - 1,05&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -274,6 +222,39 @@
 			</tr>
 	</table>
 </div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA8.htm">Attack</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink27" /></button>Details:
+							<div id="detailsDIVLink27" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 		<div class="ItemBody" id="CustomPropertiesTable">
 			<table class="Table ea_table">
 				<tr>
@@ -287,7 +268,26 @@
 
 
 			</table>
-		</div>	</div>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">TraceableSpecification</td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
  </div>
  </td>
 				</tr>

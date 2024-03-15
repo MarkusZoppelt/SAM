@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>SecurityProperty</title>
+<title>SecurityConceptMotivation</title>
 <link href="../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> SecurityProperty </h1>
+			<h1> SecurityConceptMotivation </h1>
 			<!-- <img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="EA3.htm">SAM</a> / <a href="EA32.htm">SecurityProperty</a></p>
+			<p><a href="EA5.htm">SAM</a> / <a href="EA32.htm">SecurityConceptMotivation</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,20 +84,20 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA3.htm">SAM</a></ul>
+<a href="EA5.htm">SAM</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">SecurityProperty  : Public  &lt;&lt;enumeration&gt;&gt; Class</span>
+	<span class="ObjectTitle">SecurityConceptMotivation  : Public  &lt;&lt;enumeration&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">30.06.2017 11:23:16</td>
+			<td width="85%" class="ObjectDetailsValue">15.07.2019 13:57:23</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">09.02.2024 13:12:46</td>
+			<td class="ObjectDetailsValue">10.03.2020 13:00:10</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -142,14 +142,14 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{EAF9C8FF-8F86-45ec-B06D-35E9501FC681}</td>
+			<td class="ObjectDetailsValue">{B7672BAC-022F-4569-998D-0F7EF618FF61}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA1.htm">Security</a></td>
+			<td class="ObjectDetailsValue"><a href="EA1.htm">Security</a>, <a href="EA3.htm">SocialEngineering</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">This entity offers enumerations for common security goals across any communication or data flow. These goals are: Confidentiality, Integrity, Availability, Authenticity, Reliability and Accountability.&lt;br/&gt;The entity is named in accordance with ISO/SAE 21434 3.1.20 and is synonymous with a security goal. To avoid confusion with the SecurityGoal entity, which is derived from the standard, the term SecurityProperty is used in deviation from the literature.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">This entity offers enumerations for motivations ofsecurity requirements. These motivations are: &#8220;standard&#8221;, &#8220;certification&#8221; and &#8220;documentedAttacks&#8221;.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -165,7 +165,7 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					Confidentiality
+					standard
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -183,7 +183,7 @@
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Confidentiality ensures that private or confidential is not made available or disclosed to unauthorized users, and that users control (or influence) what information related to them may be collected and used, and to whom it is disclosed.&lt;br/&gt;
+			This entity offers enumerations for motivations ofsecurity requirements. These motivations are: &#8220;standard&#8221;, &#8220;certification&#8221; and &#8220;documentedAttacks&#8221;.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -192,7 +192,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					Integrity
+					certification
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -204,22 +204,12 @@
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Integrity ensures that information is not changed (modifies) or destroyed in an unauthorized way.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					Availability
+					documentedAttacks
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -231,98 +221,7 @@
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Availability ensures that a system works promptly, service is not denied to authorized users, and access to and use of information is timely and reliable.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					Authenticity
-				</td>
-				<td width="25%" class="TableRow">
-					Public 
-				</td>
-				<td width="25%" class="TableRow">
-					
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">										
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Authenticity is the property of being genuine and able to be verified and trusted. Authenticityis ensured through authentication processes that verify whether users are who they say they are (entity authenticity).&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					Reliability
-				</td>
-				<td width="25%" class="TableRow">
-					Public 
-				</td>
-				<td width="25%" class="TableRow">
-					
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">										
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Reliability is the property of a system such that reliance can be justifiably placed on the service it delivers.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					Accountability
-				</td>
-				<td width="25%" class="TableRow">
-					Public 
-				</td>
-				<td width="25%" class="TableRow">
-					
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">										
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Accountability refers to the requirements for actions of an entity to be traced uniquely to that entity (e.g., non-repuditation of a communication that took place).&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>

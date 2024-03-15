@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>AttackFeasibilityRating</title>
+<title>Asset</title>
 <link href="../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> AttackFeasibilityRating </h1>
+			<h1> Asset </h1>
 			<!-- <img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="EA3.htm">SAM</a> / <a href="EA7.htm">AttackFeasibilityRating</a></p>
+			<p><a href="EA5.htm">SAM</a> / <a href="EA7.htm">Asset</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,20 +84,20 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA3.htm">SAM</a></ul>
+<a href="EA5.htm">SAM</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">AttackFeasibilityRating  : Public   Enumeration</span>
+	<span class="ObjectTitle">Asset  : Public   Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">01.03.2023 10:11:59</td>
+			<td width="85%" class="ObjectDetailsValue">24.04.2023 12:50:00</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">01.03.2023 11:30:43</td>
+			<td class="ObjectDetailsValue">02.05.2023 12:45:06</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -142,19 +142,21 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{E15FAFBC-6CCD-40a4-936C-C268927D0C3B}</td>
+			<td class="ObjectDetailsValue">{ECAEF152-1B9E-47f4-8652-5839D6414722}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="EA1.htm">Security</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Attack Feasibility Rating based on ISO 21434 RQ-15-10.&lt;br/&gt;&lt;br/&gt;For each attack path, the attack feasibility rating shall be determined based on the following table:&lt;br/&gt;&lt;br/&gt;-High: The attack path can be accomplished utilizing low effort.&lt;br/&gt;-Medium: The attack path can be accomplished utilizing medium effort.&lt;br/&gt;Low: The attack path can be accomplished utilizing high effort.&lt;br/&gt;Very low: The attack path can be accomplished utilizing very high effort.&lt;br/&gt;&lt;br/&gt;Based on RC-15-11 the attack feasibility rating method should be defined based on one of the following approaches: &lt;br/&gt;a) attack potential-based approach;&lt;br/&gt;b) CVSS-based approach; or &lt;br/&gt;c) attack vector-based approach. &lt;br/&gt;NOTE 1 Selection of the approach can depend upon the phase in the lifecycle and available information.&lt;br/&gt;&lt;br/&gt;Based on RC-15-13, if a CVSS-based approach is used, the attack faeasibility rating should be determined based on the exploitability metrics of the base metrig group, including: &lt;br/&gt;a) attack vector,&lt;br/&gt;b) attack complexity;&lt;br/&gt;c) privlieges required; and&lt;br/&gt;d) user interaction.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">-Asset ist der zu sch&#252;tzende Teilbestand eines Targets&lt;br/&gt;&lt;br/&gt;The identification of assets can be based on:&lt;br/&gt;&#8212; analysing the item definition;&lt;br/&gt;&#8212; performing an impact rating;&lt;br/&gt;&#8212; deriving assets from threat scenarios; and/or&lt;br/&gt;&#8212; using predefined catalogues.&lt;br/&gt;&lt;br/&gt;Ergibt sich aus Analyse von Target&lt;br/&gt;&lt;br/&gt;EXAMPLE 1 The asset is personal information (customer personal preferences) stored in an infotainment system and its cybersecurity property is confidentiality. The damage scenario is disclosure of the personal information without the customer&#8217;s consent resulting from the loss of confidentiality.&lt;br/&gt;EXAMPLE 2 The asset is data communication of the braking function and its cybersecurity property is integrity. The damage scenario is collision with following vehicle (rear-end collision) caused by unintended full braking when the vehicle is travelling at high speed.&lt;br/&gt;&lt;br/&gt;Asset eines Menschen der sch&#252;tzenswert ist, w&#228;re das Wissen &#252;ber das Passwort (Asset)-#gt; Confidentiality (SecurityGoal)&lt;br/&gt;&lt;br/&gt;Target hat evtl. mehrere Assets. Gibt es dort Vulnerabilities ist das Asset gef&#228;hrdet. &lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent != null ? parent.toggleItem('Attributes') : toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent != null ? parent.toggleItem('AssociationsFrom') : toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="parent != null ? parent.toggleItem('Links') : toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -165,115 +167,57 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					High
+					ProtectionGoal
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					
+					<a href="EA34.htm">SecurityProperty</a>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">										
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The attack path can be accomplished utilizing low effort.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					Medium
-				</td>
-				<td width="25%" class="TableRow">
-					Public 
-				</td>
-				<td width="25%" class="TableRow">
-					
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">										
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The attack path can be accomplished utilizing medium effort.&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					Low
-				</td>
-				<td width="25%" class="TableRow">
-					Public 
-				</td>
-				<td width="25%" class="TableRow">
-					
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">										
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The attack path can be accomplished utilizing high effort.&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					Very low
-				</td>
-				<td width="25%" class="TableRow">
-					Public 
-				</td>
-				<td width="25%" class="TableRow">
-					
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">										
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The attack path can be accomplished utilizing very high effort.&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>
 	</table>
 </div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA37.htm">Target</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> relevantAssets<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink2" /></button>Details:
+							<div id="detailsDIVLink2" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 		<div class="ItemBody" id="CustomPropertiesTable">
 			<table class="Table ea_table">
 				<tr>
@@ -287,7 +231,26 @@
 
 
 			</table>
-		</div>	</div>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">TraceableSpecification</td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
  </div>
  </td>
 				</tr>
